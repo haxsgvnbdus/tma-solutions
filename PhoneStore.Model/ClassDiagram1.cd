@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PhoneStore.Data.Catalog.Product">
+    <Position X="6" Y="4.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="ProductPictures" Type="PhoneStore.Data.Catalog.ProductPicture" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.938" Y="4.25" />
+        <Point X="7.938" Y="1.405" />
+        <Point X="10" Y="1.405" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAQAQAgAABoAFAAlIQgAMAAAAAgMAwIIAFAAAA=</HashCode>
+      <FileName>Catalog\Product.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ProductType" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ProductCategories" />
+      <Property Name="ProductManufacturers" />
+      <Property Name="ProductPictures" />
+      <Property Name="ProductTags" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PhoneStore.Data.Catalog.ProductCategory">
+    <Position X="2.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACQAACAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAACAA=</HashCode>
+      <FileName>Catalog\ProductCategory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Category" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PhoneStore.Data.Catalog.ProductManufacturer">
+    <Position X="2.5" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAgCQAAAAAAAAAAAAAAAAAAAAAEAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\ProductManufacturer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Manufacturer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PhoneStore.Data.Catalog.ProductPicture">
+    <Position X="10" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACwAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\ProductPicture.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Picture" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PhoneStore.Data.Catalog.ProductTag">
+    <Position X="10.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Catalog\ProductTag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneStore.Data.Media.Picture">
+    <Position X="13.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAQAAAAAAAAgAEAAIAAAIAA=</HashCode>
+      <FileName>Media\Picture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneStore.Data.Catalog.Manufacturer">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\Manufacturer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneStore.Data.Catalog.Category" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAQEAAACAgAABAAEAAUAQAAEAAAZAAAAgAIABAAAA=</HashCode>
+      <FileName>Catalog\Category.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PhoneStore.Data.Media.Tag" Collapsed="true">
+    <Position X="14.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA=</HashCode>
+      <FileName>Catalog\Tag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="PhoneStore.Data.Catalog.ProductType">
+    <Position X="3" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Catalog\ProductType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
