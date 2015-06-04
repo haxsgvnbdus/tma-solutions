@@ -12,6 +12,7 @@ namespace PhoneStore.CMS.Models
         public ApplicationDbContext()
             : base("DefaultConnection")
         {
+
         }
     }
 }

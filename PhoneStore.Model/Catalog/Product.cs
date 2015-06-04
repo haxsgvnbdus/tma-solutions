@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using PhoneStore.Data.Discounts;
+using PhoneStore.Model.Discounts;
 
-namespace PhoneStore.Data.Catalog
+namespace PhoneStore.Model.Catalog
 {
     public partial class Product : BaseEntity, ISoftDeleteable
     {

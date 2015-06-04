@@ -1,11 +1,11 @@
-﻿using System;
+﻿using PhoneStore.Model.Catalog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PhoneStore.Data.Catalog;
 
-namespace PhoneStore.Data.Media
+namespace PhoneStore.Model.Media
 {
    public class Tag : BaseEntity 
     {

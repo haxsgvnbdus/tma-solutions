@@ -46,10 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminDBContext.cs" />
-    <Compile Include="AdminDBInitializer.cs" />
     <Compile Include="Mappings\CategoryMap.cs" />
-    <Compile Include="Mappings\IdentityMapping.cs" />
     <Compile Include="Mappings\ManufactureMap.cs" />
     <Compile Include="Mappings\ProductCategoryMap.cs" />
     <Compile Include="Mappings\ProductCommentMap.cs" />
@@ -65,11 +62,6 @@
     <Compile Include="PhoneStoreDBInitializer.cs" />
     <Compile Include="PhoneStoreDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserDataContextMigrations\201506031050592_Initial.cs" />
-    <Compile Include="UserDataContextMigrations\201506031050592_Initial.Designer.cs">
-      <DependentUpon>201506031050592_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserDataContextMigrations\Configuration.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -84,9 +76,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201506030713196_db.resx">
       <DependentUpon>201506030713196_db.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserDataContextMigrations\201506031050592_Initial.resx">
-      <DependentUpon>201506031050592_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

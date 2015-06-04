@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhoneStore.Data.Customers
+namespace PhoneStore.Model.Customers
 {
     public partial class ExternalAuthenticationRecord : BaseEntity
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhoneStore.Data.Discounts
+namespace PhoneStore.Model.Discounts
 {
     /// <summary>
     /// Represents a discount type

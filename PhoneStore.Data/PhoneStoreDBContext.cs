@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using PhoneStore.Data.Customers;
-using PhoneStore.Data.Catalog;
-using PhoneStore.Data.Media;
-using PhoneStore.Data.Discounts;
+using PhoneStore.Model.Customers;
+using PhoneStore.Model.Catalog;
+using PhoneStore.Model.Media;
+using PhoneStore.Model.Discounts;
 using PhoneStore.Data.Mappings;
 
 namespace PhoneStore.Data

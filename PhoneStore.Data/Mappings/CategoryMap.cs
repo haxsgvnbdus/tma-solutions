@@ -1,4 +1,4 @@
-﻿using PhoneStore.Data.Catalog;
+﻿using PhoneStore.Model.Catalog;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;

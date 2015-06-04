@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhoneStore.Data
+namespace PhoneStore.Model
 {
     public class BaseEntity
     {

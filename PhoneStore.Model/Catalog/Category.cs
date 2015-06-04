@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PhoneStore.Data.Discounts;
-using PhoneStore.Data;
+using PhoneStore.Model.Discounts;
+using PhoneStore.Model;
 
-namespace PhoneStore.Data.Catalog
+namespace PhoneStore.Model.Catalog
 {
     public partial class Category : BaseEntity, ISoftDeleteable
     {

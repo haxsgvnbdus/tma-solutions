@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PhoneStore.Data.Catalog;
+using PhoneStore.Model.Catalog;
 using System.Data.Entity.ModelConfiguration;
 
 namespace PhoneStore.Data.Mappings

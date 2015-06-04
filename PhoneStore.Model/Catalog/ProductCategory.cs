@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PhoneStore.Data;
+using PhoneStore.Model;
 
-namespace PhoneStore.Data.Catalog
+namespace PhoneStore.Model.Catalog
 {
     /// <summary>
     /// Represents a product category mapping

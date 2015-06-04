@@ -59,7 +59,6 @@
     <Compile Include="Customers\ExternalAuthenticationRecord.cs" />
     <Compile Include="Discount\Discount.cs" />
     <Compile Include="Discount\DiscountType.cs" />
-    <Compile Include="Identity\User.cs" />
     <Compile Include="ISoftDeleteable.cs" />
     <Compile Include="Media\Picture.cs" />
     <Compile Include="Catalog\Tag.cs" />

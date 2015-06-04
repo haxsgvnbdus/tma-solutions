@@ -5,11 +5,10 @@ namespace PhoneStore.Data.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
     using PhoneStore.Data;
-    using PhoneStore.Data.Customers;
-    using PhoneStore.Data.Catalog;
-    using PhoneStore.Data.Media;
+    using PhoneStore.Model.Customers;
+    using PhoneStore.Model.Catalog;
+    using PhoneStore.Model.Media;
     using System.Collections.Generic;
-    using PhoneStore.Data.Identity;
     using PhoneStore.Data.Migrations;
     
     internal sealed class Configuration : DbMigrationsConfiguration<PhoneStore.Data.PhoneStoreDBContext>

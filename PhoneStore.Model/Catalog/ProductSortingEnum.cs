@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhoneStore.Data.Catalog
+namespace PhoneStore.Model.Catalog
 {
     /// <summary>
     /// Represents the product sorting

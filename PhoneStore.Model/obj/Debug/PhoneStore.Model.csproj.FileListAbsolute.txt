@@ -18,6 +18,6 @@ C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Model\bin\Debug\Phone
 C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Model\obj\Debug\PhoneStore.Model.csprojResolveAssemblyReference.cache
 F:\VS Workspace\PhoneStore\PhoneStore.Model\bin\Debug\PhoneStore.Model.dll
 F:\VS Workspace\PhoneStore\PhoneStore.Model\bin\Debug\PhoneStore.Model.pdb
-F:\VS Workspace\PhoneStore\PhoneStore.Model\obj\Debug\PhoneStore.Model.csprojResolveAssemblyReference.cache
 F:\VS Workspace\PhoneStore\PhoneStore.Model\obj\Debug\PhoneStore.Model.dll
 F:\VS Workspace\PhoneStore\PhoneStore.Model\obj\Debug\PhoneStore.Model.pdb
+F:\VS Workspace\PhoneStore\PhoneStore.Model\obj\Debug\PhoneStore.Model.csprojResolveAssemblyReference.cache

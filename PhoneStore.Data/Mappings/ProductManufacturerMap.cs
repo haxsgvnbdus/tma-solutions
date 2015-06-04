@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity.ModelConfiguration;
-using PhoneStore.Data.Catalog;
+using PhoneStore.Model.Catalog;
 
 namespace PhoneStore.Data.Mappings
 {

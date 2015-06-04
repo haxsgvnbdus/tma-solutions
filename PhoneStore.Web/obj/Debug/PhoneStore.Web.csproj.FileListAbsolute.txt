@@ -271,3 +271,4 @@ F:\VS Workspace\PhoneStore\PhoneStore.Web\bin\Microsoft.Owin.Security.Twitter.xm
 F:\VS Workspace\PhoneStore\PhoneStore.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 F:\VS Workspace\PhoneStore\PhoneStore.Web\obj\Debug\PhoneStore.Web.dll
 F:\VS Workspace\PhoneStore\PhoneStore.Web\obj\Debug\PhoneStore.Web.pdb
+F:\VS Workspace\PhoneStore\PhoneStore.Web\obj\Debug\PhoneStore.Web.csprojResolveAssemblyReference.cache

@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using PhoneStore.Data;
-using PhoneStore.Data.Customers;
-using PhoneStore.Data.Catalog;
-using PhoneStore.Data.Media;
+using PhoneStore.Model.Customers;
+using PhoneStore.Model.Catalog;
+using PhoneStore.Model.Media;
 
 namespace PhoneStore.Data
 {
@@ -136,7 +136,7 @@ namespace PhoneStore.Data
             });
 
             foreach (Product pro in Products)
-                Products.Add(pro);
+                context.Products.Add(pro);
 
             base.Seed(context);
         }

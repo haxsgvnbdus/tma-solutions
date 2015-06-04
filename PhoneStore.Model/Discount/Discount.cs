@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PhoneStore.Data;
-using PhoneStore.Data.Catalog;
+using PhoneStore.Model;
+using PhoneStore.Model.Catalog;
 
-namespace PhoneStore.Data.Discounts
+namespace PhoneStore.Model.Discounts
 {
     public partial class Discount : BaseEntity
     {
