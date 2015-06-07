@@ -15,48 +15,81 @@ namespace PhoneStore.CMS.Extensions
     {
         public static TDestination MapTo<TSource, TDestination> (this TSource source)
         {
+            Mapper.CreateMap<TSource, TDestination>();
             return Mapper.Map<TSource, TDestination>(source);
         }
 
         #region Category
-        public static Category ToEntity(this CreateCategorySpec entity)
+        public static Category ToEntity(this CreateCategorySpec vm)
         {
-            return entity.MapTo<CreateCategorySpec , Category>(); 
+            return vm.MapTo<CreateCategorySpec , Category>(); 
         }
+        
+        public static CreateCategorySpec ToVM (this Category entity)
+        {
+            return entity.MapTo<Category, CreateCategorySpec>();
+        }
+       
         #endregion
 
         #region Manufacturer 
-        public static Manufacturer ToEntity(this CreateManufacturerSpec entity)
+        public static Manufacturer ToEntity(this CreateManufacturerSpec vm)
         {
-            return entity.MapTo<CreateManufacturerSpec, Manufacturer>();
+            return vm.MapTo<CreateManufacturerSpec, Manufacturer>();
+        }
+
+        public static CreateManufacturerSpec ToVM(this Manufacturer entity)
+        {
+            return entity.MapTo<Manufacturer, CreateManufacturerSpec>(); 
         }
         #endregion
 
         #region Product 
-        public static Product ToEntity(this CreateProductSpec entity)
+        public static Product ToEntity(this CreateProductSpec vm)
         {
-            return entity.MapTo<CreateProductSpec, Product>();
+            return vm.MapTo<CreateProductSpec, Product>();
+        }
+
+        public static CreateProductSpec ToVM(this Product entity)
+        {
+            return entity.MapTo<Product, CreateProductSpec>(); 
         }
         #endregion
 
         #region Discount
-        public static Discount ToEntity(this CreateDiscountSpec entity)
+        public static Discount ToEntity(this CreateDiscountSpec vm)
         {
-            return entity.MapTo<CreateDiscountSpec, Discount>();
+            return vm.MapTo<CreateDiscountSpec, Discount>();
+        }
+
+        public static CreateDiscountSpec ToVM(this Discount entity)
+        {
+            return entity.MapTo<Discount, CreateDiscountSpec>(); 
         }
         #endregion
 
         #region Picture
-        public static Picture ToEntity(this CreatePictureSpec entity)
+        public static Picture ToEntity(this CreatePictureSpec vm)
         {
-            return entity.MapTo<CreatePictureSpec, Picture>();
+            return vm.MapTo<CreatePictureSpec, Picture>();
         }
+
+        public static CreatePictureSpec ToVM(this Picture entity)
+        {
+            return entity.MapTo<Picture, CreatePictureSpec>();
+        }
+
         #endregion
 
         #region Tag 
         public static Tag ToEntity(this CreateTagSpec entity)
         {
             return entity.MapTo<CreateTagSpec, Tag>();
+        }
+
+        public static CreateTagSpec ToVM(this Tag vm)
+        {
+            return vm.MapTo<Tag, CreateTagSpec>(); 
         }
         #endregion 
     }

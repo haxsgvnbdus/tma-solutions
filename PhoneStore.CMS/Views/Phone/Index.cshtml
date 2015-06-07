@@ -1,62 +1,73 @@
 ﻿@model IEnumerable<PhoneStore.Model.Catalog.Product>
 
+
+
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
 
+@using (Html.BeginForm("Index", "Phone", FormMethod.Get))
+{
+    <p>
+        Find by name: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" />
+    </p>
+}
+
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.ElementAt(0).Name)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Description)
+            @Html.DisplayNameFor(model => model.ElementAt(0).Description)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Price)
+            @Html.DisplayNameFor(model => model.ElementAt(0).Price)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.IsHot)
+            @Html.DisplayNameFor(model => model.ElementAt(0).IsHot)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ShowOnHomePage)
+            @Html.DisplayNameFor(model => model.ElementAt(0).ShowOnHomePage)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Deleted)
+            @Html.DisplayNameFor(model => model.ElementAt(0).Deleted)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.StockQuantity)
+            @Html.DisplayNameFor(model => model.ElementAt(0).StockQuantity)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MetaKeywords)
+            @Html.DisplayNameFor(model => model.ElementAt(0).MetaKeywords)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MetaDescription)
+            @Html.DisplayNameFor(model => model.ElementAt(0).MetaDescription)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MetaTitle)
+            @Html.DisplayNameFor(model => model.ElementAt(0).MetaTitle)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Sku)
+            @Html.DisplayNameFor(model => model.ElementAt(0).Sku)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CreatedOnUtc)
+            @Html.DisplayNameFor(model => model.ElementAt(0).CreatedOnUtc)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.UpdatedOnUtc)
+            @Html.DisplayNameFor(model => model.ElementAt(0).UpdatedOnUtc)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ProductTypeId)
+        <th>    
+            @Html.DisplayNameFor(model => model.ElementAt(0).ProductTypeId)
         </th>
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
+@foreach (var item in Model) { 
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.Name)

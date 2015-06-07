@@ -91,7 +91,7 @@ namespace PhoneStore.CMS.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(manufacturer);
+            return View(manufacturer); 
         }
 
         // GET: Manufacturer/Delete/5

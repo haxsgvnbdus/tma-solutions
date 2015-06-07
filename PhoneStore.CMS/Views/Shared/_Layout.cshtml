@@ -7,6 +7,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -26,7 +27,7 @@
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Phone List", "Index", "Phone")</li>
                     <li>@Html.ActionLink("Manufacturer List", "Index", "Manufacturer")</li>
-                    <li>@Html.ActionLink("Category List", "Index", "Manufacturer")</li>
+                    <li>@Html.ActionLink("Category List", "Index", "Category")</li>
                     <li>@Html.ActionLink("Discount List", "Index", "Discount")</li>
                     <li>@Html.ActionLink("Picture List", "Index", "Picture")</li>
                     <li>@Html.ActionLink("Tag List", "Index", "Tag")</li>
@@ -42,7 +43,6 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

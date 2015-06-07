@@ -7,6 +7,7 @@ namespace PhoneStore.CMS.ViewModels
 {
     public class CreateDiscountSpec
     {
+        public int ID { set; get; }
         public string Name { get; set; }
         public int DiscountTypeId { get; set; }
         public bool UsePercentage { get; set; }

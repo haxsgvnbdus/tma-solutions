@@ -11,7 +11,7 @@ using PhoneStore.Model.Media;
 
 namespace PhoneStore.Data
 {
-    public class PhoneStoreDBInitializer : DropCreateDatabaseAlways<PhoneStoreDBContext>
+    public class PhoneStoreDBInitializer : DropCreateDatabaseIfModelChanges<PhoneStoreDBContext>
     {
         protected override void Seed(PhoneStoreDBContext context)
         {

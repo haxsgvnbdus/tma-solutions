@@ -5,8 +5,9 @@ using System.Web;
 
 namespace PhoneStore.CMS.ViewModels
 {
-    public class CreateProductSpec
+    public class CreateProductSpec 
     {
+        public int ID { get; set; }
         public string Name { set; get; }
         public string Description { set; get; }
         public decimal Price { get; set; }

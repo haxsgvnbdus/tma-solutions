@@ -7,6 +7,7 @@ namespace PhoneStore.CMS.ViewModels
 {
     public class CreateCategorySpec
     {
+        public int ID { set; get; }
         public string Name { get; set; }
 
         public string Description { get; set; }
