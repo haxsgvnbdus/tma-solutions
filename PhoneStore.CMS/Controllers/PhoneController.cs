@@ -7,8 +7,10 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using PhoneStore.Model.Catalog;
-using PhoneStore.Data; 
-
+using PhoneStore.Data;
+using PagedList;
+using PhoneStore.CMS.ViewModels;
+using PhoneStore.CMS.Extensions;
 
 namespace PhoneStore.CMS.Controllers
 {
@@ -61,7 +63,7 @@ namespace PhoneStore.CMS.Controllers
 
             return View(products.ToPagedList(pageSize, pageNumber));
             
-            return View(products.ToList());
+            //return View(products.ToList());
         }
 
         // GET: /Phone/Details/5
@@ -91,10 +93,13 @@ namespace PhoneStore.CMS.Controllers
         
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="ID,Name,Description,Price,IsHot,ShowOnHomePage,Deleted,StockQuantity,MetaKeywords,MetaDescription,MetaTitle,Sku,CreatedOnUtc,UpdatedOnUtc,ProductTypeId")] Product product)
+        public ActionResult Create(CreateProductSpec productSpec)
         {
+            var product = productSpec.ToEntity();
             if (ModelState.IsValid)
             {
+                product.CreatedOnUtc = DateTime.UtcNow;
+                product.UpdatedOnUtc = DateTime.UtcNow;
                 db.Products.Add(product);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -117,14 +122,15 @@ namespace PhoneStore.CMS.Controllers
             }
             return View(product);
         }
-
+        
         // POST: /Phone/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="ID,Name,Description,Price,IsHot,ShowOnHomePage,Deleted,StockQuantity,MetaKeywords,MetaDescription,MetaTitle,Sku,CreatedOnUtc,UpdatedOnUtc,ProductTypeId")] Product product)
+        public ActionResult Edit(CreateProductSpec productSpec)
         {
+            var product = productSpec.ToEntity(); 
             if (ModelState.IsValid)
             {
                 db.Entry(product).State = EntityState.Modified;

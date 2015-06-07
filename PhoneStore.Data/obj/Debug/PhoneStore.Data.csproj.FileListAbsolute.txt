@@ -1,66 +1,28 @@
-c:\users\dell pc\documents\visual studio 2013\Projects\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll
-c:\users\dell pc\documents\visual studio 2013\Projects\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.pdb
-c:\users\dell pc\documents\visual studio 2013\Projects\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.dll
-c:\users\dell pc\documents\visual studio 2013\Projects\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.pdb
-c:\users\dell pc\documents\visual studio 2013\Projects\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csprojResolveAssemblyReference.cache
-c:\users\dell pc\documents\visual studio 2013\Projects\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll.config
-c:\users\dell pc\documents\visual studio 2013\Projects\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.dll
-c:\users\dell pc\documents\visual studio 2013\Projects\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.dll
-c:\users\dell pc\documents\visual studio 2013\Projects\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.dll
-c:\users\dell pc\documents\visual studio 2013\Projects\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.pdb
-c:\users\dell pc\documents\visual studio 2013\Projects\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.xml
-c:\users\dell pc\documents\visual studio 2013\Projects\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.xml
-D:\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csprojResolveAssemblyReference.cache
-D:\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.dll
-D:\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll.config
-D:\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll
-D:\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.pdb
-D:\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.dll
-D:\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.dll
-D:\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.dll
-D:\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.pdb
-D:\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.xml
-D:\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.xml
-D:\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.pdb
-C:\Users\Anh\Desktop\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll.config
-C:\Users\Anh\Desktop\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll
-C:\Users\Anh\Desktop\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.pdb
-C:\Users\Anh\Desktop\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.dll
-C:\Users\Anh\Desktop\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Anh\Desktop\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.dll
-C:\Users\Anh\Desktop\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.pdb
-C:\Users\Anh\Desktop\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.xml
-C:\Users\Anh\Desktop\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Anh\Desktop\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csprojResolveAssemblyReference.cache
-C:\Users\Anh\Desktop\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.dll
-C:\Users\Anh\Desktop\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.pdb
-C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csprojResolveAssemblyReference.cache
-C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.dll
-C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.pdb
-C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll.config
-C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll
-C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.pdb
-C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.dll
-C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.dll
-C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.pdb
-C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.xml
-C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.Migrations.db.resources
-C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csproj.GenerateResource.Cache
-C:\Users\hanngo\Source\Repos\NewRepo\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.UserDataContextMigrations.Initial.resources
-F:\VS Workspace\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll.config
-F:\VS Workspace\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll
-F:\VS Workspace\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.pdb
-F:\VS Workspace\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.dll
-F:\VS Workspace\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.dll
-F:\VS Workspace\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.dll
-F:\VS Workspace\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.pdb
-F:\VS Workspace\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.xml
-F:\VS Workspace\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.xml
-F:\VS Workspace\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csprojResolveAssemblyReference.cache
-F:\VS Workspace\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.Migrations.db.resources
-F:\VS Workspace\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.UserDataContextMigrations.Initial.resources
-F:\VS Workspace\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csproj.GenerateResource.Cache
-F:\VS Workspace\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.dll
-F:\VS Workspace\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.pdb
+E:\My Work Space\Web Projects\nda1291-PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csprojResolveAssemblyReference.cache
+E:\My Work Space\Web Projects\nda1291-PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.Migrations.dbphone.resources
+E:\My Work Space\Web Projects\nda1291-PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csproj.GenerateResource.Cache
+E:\My Work Space\Web Projects\nda1291-PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll.config
+E:\My Work Space\Web Projects\nda1291-PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll
+E:\My Work Space\Web Projects\nda1291-PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.pdb
+E:\My Work Space\Web Projects\nda1291-PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.dll
+E:\My Work Space\Web Projects\nda1291-PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\My Work Space\Web Projects\nda1291-PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.dll
+E:\My Work Space\Web Projects\nda1291-PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.pdb
+E:\My Work Space\Web Projects\nda1291-PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.xml
+E:\My Work Space\Web Projects\nda1291-PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\My Work Space\Web Projects\nda1291-PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.dll
+E:\My Work Space\Web Projects\nda1291-PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.pdb
+E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll.config
+E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll
+E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.pdb
+E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.dll
+E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.dll
+E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.pdb
+E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.xml
+E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csprojResolveAssemblyReference.cache
+E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.Migrations.dbphone.resources
+E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csproj.GenerateResource.Cache
+E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.dll
+E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.pdb

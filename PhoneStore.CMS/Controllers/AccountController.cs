@@ -27,7 +27,7 @@ namespace PhoneStore.CMS.Controllers
 
         public UserManager<ApplicationUser> UserManager { get; private set; }
 
-        //
+        
         // GET: /Account/Login
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)

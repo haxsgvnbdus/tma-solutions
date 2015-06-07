@@ -48,15 +48,16 @@
   <ItemGroup>
     <Compile Include="Mappings\CategoryMap.cs" />
     <Compile Include="Mappings\ManufactureMap.cs" />
+    <Compile Include="Mappings\PictureMap.cs" />
     <Compile Include="Mappings\ProductCategoryMap.cs" />
     <Compile Include="Mappings\ProductCommentMap.cs" />
     <Compile Include="Mappings\ProductManufacturerMap.cs" />
     <Compile Include="Mappings\ProductMap.cs" />
     <Compile Include="Mappings\ProductPictureMap.cs" />
     <Compile Include="Mappings\ProductTagMap.cs" />
-    <Compile Include="Migrations\201506030713196_db.cs" />
-    <Compile Include="Migrations\201506030713196_db.Designer.cs">
-      <DependentUpon>201506030713196_db.cs</DependentUpon>
+    <Compile Include="Migrations\201506051016113_dbphone.cs" />
+    <Compile Include="Migrations\201506051016113_dbphone.Designer.cs">
+      <DependentUpon>201506051016113_dbphone.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PhoneStoreDBInitializer.cs" />
@@ -74,14 +75,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201506030713196_db.resx">
-      <DependentUpon>201506030713196_db.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Bitmap1.bmp" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201506051016113_dbphone.resx">
+      <DependentUpon>201506051016113_dbphone.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

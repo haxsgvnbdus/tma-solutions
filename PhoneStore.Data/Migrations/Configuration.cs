@@ -15,7 +15,6 @@ namespace PhoneStore.Data.Migrations
     {
         protected override void Seed(PhoneStore.Data.PhoneStoreDBContext context)
         {
-
             context.Categories.AddOrUpdate(p => p.Name,
                 new Category
                 {
@@ -109,7 +108,7 @@ namespace PhoneStore.Data.Migrations
                 });
             context.SaveChanges();
 
-            
+
 
             //    context.Customers.AddOrUpdate(p => p.ID,
             //        new Customer { Name = "Han" },
@@ -130,14 +129,14 @@ namespace PhoneStore.Data.Migrations
                 new Tag { Tagline = "Makes me mad" },
                 new Tag { Tagline = "Cool like a pool" });
             context.SaveChanges();
-            
-            context.ProductComments.AddOrUpdate(p => p.ID,
-                new ProductComment { ProductID = 1, CustomerID = 4, IsApproved = true, Title = "Iphone 5S", ReviewText = "New features of Iphone 6S" },
-                new ProductComment { ProductID = 1, CustomerID = 4, IsApproved = true, Title = "Iphone 5S", ReviewText = "New features of Iphone 6S" },
-                new ProductComment { ProductID = 1, CustomerID = 4, IsApproved = true, Title = "Iphone 5S", ReviewText = "New features of Iphone 6S" },
-                new ProductComment { ProductID = 1, CustomerID = 4, IsApproved = true, Title = "Iphone 5S", ReviewText = "New features of Iphone 6S" },
-                new ProductComment { ProductID = 1, CustomerID = 4, IsApproved = true, Title = "Iphone 5S", ReviewText = "New features of Iphone 6S" });
-            context.SaveChanges();
+
+            //context.ProductComments.AddOrUpdate(p => p.ID,
+            //    new ProductComment { ProductID = 1, CustomerID = 4, IsApproved = true, Title = "Iphone 5S", ReviewText = "New features of Iphone 6S" },
+            //    new ProductComment { ProductID = 1, CustomerID = 4, IsApproved = true, Title = "Iphone 5S", ReviewText = "New features of Iphone 6S" },
+            //    new ProductComment { ProductID = 1, CustomerID = 4, IsApproved = true, Title = "Iphone 5S", ReviewText = "New features of Iphone 6S" },
+            //    new ProductComment { ProductID = 1, CustomerID = 4, IsApproved = true, Title = "Iphone 5S", ReviewText = "New features of Iphone 6S" },
+            //    new ProductComment { ProductID = 1, CustomerID = 4, IsApproved = true, Title = "Iphone 5S", ReviewText = "New features of Iphone 6S" });
+            //context.SaveChanges();
 
             context.Products.AddOrUpdate(p => p.Sku,
                 new Product
@@ -197,8 +196,8 @@ namespace PhoneStore.Data.Migrations
             context.SaveChanges();
 
             var productTags = new List<ProductTag> {
-                new ProductTag { ProductId = 1, TagId = 1}, 
-                new ProductTag { ProductId = 2, TagId = 2}, 
+                new ProductTag { ProductId = 1, TagId = 1},
+                new ProductTag { ProductId = 2, TagId = 2},
                 new ProductTag { ProductId = 3, TagId = 3}
             };
 
@@ -221,51 +220,51 @@ namespace PhoneStore.Data.Migrations
                     new ProductCategory { ProductID = 1, CategoryID = 1, DisplayOrder = 2, IsFeaturedProduct = true},
                 };
 
-            foreach (ProductCategory pc in productCategories) 
+            foreach (ProductCategory pc in productCategories)
             {
                 var ProductCategoryInDatabase = context.ProductCategories.Where(
                         s =>
                              s.Product.ID == pc.ProductID &&
                              s.Category.ID == pc.CategoryID).SingleOrDefault();
-                    if (ProductCategoryInDatabase== null)
-                    {
-                        context.ProductCategories.Add(pc);
-                    }
-                    context.SaveChanges();
+                if (ProductCategoryInDatabase == null)
+                {
+                    context.ProductCategories.Add(pc);
                 }
+                context.SaveChanges();
+            }
 
-                var productManufacturers = new List<ProductManufacturer> {
+            var productManufacturers = new List<ProductManufacturer> {
                     new ProductManufacturer { ProductId = 1, ManufacturerId = 1, IsFeaturedProduct = true, DisplayOrder = 1},
                     new ProductManufacturer { ProductId = 2, ManufacturerId = 3, IsFeaturedProduct = false, DisplayOrder = 2},
                     new ProductManufacturer { ProductId = 3, ManufacturerId = 5, IsFeaturedProduct = true, DisplayOrder = 3},
                 };
 
-                foreach (ProductManufacturer e in productManufacturers)
+            foreach (ProductManufacturer e in productManufacturers)
+            {
+                var ProductManuInDataBase = context.ProductManufacturers.Where(
+                    s =>
+                         s.Product.ID == e.ProductId &&
+                         s.Manufacturer.ID == e.ManufacturerId).FirstOrDefault();
+                if (ProductManuInDataBase == null)
                 {
-                    var ProductManuInDataBase = context.ProductManufacturers.Where(
-                        s =>
-                             s.Product.ID == e.ProductId &&
-                             s.Manufacturer.ID == e.ManufacturerId).FirstOrDefault();
-                    if (ProductManuInDataBase == null)
-                    {
-                        context.ProductManufacturers.Add(e);
-                    }
+                    context.ProductManufacturers.Add(e);
                 }
-                context.SaveChanges();
-            
-            
-            
-            
             }
-
-        
-            
-        
-            
+            context.SaveChanges();
 
 
-        
-            
-        
+
+
+        }
+
+
+
+
+
+
+
+
+
+     
     }
 }

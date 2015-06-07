@@ -1,0 +1,82 @@
+﻿@model PhoneStore.Model.Discounts.Discount
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Discount</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiscountTypeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiscountTypeId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsePercentage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsePercentage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiscountPercentage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiscountPercentage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiscountAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiscountAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDateUtc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDateUtc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDateUtc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDateUtc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiscountType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiscountType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

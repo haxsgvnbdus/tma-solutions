@@ -18,7 +18,7 @@ namespace PhoneStore.Data
 
         public PhoneStoreDBContext() : base("PhoneStoreWebData")
         {
-            Database.SetInitializer<PhoneStoreDBContext>(new PhoneStoreDBInitializer()); 
+            //Database.SetInitializer<PhoneStoreDBContext>(new PhoneStoreDBInitializer()); 
         }
         
         public DbSet<Category> Categories { set; get; }
@@ -47,13 +47,14 @@ namespace PhoneStore.Data
             base.OnModelCreating(modelBuilder);
             modelBuilder.Configurations.Add(new CategoryMap());
             modelBuilder.Configurations.Add(new ManufactureMap());
+            modelBuilder.Configurations.Add(new PictureMap());
+            modelBuilder.Configurations.Add(new ProductMap());
             modelBuilder.Configurations.Add(new ProductCategoryMap());
             modelBuilder.Configurations.Add(new ProductCommentMap());
             modelBuilder.Configurations.Add(new ProductManufacturerMap());
-            modelBuilder.Configurations.Add(new ProductMap());
             modelBuilder.Configurations.Add(new ProductPictureMap());
-            modelBuilder.Configurations.Add(new ProductTagMap()); 
-             
+            modelBuilder.Configurations.Add(new ProductTagMap());
+
         }
       
     }

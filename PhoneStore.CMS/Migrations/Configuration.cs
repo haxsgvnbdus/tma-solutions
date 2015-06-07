@@ -4,6 +4,7 @@ namespace PhoneStore.CMS.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using PhoneStore.CMS.Models;
 
     internal sealed class Configuration : DbMigrationsConfiguration<PhoneStore.CMS.Models.ApplicationDbContext>
     {
@@ -26,6 +27,11 @@ namespace PhoneStore.CMS.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            //context.Users.AddOrUpdate(p => p.Name,
+            //    new User { Name = "nda1291", Roles = "boss" }, 
+            //    new User { Name = "hanngo2911", Roles = "unpaid osin"});
+
         }
     }
 }

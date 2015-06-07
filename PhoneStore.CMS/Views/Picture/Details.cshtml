@@ -1,0 +1,50 @@
+﻿@model PhoneStore.Model.Media.Picture
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Picture</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PictureBinary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PictureBinary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MimeType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MimeType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeoFilename)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SeoFilename)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsNew)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsNew)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
