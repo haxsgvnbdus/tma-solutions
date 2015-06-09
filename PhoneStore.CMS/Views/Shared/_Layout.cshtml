@@ -13,13 +13,10 @@
     @Styles.Render("~/Content/theme")
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/theme")
-    
-
+    @Scripts.Render("~/bundles/bootstrap")
 
     @RenderSection("HeadIncludes", required: false)
-
 </head>
 <body>
 
@@ -72,8 +69,9 @@
                         </li>
                     </ul>
                 </li>
+
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> @User.Identity.Name <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> @*@User.Identity.Name*@ <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>

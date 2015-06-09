@@ -26,3 +26,15 @@ E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\obj\Debug\Ph
 E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csproj.GenerateResource.Cache
 E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.dll
 E:\My Work Space\Web Projects\hanngo2911-PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.pdb
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll.config
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.pdb
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.pdb
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csprojResolveAssemblyReference.cache
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.pdb

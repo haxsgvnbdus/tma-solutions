@@ -24,26 +24,21 @@ namespace PhoneStore.CMS
                       "~/Scripts/respond.js"));
 
 
-
-
-            bundles.Add(new ScriptBundle("~/bundles/theme").Include(
-                "~/Scripts/angular-ui/ui-bootstrap-tpls.min.js",               
+            bundles.Add(new ScriptBundle("~/bundles/theme").Include(          
                 "~/Scripts/theme/morris/morris.min.js", 
-                "~/Scripts/theme/morris/raphael.min.js",
-                "~/Scripts/jquery-2.1.4.js",
-                "~/Scripts/respond.js"
+                "~/Scripts/theme/morris/raphael.min.js"
                 ));
 
 
-            bundles.Add(new StyleBundle("~/Content/theme").Include(
-               "~/Content/theme/font-awesome/css/font-awesome.min.css",      
-               "~/Content/theme/morris.css",
-               "~/Content/theme/sb-admin.css",
+            bundles.Add(new StyleBundle("~/Content/css").Include(
                "~/Content/bootstrap/bootstrap.css"
                 ));
 
-            
-
+            bundles.Add(new StyleBundle("~/Content/theme").Include(
+               "~/Content/theme/font-awesome/css/font-awesome.min.css",
+               "~/Content/theme/morris.css",
+               "~/Content/theme/sb-admin.css"
+                ));
         }
     }
 }
