@@ -21,7 +21,8 @@ namespace PhoneStore.CMS.Controllers
         // GET: /Phone/
         public ActionResult Index()
         {
-           return View(db.Products.ToList());
+            return View(db.Products.ToList());
+
         }
 
         // GET: /Phone/Details/5
@@ -51,9 +52,9 @@ namespace PhoneStore.CMS.Controllers
         
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(CreateProductSpec productSpec)
+        public ActionResult Create(CreateProductSpec VM)
         {
-            var product = productSpec.ToEntity();
+            var product = VM.ToEntity();
             if (ModelState.IsValid)
             {
                 product.CreatedOnUtc = DateTime.UtcNow;

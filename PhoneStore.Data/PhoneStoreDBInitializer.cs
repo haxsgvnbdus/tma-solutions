@@ -19,7 +19,7 @@ namespace PhoneStore.Data
 
             Categories.Add(new Category
             {
-                Name = "IPhone",
+                Name = "IPhone2",
                 Description = "Product from Apple Co.",
                 PriceRanges = "300-2000",
                 MetaKeywords = "Ipad, Iphone, Ipod",
@@ -37,7 +37,7 @@ namespace PhoneStore.Data
             });
             Categories.Add(new Category 
             {
-                Name = "IPhone",
+                Name = "IPhone3",
                 Description = "Product from Apple Co.",
                 PriceRanges = "300-2000",
                 MetaKeywords = "Ipad, Iphone, Ipod",
@@ -56,6 +56,7 @@ namespace PhoneStore.Data
 
             foreach (Category cat in Categories)
                 context.Categories.Add(cat);
+            context.SaveChanges();
 
             IList<Customer> Customers = new List<Customer>();
             Customers.Add(new Customer() { Name = "Han" });
@@ -67,6 +68,28 @@ namespace PhoneStore.Data
 
             foreach (Customer cus in Customers)
                 context.Customers.Add(cus);
+            context.SaveChanges();
+
+
+            IList<Tag> Tags = new List<Tag>();
+            Tags.Add(new Tag() { Tagline = "dumb like a hub" });
+            Tags.Add(new Tag() { Tagline = "cool like a pool" });
+            Tags.Add(new Tag() { Tagline = "goodie-tootsy" });
+
+            foreach (Tag tag in Tags)
+                context.Tags.Add(tag);
+                context.SaveChanges();
+
+            IList<Picture> Pictures = new List<Picture>();
+            Pictures.Add(new Picture() { PictureLink = "/Images/w595-detail.jpg", MimeType = "", IsNew = true, SeoFilename = ""  });
+            Pictures.Add(new Picture() { PictureLink = "/Images/zxs.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "/Images/zxs.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "/Images/zxs.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            
+            foreach (Picture picture in Pictures)
+                context.Pictures.Add(picture);
+            context.SaveChanges();
+
 
             IList<Manufacturer> Manufacturers = new List<Manufacturer>();
             Manufacturers.Add(new Manufacturer() { Name = "Apple" });
@@ -78,6 +101,7 @@ namespace PhoneStore.Data
 
             foreach (Manufacturer manu in Manufacturers)
                 context.Manufacturers.Add(manu);
+            context.SaveChanges();
 
             IList<Product> Products = new List<Product>();
             Products.Add(new Product()
@@ -137,6 +161,9 @@ namespace PhoneStore.Data
 
             foreach (Product pro in Products)
                 context.Products.Add(pro);
+            context.SaveChanges();
+
+            
 
             base.Seed(context);
         }

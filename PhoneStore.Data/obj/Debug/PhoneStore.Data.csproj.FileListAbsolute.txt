@@ -38,3 +38,15 @@ E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramewo
 E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csprojResolveAssemblyReference.cache
 E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.dll
 E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.pdb
+C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll.config
+C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll
+C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.pdb
+C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.dll
+C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.dll
+C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.pdb
+C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.xml
+C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csprojResolveAssemblyReference.cache
+C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.dll
+C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.pdb

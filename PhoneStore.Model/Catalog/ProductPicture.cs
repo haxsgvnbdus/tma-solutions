@@ -21,3 +21,4 @@ namespace PhoneStore.Model.Catalog
         
     }
 }
+

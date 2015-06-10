@@ -1,4 +1,4 @@
-﻿@model PhoneStore.Model.Catalog.Product
+﻿@model PhoneStore.CMS.ViewModels.CreateProductSpec
 
 @{
     ViewBag.Title = "Details";
@@ -41,23 +41,6 @@
         <dd>
             @Html.DisplayFor(model => model.IsHot)
         </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ShowOnHomePage)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ShowOnHomePage)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Deleted)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Deleted)
-        </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.StockQuantity)
         </dt>
@@ -97,23 +80,6 @@
         <dd>
             @Html.DisplayFor(model => model.Sku)
         </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CreatedOnUtc)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CreatedOnUtc)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.UpdatedOnUtc)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.UpdatedOnUtc)
-        </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.ProductTypeId)
         </dt>

@@ -1,18 +1,18 @@
-﻿@model IEnumerable<PhoneStore.Model.Media.Picture>
+﻿@model IEnumerable<PhoneStore.CMS.ViewModels.CreatePictureSpec>
+    
 
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
-
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.PictureBinary)
+            @Html.DisplayNameFor(model => model.PictureLink)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.MimeType)
@@ -29,7 +29,8 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.PictureBinary)
+            <img src="@item.PictureLink" alt="Mountain View" style="width:304px;height:228px;">
+ )
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.MimeType)

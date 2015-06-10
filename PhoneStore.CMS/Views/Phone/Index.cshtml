@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PhoneStore.Model.Catalog.Product>
+﻿@model IEnumerable<PhoneStore.CMS.ViewModels.IndexProductSpec>
 
 
 
@@ -23,43 +23,37 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ElementAt(0).Name)
+            @Html.DisplayNameFor(model => model.Name)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ElementAt(0).Description)
+            @Html.DisplayNameFor(model => model.Description)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ElementAt(0).Price)
+            @Html.DisplayNameFor(model => model.Price)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ElementAt(0).IsHot)
+            @Html.DisplayNameFor(model => model.IsHot)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ElementAt(0).ShowOnHomePage)
+            @Html.DisplayNameFor(model => model.StockQuantity)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ElementAt(0).Deleted)
+            @Html.DisplayNameFor(model => model.MetaKeywords)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ElementAt(0).StockQuantity)
+            @Html.DisplayNameFor(model => model.MetaDescription)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ElementAt(0).MetaKeywords)
+            @Html.DisplayNameFor(model => model.MetaTitle)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ElementAt(0).MetaDescription)
+            @Html.DisplayNameFor(model => model.Sku)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ElementAt(0).MetaTitle)
+            @Html.DisplayNameFor(model => model.CreatedOnUtc)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ElementAt(0).Sku)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ElementAt(0).CreatedOnUtc)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ElementAt(0).UpdatedOnUtc)
+            @Html.DisplayNameFor(model => model.UpdatedOnUtc)
         </th>
         <th>    
             @Html.DisplayNameFor(model => model.ElementAt(0).ProductTypeId)
@@ -80,12 +74,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.IsHot)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShowOnHomePage)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Deleted)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.StockQuantity)

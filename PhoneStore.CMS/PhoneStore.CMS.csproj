@@ -215,6 +215,8 @@
     <Compile Include="ViewModels\CreatePictureSpec.cs" />
     <Compile Include="ViewModels\CreateProductSpec.cs" />
     <Compile Include="ViewModels\CreateTagSpec.cs" />
+    <Compile Include="ViewModels\IndexCategorySpec.cs" />
+    <Compile Include="ViewModels\IndexProductSpec.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap\bootstrap-theme.css" />
@@ -239,6 +241,8 @@
     <Content Include="Global.asax" />
     <Content Include="Icon.png" />
     <Content Include="Images\fancy.jpg" />
+    <Content Include="Images\w595-detail.jpg" />
+    <Content Include="Images\zxs.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\fontawesome-webfont.eot" />

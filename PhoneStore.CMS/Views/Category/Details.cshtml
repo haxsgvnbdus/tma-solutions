@@ -1,4 +1,4 @@
-﻿@model PhoneStore.Model.Catalog.Category
+﻿@model PhoneStore.CMS.ViewModels.CreateCategorySpec
 
 @{
     ViewBag.Title = "Details";
@@ -83,22 +83,6 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Deleted)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Deleted)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ShowOnHomePage)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ShowOnHomePage)
-        </dd>
-
-        <dt>
             @Html.DisplayNameFor(model => model.IncludeInTopMenu)
         </dt>
 
@@ -112,22 +96,6 @@
 
         <dd>
             @Html.DisplayFor(model => model.HasDiscountsApplied)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CreatedOnUtc)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CreatedOnUtc)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.UpdatedOnUtc)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.UpdatedOnUtc)
         </dd>
 
     </dl>

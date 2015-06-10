@@ -1,4 +1,4 @@
-﻿@model PhoneStore.Model.Media.Picture
+﻿@model PhoneStore.CMS.ViewModels.CreatePictureSpec
 
 @{
     ViewBag.Title = "Edit";
@@ -18,10 +18,10 @@
         @Html.HiddenFor(model => model.ID)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.PictureBinary, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.PictureLink, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.PictureBinary)
-                @Html.ValidationMessageFor(model => model.PictureBinary)
+                @Html.EditorFor(model => model.PictureLink)
+                @Html.ValidationMessageFor(model => model.PictureLink)
             </div>
         </div>
 

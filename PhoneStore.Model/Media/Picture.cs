@@ -11,10 +11,15 @@ namespace PhoneStore.Model.Media
     public partial class Picture : BaseEntity
     {
         private ICollection<ProductPicture> productPictures;
+       
+        
+        
+        
+        
         /// <summary>
         /// Gets or sets the picture binary
         /// </summary>
-        public byte[] PictureBinary { get; set; }
+        public string PictureLink { get; set; }
 
         /// <summary>
         /// Gets or sets the picture mime type

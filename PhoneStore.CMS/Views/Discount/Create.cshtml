@@ -1,4 +1,4 @@
-﻿@model PhoneStore.Model.Discounts.Discount
+﻿@model PhoneStore.CMS.ViewModels.CreateDiscountSpec
 
 @{
     ViewBag.Title = "Create";
@@ -68,14 +68,6 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.EndDateUtc)
                 @Html.ValidationMessageFor(model => model.EndDateUtc)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.DiscountType, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.DiscountType)
-                @Html.ValidationMessageFor(model => model.DiscountType)
             </div>
         </div>
 

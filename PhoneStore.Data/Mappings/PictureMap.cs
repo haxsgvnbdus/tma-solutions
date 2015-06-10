@@ -18,7 +18,7 @@ namespace PhoneStore.Data.Mappings
             this.Property(c => c.IsNew).IsRequired();
             this.Property(c => c.SeoFilename).IsRequired();
             this.Property(c => c.MimeType).IsRequired();
-            this.Property(c => c.PictureBinary).IsRequired();
+            this.Property(c => c.PictureLink).IsRequired();
         }         
     }
 }

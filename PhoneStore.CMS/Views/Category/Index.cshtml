@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PhoneStore.Model.Catalog.Category>
+﻿@model List<PhoneStore.CMS.ViewModels.IndexCategorySpec>
 
 @{
     ViewBag.Title = "Index";
@@ -10,51 +10,45 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
-    <tr>
+    <tr> 
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.ElementAt(0).Name)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Description)
+            @Html.DisplayNameFor(model => model.ElementAt(0).Description)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PriceRanges)
+            @Html.DisplayNameFor(model => model.ElementAt(0).PriceRanges)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MetaKeywords)
+            @Html.DisplayNameFor(model => model.ElementAt(0).MetaKeywords)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MetaDescription)
+            @Html.DisplayNameFor(model => model.ElementAt(0).MetaDescription)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MetaTitle)
+            @Html.DisplayNameFor(model => model.ElementAt(0).MetaTitle)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ParentCategoryId)
+            @Html.DisplayNameFor(model => model.ElementAt(0).ParentCategoryId)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PictureId)
+            @Html.DisplayNameFor(model => model.ElementAt(0).PictureId)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.DisplayOrder)
+            @Html.DisplayNameFor(model => model.ElementAt(0).DisplayOrder)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Deleted)
+            @Html.DisplayNameFor(model => model.ElementAt(0).IncludeInTopMenu)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ShowOnHomePage)
+            @Html.DisplayNameFor(model => model.ElementAt(0).HasDiscountsApplied)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.IncludeInTopMenu)
+            @Html.DisplayNameFor(model => model.ElementAt(0).CreatedOnUtc)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.HasDiscountsApplied)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CreatedOnUtc)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UpdatedOnUtc)
+            @Html.DisplayNameFor(model => model.ElementAt(0).UpdatedOnUtc)
         </th>
         <th></th>
     </tr>
@@ -87,12 +81,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.DisplayOrder)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Deleted)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShowOnHomePage)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.IncludeInTopMenu)

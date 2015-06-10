@@ -1,4 +1,4 @@
-﻿@model PhoneStore.Model.Catalog.Category
+﻿@model PhoneStore.CMS.ViewModels.CreateCategorySpec
 
 @{
     ViewBag.Title = "Create";
@@ -20,30 +20,6 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Name)
                 @Html.ValidationMessageFor(model => model.Name)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Description)
-                @Html.ValidationMessageFor(model => model.Description)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.PriceRanges, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.PriceRanges)
-                @Html.ValidationMessageFor(model => model.PriceRanges)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.MetaKeywords, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.MetaKeywords)
-                @Html.ValidationMessageFor(model => model.MetaKeywords)
             </div>
         </div>
 
@@ -88,22 +64,6 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Deleted, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Deleted)
-                @Html.ValidationMessageFor(model => model.Deleted)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.ShowOnHomePage, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.ShowOnHomePage)
-                @Html.ValidationMessageFor(model => model.ShowOnHomePage)
-            </div>
-        </div>
-
-        <div class="form-group">
             @Html.LabelFor(model => model.IncludeInTopMenu, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.IncludeInTopMenu)
@@ -116,22 +76,6 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.HasDiscountsApplied)
                 @Html.ValidationMessageFor(model => model.HasDiscountsApplied)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.CreatedOnUtc, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.CreatedOnUtc)
-                @Html.ValidationMessageFor(model => model.CreatedOnUtc)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.UpdatedOnUtc, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.UpdatedOnUtc)
-                @Html.ValidationMessageFor(model => model.UpdatedOnUtc)
             </div>
         </div>
 
