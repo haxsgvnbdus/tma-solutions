@@ -74,7 +74,7 @@ namespace PhoneStore.Model.Catalog
             protected set { _productPictures = value; }
         }
 
-        public virtual ICollection<ProductComment> ProductReviews
+        public virtual ICollection<ProductComment> ProductComments
         {
             get { return _productComments ?? (_productComments = new List<ProductComment>()); }
             protected set { _productComments = value; }
@@ -91,7 +91,5 @@ namespace PhoneStore.Model.Catalog
             get { return _appliedDiscounts ?? (_appliedDiscounts = new List<Discount>()); }
             protected set { _appliedDiscounts = value; }
         }
-
-        public ICollection<ProductPicture> ProductPicture { get; set; }
     }
 }

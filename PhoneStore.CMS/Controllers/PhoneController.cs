@@ -21,8 +21,12 @@ namespace PhoneStore.CMS.Controllers
         // GET: /Phone/
         public ActionResult Index()
         {
-            return View(db.Products.ToList());
-
+            var entities = db.Products;
+            var viewModels = entities.AsEnumerable().Select(c =>
+            {
+                return c.ToVMIndex();
+            });
+            return View(viewModels.ToList());
         }
 
         // GET: /Phone/Details/5
@@ -32,12 +36,24 @@ namespace PhoneStore.CMS.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
             Product product = db.Products.Find(id);
             if (product == null)
             {
                 return HttpNotFound();
             }
-            return View(product);
+
+            var viewModel = new DetailProductSpec();
+            viewModel.IndexSpec = product.ToVMIndex();
+            viewModel.ProductCategories = product.ProductCategories;          
+            
+           
+                //ViewBag.ProductID = id.Value;
+                //viewModel.ProductCategories = viewModel.ProductCategories.Where(i => i.ID == id.Value).Single()
+                //viewModel.ProductCategories = db.ProductCategories.Where(i => i.ID == id.Value);
+            
+
+            return View(viewModel);
         }
 
         // GET: /Phone/Create

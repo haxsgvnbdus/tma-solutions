@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PhoneStore.CMS.ViewModels.CreatePictureSpec>
+﻿@model IList<PhoneStore.CMS.ViewModels.CreatePictureSpec>
     
 
 @{
@@ -12,16 +12,16 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.PictureLink)
+            @Html.DisplayNameFor(model => model.ElementAt(0).PictureLink)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MimeType)
+            @Html.DisplayNameFor(model => model.ElementAt(0).MimeType)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.SeoFilename)
+            @Html.DisplayNameFor(model => model.ElementAt(0).SeoFilename)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.IsNew)
+            @Html.DisplayNameFor(model => model.ElementAt(0).IsNew)
         </th>
         <th></th>
     </tr>

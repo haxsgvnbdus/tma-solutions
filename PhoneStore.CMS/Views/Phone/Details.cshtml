@@ -1,4 +1,4 @@
-﻿@model PhoneStore.CMS.ViewModels.CreateProductSpec
+﻿@model PhoneStore.CMS.ViewModels.DetailProductSpec
 
 @{
     ViewBag.Title = "Details";
@@ -11,86 +11,100 @@
 	<hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.IndexSpec.Name)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Name)
+            @Html.DisplayFor(model => model.IndexSpec.Name)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Description)
+            @Html.DisplayNameFor(model => model.IndexSpec.Description)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Description)
+            @Html.DisplayFor(model => model.IndexSpec.Description)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Price)
+            @Html.DisplayNameFor(model => model.IndexSpec.Price)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Price)
+            @Html.DisplayFor(model => model.IndexSpec.Price)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.IsHot)
+            @Html.DisplayNameFor(model => model.IndexSpec.IsHot)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.IsHot)
+            @Html.DisplayFor(model => model.IndexSpec.IsHot)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.StockQuantity)
+            @Html.DisplayNameFor(model => model.IndexSpec.StockQuantity)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.StockQuantity)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.MetaKeywords)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.MetaKeywords)
+            @Html.DisplayFor(model => model.IndexSpec.StockQuantity)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.MetaDescription)
+            @Html.DisplayNameFor(model => model.IndexSpec.MetaKeywords)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.MetaDescription)
+            @Html.DisplayFor(model => model.IndexSpec.MetaKeywords)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.MetaTitle)
+            @Html.DisplayNameFor(model => model.IndexSpec.MetaDescription)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.MetaTitle)
+            @Html.DisplayFor(model => model.IndexSpec.MetaDescription)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Sku)
+            @Html.DisplayNameFor(model => model.IndexSpec.MetaTitle)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Sku)
+            @Html.DisplayFor(model => model.IndexSpec.MetaTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IndexSpec.Sku)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IndexSpec.Sku)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.ProductTypeId)
+            @Html.DisplayNameFor(model => model.IndexSpec.ProductTypeId)
         </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.ProductTypeId)
+            @Html.DisplayFor(model => model.IndexSpec.ProductTypeId)
         </dd>
 
+        <dt>
+            @Html.DisplayFor(model => model.ProductCategories)
+        </dt>
+        <dd>
+            <ul>
+                @foreach (var cat in Model.ProductCategories)
+                {
+                    <li>@cat.Category.Name</li>
+                    @*<li>@Html.DisplayNameFor(model => </li>*@
+                }
+            </ul>        
+        </dd>
     </dl>
 </div>
+
+
+
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IndexSpec.ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

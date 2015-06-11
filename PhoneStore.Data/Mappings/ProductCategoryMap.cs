@@ -12,7 +12,7 @@ namespace PhoneStore.Data.Mappings
     {
         public ProductCategoryMap () 
         {
-            this.ToTable("Product_Category_Mapping");
+            this.ToTable("Product_Category");
             this.HasKey(pc => pc.ID);
             
             this.HasRequired(pc => pc.Category)

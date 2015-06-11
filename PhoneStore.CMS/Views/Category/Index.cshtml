@@ -1,4 +1,5 @@
-﻿@model List<PhoneStore.CMS.ViewModels.IndexCategorySpec>
+﻿@model IList<PhoneStore.CMS.ViewModels.IndexCategorySpec> 
+@*@model  IEnumerable<PhoneStore.Model.Catalog.Category*@>
 
 @{
     ViewBag.Title = "Index";
@@ -13,6 +14,7 @@
     <tr> 
         <th>
             @Html.DisplayNameFor(model => model.ElementAt(0).Name)
+            @*Name*@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.ElementAt(0).Description)

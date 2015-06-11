@@ -29,6 +29,11 @@ namespace PhoneStore.CMS.Extensions
         {
             return entity.MapTo<Category, CreateCategorySpec>();
         }
+
+        public static IndexCategorySpec ToVMIndex (this Category entity)
+        {
+            return entity.MapTo<Category, IndexCategorySpec>();
+        }
        
         #endregion
 
@@ -53,6 +58,16 @@ namespace PhoneStore.CMS.Extensions
         public static CreateProductSpec ToVM(this Product entity)
         {
             return entity.MapTo<Product, CreateProductSpec>(); 
+        }
+        
+        public static IndexProductSpec ToVMIndex (this Product entity)
+        {
+            return entity.MapTo<Product, IndexProductSpec>();
+        }
+
+        public static DetailProductSpec ToVMDetail (this Product entity)
+        {
+            return entity.MapTo<Product, DetailProductSpec>(); 
         }
         #endregion
 

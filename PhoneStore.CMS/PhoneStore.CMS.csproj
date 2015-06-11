@@ -215,6 +215,7 @@
     <Compile Include="ViewModels\CreatePictureSpec.cs" />
     <Compile Include="ViewModels\CreateProductSpec.cs" />
     <Compile Include="ViewModels\CreateTagSpec.cs" />
+    <Compile Include="ViewModels\DetailProductSpec.cs" />
     <Compile Include="ViewModels\IndexCategorySpec.cs" />
     <Compile Include="ViewModels\IndexProductSpec.cs" />
   </ItemGroup>

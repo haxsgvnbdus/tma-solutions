@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PhoneStore.CMS.ViewModels.CreateDiscountSpec>
+﻿@model IList<PhoneStore.CMS.ViewModels.CreateDiscountSpec>
 
 @{
     ViewBag.Title = "Index";
@@ -12,25 +12,25 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.ElementAt(0).Name)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.DiscountTypeId)
+            @Html.DisplayNameFor(model => model.ElementAt(0).DiscountTypeId)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.UsePercentage)
+            @Html.DisplayNameFor(model => model.ElementAt(0).UsePercentage)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.DiscountPercentage)
+            @Html.DisplayNameFor(model => model.ElementAt(0).DiscountPercentage)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.DiscountAmount)
+            @Html.DisplayNameFor(model => model.ElementAt(0).DiscountAmount)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.StartDateUtc)
+            @Html.DisplayNameFor(model => model.ElementAt(0).StartDateUtc)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.EndDateUtc)
+            @Html.DisplayNameFor(model => model.ElementAt(0).EndDateUtc)
         </th>
 
         <th></th>

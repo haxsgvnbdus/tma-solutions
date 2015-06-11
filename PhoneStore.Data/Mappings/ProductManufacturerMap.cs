@@ -12,7 +12,7 @@ namespace PhoneStore.Data.Mappings
     {
       public ProductManufacturerMap()
         {
-            this.ToTable("Product_Manufacturer_Mapping");
+            this.ToTable("Product_Manufacturer");
             this.HasKey(pm => pm.ID);
 
             this.HasRequired(pm => pm.Manufacturer)

@@ -326,3 +326,4 @@ C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Web\bin\Microsoft.Owin.S
 C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Web\obj\Debug\PhoneStore.Web.dll
 C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Web\obj\Debug\PhoneStore.Web.pdb
+C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Web\obj\Debug\PhoneStore.Web.csprojResolveAssemblyReference.cache

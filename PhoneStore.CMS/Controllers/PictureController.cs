@@ -20,7 +20,12 @@ namespace PhoneStore.CMS.Controllers
         // GET: Picture
         public ActionResult Index()
         {
-            return View(db.Pictures.ToList());
+            var entities = db.Pictures;
+            var viewModels = entities.AsEnumerable().Select(c =>
+            {
+                return c.ToVM();
+            });
+            return View(viewModels.ToList());
         }
 
         // GET: Picture/Details/5

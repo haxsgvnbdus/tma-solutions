@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PhoneStore.Model.Media.Tag>
+﻿@model IList<PhoneStore.CMS.ViewModels.CreateTagSpec>
 
 @{
     ViewBag.Title = "Index";
@@ -12,7 +12,7 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Tagline)
+            @Html.DisplayNameFor(model => model.ElementAt(0).Tagline)
         </th>
         <th></th>
     </tr>

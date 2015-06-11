@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,7 +8,10 @@ namespace PhoneStore.CMS.ViewModels
 {
     public class IndexCategorySpec
     {
+        
         public int ID { set; get; }
+
+        [Display(Name="Category Name")]
         public string Name { get; set; }
 
         public string Description { get; set; }

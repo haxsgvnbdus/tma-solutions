@@ -10,6 +10,7 @@ using PhoneStore.Data;
 using PhoneStore.Model.Catalog;
 using PhoneStore.CMS.Extensions;
 using PhoneStore.CMS.ViewModels;
+using PhoneStore.CMS.Extensions;
 
 namespace PhoneStore.CMS.Controllers
 {
@@ -20,7 +21,12 @@ namespace PhoneStore.CMS.Controllers
         // GET: Categories
         public ActionResult Index()
         {
-            return View(db.Categories.ToList());
+            var entities = db.Categories;
+            var viewModels = entities.AsEnumerable().Select(c =>
+                {
+                    return c.ToVMIndex();
+                });
+            return View(viewModels.ToList());
         }
 
         // GET: Categories/Details/5

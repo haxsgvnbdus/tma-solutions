@@ -20,7 +20,12 @@ namespace PhoneStore.CMS.Controllers
         // GET: Tag
         public ActionResult Index()
         {
-            return View(db.Tags.ToList());
+            var entities = db.Tags;
+            var viewModels = entities.AsEnumerable().Select(c =>
+            {
+                return c.ToVM();
+            });
+            return View(viewModels.ToList());
         }
 
         // GET: Tag/Details/5

@@ -49,7 +49,7 @@
         </div>
 
    
-        </div>
+       
 
         <div class="form-group">
             @Html.LabelFor(model => model.StockQuantity, new { @class = "control-label col-md-2" })
@@ -106,11 +106,12 @@
         </div>
     </div>
 }
+    
 
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
-
+   
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
