@@ -6,3 +6,5 @@
 /PhoneStore.Model/obj/Debug
 /PhoneStore.CMS/bin
 /PhoneStore.CMS/obj/Debug/build.force
+*.dll
+*.pdb
