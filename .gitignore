@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/packages
+/PhoneStore.Model/obj/Debug
+/PhoneStore.CMS/bin
+/PhoneStore.CMS/obj/Debug/build.force
