@@ -132,15 +132,15 @@ namespace PhoneStore.Data
 
             #region ProductComments
             //IList<ProductComment> ProductComments = new List<ProductComment>();
-            //ProductComments.Add(new ProductComment() { ReviewText = "suck like a bug", CustomerID = 1, IsApproved = true, ProductID = 1, Title = "Sucks"});
-            //ProductComments.Add(new ProductComment() { ReviewText = "so perfect", CustomerID = 2, IsApproved = true, ProductID = 2, Title = "Awesome"});
-            //ProductComments.Add(new ProductComment() { ReviewText = "dumb like a hub", CustomerID = 2, IsApproved = true, ProductID = 3, Title = "Stupid"});
-            //ProductComments.Add(new ProductComment() { ReviewText = "cool like a pool", CustomerID = 3, IsApproved = true, ProductID = 4, Title = "Coollies"});
-            //ProductComments.Add(new ProductComment() { ReviewText = "goodie-tootsy", CustomerID = 1, IsApproved = false, ProductID = 5, Title = "Amazing"});
+            //ProductComments.Add(new ProductComment() { ReviewText = "suck like a bug", CustomerID = 1, IsApproved = true, ProductID = 1, Title = "Sucks" });
+            //ProductComments.Add(new ProductComment() { ReviewText = "so perfect", CustomerID = 2, IsApproved = true, ProductID = 2, Title = "Awesome" });
+            //ProductComments.Add(new ProductComment() { ReviewText = "dumb like a hub", CustomerID = 2, IsApproved = true, ProductID = 3, Title = "Stupid" });
+            //ProductComments.Add(new ProductComment() { ReviewText = "cool like a pool", CustomerID = 3, IsApproved = true, ProductID = 1, Title = "Coollies" });
+            //ProductComments.Add(new ProductComment() { ReviewText = "goodie-tootsy", CustomerID = 1, IsApproved = false, ProductID = 5, Title = "Amazing" });
 
             //foreach (ProductComment pc in ProductComments)
             //    context.ProductComments.Add(pc);
-            //    context.SaveChanges();
+            //context.SaveChanges();
             #endregion
 
             #region Pictures
@@ -273,15 +273,31 @@ namespace PhoneStore.Data
             ProductCategories.Add(
                 new ProductCategory() 
                 { 
-                    ProductID = Products.Single(p => p.Name.Equals("Iphone4S")).ID, 
-                    CategoryID = Categories.Single(c => c.Name.Equals("Phone")).ID, 
+                    ProductID = Products.Single(p => p.Name.ToLower().Contains("phone")).ID, 
+                    CategoryID = Categories.Single(c => c.Name.Equals("Phone")).ID,
                     DisplayOrder = 2, 
                     IsFeaturedProduct = true
                 });
-            ProductCategories.Add(new ProductCategory() { ProductID = 2, CategoryID = 1, DisplayOrder = 1, IsFeaturedProduct = false}); 
-            ProductCategories.Add(new ProductCategory() { ProductID = 3, CategoryID = 5, DisplayOrder = 3, IsFeaturedProduct = false}); 
-            ProductCategories.Add(new ProductCategory() { ProductID = 4, CategoryID = 3, DisplayOrder = 4, IsFeaturedProduct = true}); 
-            ProductCategories.Add(new ProductCategory() { ProductID = 5, CategoryID = 4, DisplayOrder = 5, IsFeaturedProduct = true});
+
+            ProductCategories.Add(
+                new ProductCategory()
+                {
+                    ProductID = Products.Single(p => p.Name.ToLower().Contains("iphone")).ID,
+                    CategoryID = Categories.Single(c => c.Name.Equals("Phone")).ID,
+                    DisplayOrder = 1,
+                    IsFeaturedProduct = false
+                });
+            ProductCategories.Add(
+                 new ProductCategory()
+                 {
+                     ProductID = Products.Single(p => p.Name.ToLower().Contains("ipad")).ID,
+                     CategoryID = Categories.Single(c => c.Name.Equals("IPad")).ID,
+                     DisplayOrder = 1,
+                     IsFeaturedProduct = false
+                 });
+            
+
+          
 
             foreach (ProductCategory pc in ProductCategories)
                 context.ProductCategories.Add(pc);
@@ -293,20 +309,34 @@ namespace PhoneStore.Data
             Tags.Add(new ProductTag() { Name = "iphone" }); 
             Tags.Add(new ProductTag() { Name = "bphone"}); 
             Tags.Add(new ProductTag() { Name = "nokia"}); 
-            Tags.Add(new ProductTag() { Name = "awesome"}); 
-
+            Tags.Add(new ProductTag() { Name = "awesome"});
+            Tags.Add(new ProductTag() { Name = "icloud" });
+            
             foreach (ProductTag t in Tags) 
                 context.ProductTags.Add(t);
-            context.SaveChanges();
+                context.SaveChanges();
             #endregion
+            
 
             #region ProductManufacturers
-            IList<ProductManufacturer> ProductManufacturers = new List<ProductManufacturer>(); 
-            ProductManufacturers.Add(new ProductManufacturer() { ProductId = 1, ManufacturerId = 1, IsFeaturedProduct = true, DisplayOrder = 1});
-            ProductManufacturers.Add(new ProductManufacturer() { ProductId = 2, ManufacturerId = 3, IsFeaturedProduct = true, DisplayOrder = 2});
-            ProductManufacturers.Add(new ProductManufacturer() { ProductId = 3, ManufacturerId = 5, IsFeaturedProduct = true, DisplayOrder = 4});
-            ProductManufacturers.Add(new ProductManufacturer() { ProductId = 4, ManufacturerId = 4, IsFeaturedProduct = false, DisplayOrder = 3});
-            ProductManufacturers.Add(new ProductManufacturer() { ProductId = 5, ManufacturerId = 2, IsFeaturedProduct = true, DisplayOrder = 5});
+            IList<ProductManufacturer> ProductManufacturers = new List<ProductManufacturer>();
+            ProductManufacturers.Add(
+                            new ProductManufacturer ()
+                            {    
+                                ProductId = Products.Single(p => p.Name.ToLower().Contains("iphone")).ID,
+                                ManufacturerId = Categories.Single(c => c.Name.Equals("Apple")).ID,
+                                DisplayOrder = 1,
+                                IsFeaturedProduct = false
+                            });
+
+            ProductManufacturers.Add(
+                            new ProductManufacturer()
+                            {
+                                ProductId = Products.Single(p => p.Name.ToLower().Contains("bphone")).ID,
+                                ManufacturerId = Categories.Single(c => c.Name.Equals("Bach Khoa")).ID,
+                                DisplayOrder = 1,
+                                IsFeaturedProduct = false
+                            });
 
             foreach (ProductManufacturer pm in ProductManufacturers) 
                 context.ProductManufacturers.Add(pm);
@@ -314,16 +344,17 @@ namespace PhoneStore.Data
             #endregion
 
             #region ProductPicture 
-            IList<ProductPicture> ProductPictures = new List<ProductPicture>(); 
+            IList<ProductPicture> ProductPictures = new List<ProductPicture>();
+
             ProductPictures.Add(new ProductPicture() { ProductId = 1, PictureId = 1, DisplayOrder = 1}); 
             ProductPictures.Add(new ProductPicture() { ProductId = 2, PictureId = 2, DisplayOrder = 3}); 
-            ProductPictures.Add(new ProductPicture() { ProductId = 3, PictureId = 5, DisplayOrder = 2}); 
-            ProductPictures.Add(new ProductPicture() { ProductId = 4, PictureId = 4, DisplayOrder = 4}); 
-            ProductPictures.Add(new ProductPicture() { ProductId = 5, PictureId = 3, DisplayOrder = 5}); 
+            ProductPictures.Add(new ProductPicture() { ProductId = 3, PictureId = 1, DisplayOrder = 2}); 
+            ProductPictures.Add(new ProductPicture() { ProductId = 4, PictureId = 2, DisplayOrder = 4});
+            ProductPictures.Add(new ProductPicture() { ProductId = 5, PictureId = 1, DisplayOrder = 5 });
 
             foreach (ProductPicture pp in ProductPictures)
                 context.ProductPictures.Add(pp);
-            context.SaveChanges(); 
+                context.SaveChanges(); 
             #endregion
             
             #region ProductTag Mapping
@@ -333,6 +364,51 @@ namespace PhoneStore.Data
                     var iphoneTag = Tags.SingleOrDefault(t => t.Name.Equals("iphone"));
                     i.ProductTags.Add(iphoneTag);
                 });
+
+            Products.Where(p => p.Name.ToLower().Contains("bphone")).ToList().ForEach(i =>
+            {
+                var bphoneTag = Tags.SingleOrDefault(t => t.Name.Equals("bphone"));
+                i.ProductTags.Add(bphoneTag);
+            });
+
+            Products.Where(p => p.Description.ToLower().Contains("icloud")).ToList().ForEach(i =>
+            {
+                var icloudTag = Tags.SingleOrDefault(t => t.Name.Equals("icloud"));
+                i.ProductTags.Add(icloudTag);
+            });
+
+            // add bphone tag to those phones whose manufacutrer is bphone/etc
+            var phonesWithBphoneTag = Products.Where(p => 
+                                     p.ProductManufacturers.Any(pm => pm.Manufacturer.Name.ToLower().Contains("bphone")));
+            phonesWithBphoneTag.ToList().ForEach(b =>
+            {
+                var bphoneTag = Tags.SingleOrDefault(t => t.Name.Equals("bphone"));
+                b.ProductTags.Add(bphoneTag);
+            });
+
+            var phonesWithIPhoneTag = Products.Where(p =>
+                                     p.ProductManufacturers.Any(pm => pm.Manufacturer.Name.ToLower().Contains("iphone")));
+            phonesWithIPhoneTag.ToList().ForEach(b =>
+            {
+                var iphoneTag = Tags.SingleOrDefault(t => t.Name.Equals("iphone"));
+                b.ProductTags.Add(iphoneTag);
+            });
+
+            var phonesWithLGTag  = Products.Where(p =>
+                                      p.ProductManufacturers.Any(pm => pm.Manufacturer.Name.ToLower().Contains("lg")));
+            phonesWithLGTag.ToList().ForEach(b =>
+            {
+                var lgTag = Tags.SingleOrDefault(t => t.Name.Equals("lg"));
+                b.ProductTags.Add(lgTag);
+            });
+
+            // add bphone tag to those phone whose name contains bphone
+            Products.Where(p => p.Name.ToLower().Contains("bphone")).ToList().ForEach(i =>
+            {
+                var bphoneTag = Tags.SingleOrDefault(t => t.Name.Equals("bphone"));
+                i.ProductTags.Add(bphoneTag);
+            });
+
 
             //IList<ProductTag> ProductTags = new List<ProductTag>(); 
             //ProductTags.Add(new ProductTag() { ProductId = 1, TagId = 1});
@@ -346,6 +422,8 @@ namespace PhoneStore.Data
 
             context.SaveChanges();
             #endregion 
+
+
           
             base.Seed(context);
             

@@ -88,17 +88,71 @@
         </dd>
 
         <dt>
-            @Html.DisplayFor(model => model.ProductCategories)
+            @*@Html.DisplayFor(model => model.ProductCategories);*@ 
+            @Html.DisplayName("ProductCategory")
         </dt>
         <dd>
             <ul>
                 @foreach (var cat in Model.ProductCategories)
                 {
                     <li>@cat.Category.Name</li>
-                    @*<li>@Html.DisplayNameFor(model => </li>*@
                 }
-            </ul>        
+            </ul>     
+        <dt>
+            @Html.DisplayName("ProductManufacturer")
+        </dt>   
+        <dd>
+            <ul>
+                @foreach (var manu in Model.ProductManufacturers)
+                {
+                    <li>@manu.Manufacturer.Name</li> 
+                }
+            </ul>
         </dd>
+        <dt>
+            @Html.DisplayName("ProductPictures")
+        </dt>  
+        <dd>
+            <ul>
+                @foreach (var pic in Model.ProductPictures)
+                {
+                    <li>@pic.Picture.PictureLink</li>
+                }
+            </ul>
+        </dd>
+        @*<dt>
+            @Html.DisplayName("ProductComments")
+        </dt>
+        <dd>
+            <ul>
+                    @foreach (var cmt in Model.ProductComments)
+                    {
+                        <li>@cmt.ReviewText</li>
+                    }
+            </ul>
+        </dd>*@
+        <dt>
+            @Html.DisplayName("ProductTags")
+        </dt>
+        <dd>
+            <ul>
+                @foreach (var tag in Model.ProductTags)
+                {
+                    <li>@tag.Name</li>
+                }
+            </ul>
+        </dd>
+        @*<dt>
+            @Html.DisplayName("Discounts")
+        </dt>
+        <dd>
+            <ul>
+                @foreach (var dc in Model.Discounts)
+                {
+                    <li>@dc.DiscountType</li>
+                }
+            </ul>
+        </dd>*@
     </dl>
 </div>
 

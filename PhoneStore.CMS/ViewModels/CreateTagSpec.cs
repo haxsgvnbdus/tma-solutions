@@ -8,6 +8,6 @@ namespace PhoneStore.CMS.ViewModels
     public class CreateTagSpec
     {
         public int ID { set; get;  }
-        public String Tagline { set; get; }
+        public String Name { set; get; }
     }
 }

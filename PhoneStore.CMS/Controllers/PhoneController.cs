@@ -45,9 +45,12 @@ namespace PhoneStore.CMS.Controllers
 
             var viewModel = new DetailProductSpec();
             viewModel.IndexSpec = product.ToVMIndex();
-            viewModel.ProductCategories = product.ProductCategories;          
-            
-           
+            viewModel.ProductCategories = product.ProductCategories;
+            viewModel.ProductManufacturers = product.ProductManufacturers;
+            //viewModel.ProductComments = product.ProductComments;
+            viewModel.ProductPictures = product.ProductPictures;
+            viewModel.ProductTags = product.ProductTags; 
+                       
                 //ViewBag.ProductID = id.Value;
                 //viewModel.ProductCategories = viewModel.ProductCategories.Where(i => i.ID == id.Value).Single()
                 //viewModel.ProductCategories = db.ProductCategories.Where(i => i.ID == id.Value);

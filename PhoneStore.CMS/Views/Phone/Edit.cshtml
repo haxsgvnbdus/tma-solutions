@@ -49,21 +49,7 @@
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.ShowOnHomePage, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.ShowOnHomePage)
-                @Html.ValidationMessageFor(model => model.ShowOnHomePage)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Deleted, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Deleted)
-                @Html.ValidationMessageFor(model => model.Deleted)
-            </div>
-        </div>
+       
 
         <div class="form-group">
             @Html.LabelFor(model => model.StockQuantity, new { @class = "control-label col-md-2" })
@@ -105,22 +91,7 @@
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.CreatedOnUtc, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.CreatedOnUtc)
-                @Html.ValidationMessageFor(model => model.CreatedOnUtc)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.UpdatedOnUtc, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.UpdatedOnUtc)
-                @Html.ValidationMessageFor(model => model.UpdatedOnUtc)
-            </div>
-        </div>
-
+        
         <div class="form-group">
             @Html.LabelFor(model => model.ProductTypeId, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
