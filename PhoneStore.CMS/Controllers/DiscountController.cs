@@ -10,7 +10,6 @@ using PhoneStore.Data;
 using PhoneStore.Model.Discounts;
 using PhoneStore.CMS.Extensions;
 using PhoneStore.CMS.ViewModels;
-using PhoneStore.CMS.Extensions; 
 
 namespace PhoneStore.CMS.Controllers
 {

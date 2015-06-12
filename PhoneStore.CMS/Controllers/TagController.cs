@@ -10,6 +10,7 @@ using PhoneStore.Data;
 using PhoneStore.Model.Media;
 using PhoneStore.CMS.ViewModels;
 using PhoneStore.CMS.Extensions;
+using PhoneStore.Model.Catalog;
 
 namespace PhoneStore.CMS.Controllers
 {
@@ -20,7 +21,7 @@ namespace PhoneStore.CMS.Controllers
         // GET: Tag
         public ActionResult Index()
         {
-            var entities = db.Tags;
+            var entities = db.ProductTags;
             var viewModels = entities.AsEnumerable().Select(c =>
             {
                 return c.ToVM();
@@ -35,7 +36,7 @@ namespace PhoneStore.CMS.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Tag tag = db.Tags.Find(id);
+            ProductTag tag = db.ProductTags.Find(id);
             if (tag == null)
             {
                 return HttpNotFound();
@@ -59,7 +60,7 @@ namespace PhoneStore.CMS.Controllers
             var tag = tagSpec.ToEntity();
             if (ModelState.IsValid)
             {
-                db.Tags.Add(tag);
+                db.ProductTags.Add(tag);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -73,7 +74,7 @@ namespace PhoneStore.CMS.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Tag tag = db.Tags.Find(id);
+            ProductTag tag = db.ProductTags.Find(id);
             if (tag == null)
             {
                 return HttpNotFound();
@@ -105,7 +106,7 @@ namespace PhoneStore.CMS.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Tag tag = db.Tags.Find(id);
+            ProductTag tag = db.ProductTags.Find(id);
             if (tag == null)
             {
                 return HttpNotFound();
@@ -118,8 +119,8 @@ namespace PhoneStore.CMS.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Tag tag = db.Tags.Find(id);
-            db.Tags.Remove(tag);
+            ProductTag tag = db.ProductTags.Find(id);
+            db.ProductTags.Remove(tag);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

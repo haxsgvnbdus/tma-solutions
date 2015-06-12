@@ -97,14 +97,14 @@ namespace PhoneStore.CMS.Extensions
         #endregion
 
         #region Tag 
-        public static Tag ToEntity(this CreateTagSpec entity)
+        public static ProductTag ToEntity(this CreateTagSpec entity)
         {
-            return entity.MapTo<CreateTagSpec, Tag>();
+            return entity.MapTo<CreateTagSpec, ProductTag>();
         }
 
-        public static CreateTagSpec ToVM(this Tag vm)
+        public static CreateTagSpec ToVM(this ProductTag vm)
         {
-            return vm.MapTo<Tag, CreateTagSpec>(); 
+            return vm.MapTo<ProductTag, CreateTagSpec>(); 
         }
         #endregion 
     }

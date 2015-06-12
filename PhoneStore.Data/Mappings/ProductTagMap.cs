@@ -12,18 +12,21 @@ namespace PhoneStore.Data.Mappings
     {
         public ProductTagMap()
         {
-            this.ToTable("Product_Tag");
+            this.ToTable("ProductTag");
             this.HasKey(pt => pt.ID);
-            //this.Property(pt => pt.Product).IsRequired();
-            this.HasRequired(pt => pt.Product)
-                .WithMany(p => p.ProductTags)
-                .HasForeignKey(pt => pt.ProductId);
+            this.Property(pt => pt.Name).IsRequired().HasMaxLength(400);
 
-            this.HasRequired(pt => pt.Tag)
-                .WithMany(t => t.ProductTags)
-                .HasForeignKey(pm => pm.TagId);
+            //this.ToTable("Product_Tag");
+            //this.HasKey(pt => pt.ID);
 
 
+            //this.HasRequired(pt => pt.Product)
+            //    .WithMany(p => p.ProductTags)
+            //    .HasForeignKey(pt => pt.ProductId);
+
+            //this.HasRequired(pt => pt.Tag)
+            //    .WithMany(t => t.ProductTags)
+            //    .HasForeignKey(pm => pm.TagId);
         }
     }
 }

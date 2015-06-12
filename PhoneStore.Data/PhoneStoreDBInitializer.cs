@@ -20,7 +20,7 @@ namespace PhoneStore.Data
             #region Categories
             Categories.Add(new Category
             {
-                Name = "Nokia",
+                Name = "Phone",
                 Description = "The Nokia Lumia Series, being the more expensive of the two Nokia Windows Phone offerings (the other being the £299 SIM-free/£199 PAYG Nokia Lumia 710) shares the Nokia N9's 16-bit AMOLED ClearBlack display whereas the Nokia Lumia 710 sports a 24-bit ClearBlack TFT.",
                 PriceRanges = "700-900",
                 MetaKeywords = "Lumia, Nokia, Smartphone",
@@ -38,7 +38,7 @@ namespace PhoneStore.Data
             });
             Categories.Add(new Category
             {
-                Name = "IPhone 6Plus",
+                Name = "Tablet",
                 Description = "Product from Apple Co.",
                 PriceRanges = "600-1200",
                 MetaKeywords = "Ipad, Iphone, Ipod",
@@ -56,7 +56,7 @@ namespace PhoneStore.Data
             });
             Categories.Add(new Category
             {
-                Name = "IPhone 7",
+                Name = "Laptop",
                 Description = "Product from Apple Co.",
                 PriceRanges = "1200-2000",
                 MetaKeywords = "Ipad, Iphone, Ipod",
@@ -74,7 +74,7 @@ namespace PhoneStore.Data
             });
             Categories.Add(new Category
             {
-                Name = "Lenovo",
+                Name = "Wearable",
                 Description = "Headquarter used to be in the States but wholly handed over to China. Be careful.",
                 PriceRanges = "300-2000",
                 MetaKeywords = "Lenovo",
@@ -93,7 +93,7 @@ namespace PhoneStore.Data
 
             Categories.Add(new Category 
             {
-                Name = "IPhone 5S",
+                Name = "Camera",
                 Description = "Product from Apple Co.",
                 PriceRanges = "300-2000",
                 MetaKeywords = "Ipad, Iphone, Ipod",
@@ -117,41 +117,40 @@ namespace PhoneStore.Data
             #endregion
 
             #region Customers
-            IList<Customer> Customers = new List<Customer>();
-            Customers.Add(new Customer() { Name = "Han" });
-            Customers.Add(new Customer() { Name = "Duy Anh" });
-            Customers.Add(new Customer() { Name = "Hanh" });
-            Customers.Add(new Customer() { Name = "Quyen Do" }); 
-            Customers.Add(new Customer() { Name = "Nhan" }); 
-            Customers.Add(new Customer() { Name = "Loi" });
+            //IList<Customer> Customers = new List<Customer>();
+            //Customers.Add(new Customer() { Name = "Han" });
+            //Customers.Add(new Customer() { Name = "Duy Anh" });
+            //Customers.Add(new Customer() { Name = "Hanh" });
+            //Customers.Add(new Customer() { Name = "Quyen Do" }); 
+            //Customers.Add(new Customer() { Name = "Nhan" }); 
+            //Customers.Add(new Customer() { Name = "Loi" });
 
-            foreach (Customer cus in Customers)
-                context.Customers.Add(cus);
-            context.SaveChanges();
+            //foreach (Customer cus in Customers)
+            //    context.Customers.Add(cus);
+            //context.SaveChanges();
             #endregion
 
             #region ProductComments
-            IList<ProductComment> ProductComments = new List<ProductComment>();
-            ProductComments.Add(new ProductComment() { ReviewText = "suck like a bug", CustomerID = 1, IsApproved = true, ProductID = 1, Title = "Sucks"});
-            ProductComments.Add(new ProductComment() { ReviewText = "so perfect", CustomerID = 2, IsApproved = true, ProductID = 2, Title = "Awesome"});
-            ProductComments.Add(new ProductComment() { ReviewText = "dumb like a hub", CustomerID = 2, IsApproved = true, ProductID = 3, Title = "Stupid"});
-            ProductComments.Add(new ProductComment() { ReviewText = "cool like a pool", CustomerID = 3, IsApproved = true, ProductID = 4, Title = "Coollies"});
-            ProductComments.Add(new ProductComment() { ReviewText = "goodie-tootsy", CustomerID = 1, IsApproved = false, ProductID = 5, Title = "Amazing"});
+            //IList<ProductComment> ProductComments = new List<ProductComment>();
+            //ProductComments.Add(new ProductComment() { ReviewText = "suck like a bug", CustomerID = 1, IsApproved = true, ProductID = 1, Title = "Sucks"});
+            //ProductComments.Add(new ProductComment() { ReviewText = "so perfect", CustomerID = 2, IsApproved = true, ProductID = 2, Title = "Awesome"});
+            //ProductComments.Add(new ProductComment() { ReviewText = "dumb like a hub", CustomerID = 2, IsApproved = true, ProductID = 3, Title = "Stupid"});
+            //ProductComments.Add(new ProductComment() { ReviewText = "cool like a pool", CustomerID = 3, IsApproved = true, ProductID = 4, Title = "Coollies"});
+            //ProductComments.Add(new ProductComment() { ReviewText = "goodie-tootsy", CustomerID = 1, IsApproved = false, ProductID = 5, Title = "Amazing"});
 
-            foreach (ProductComment pc in ProductComments)
-                context.ProductComments.Add(pc);
-                context.SaveChanges();
+            //foreach (ProductComment pc in ProductComments)
+            //    context.ProductComments.Add(pc);
+            //    context.SaveChanges();
             #endregion
 
             #region Pictures
             IList<Picture> Pictures = new List<Picture>();
             Pictures.Add(new Picture() { PictureLink = "/Images/w595-detail.jpg", MimeType = "", IsNew = true, SeoFilename = ""  });
             Pictures.Add(new Picture() { PictureLink = "/Images/zxs.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
-            Pictures.Add(new Picture() { PictureLink = "/Images/zxs.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
-            Pictures.Add(new Picture() { PictureLink = "/Images/zxs.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
-            Pictures.Add(new Picture() { PictureLink = "/Images/w595-detail.jpg", MimeType = "", IsNew = true, SeoFilename = ""  });
-
-            
+            //Pictures.Add(new Picture() { PictureLink = "/Images/zxs.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            //Pictures.Add(new Picture() { PictureLink = "/Images/zxs.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            //Pictures.Add(new Picture() { PictureLink = "/Images/w595-detail.jpg", MimeType = "", IsNew = true, SeoFilename = ""  });
+        
             foreach (Picture picture in Pictures)
                 context.Pictures.Add(picture);
             context.SaveChanges();
@@ -189,7 +188,7 @@ namespace PhoneStore.Data
                 CreatedOnUtc = DateTime.UtcNow,
                 UpdatedOnUtc = DateTime.UtcNow,
                 ProductTypeId = 1,
-                ProductType = ProductType.GroupedProduct
+                ProductType = ProductType.SimpleProduct
             });
             Products.Add(new Product()
             {
@@ -207,7 +206,7 @@ namespace PhoneStore.Data
                 CreatedOnUtc = DateTime.UtcNow,
                 UpdatedOnUtc = DateTime.UtcNow,
                 ProductTypeId = 1,
-                ProductType = ProductType.GroupedProduct
+                ProductType = ProductType.SimpleProduct
             });
             Products.Add(new Product()
             {
@@ -225,7 +224,7 @@ namespace PhoneStore.Data
                 CreatedOnUtc = DateTime.UtcNow,
                 UpdatedOnUtc = DateTime.UtcNow,
                 ProductTypeId = 1,
-                ProductType = ProductType.GroupedProduct
+                ProductType = ProductType.SimpleProduct
             });
             Products.Add(new Product()
             {
@@ -243,7 +242,7 @@ namespace PhoneStore.Data
                 CreatedOnUtc = DateTime.UtcNow,
                 UpdatedOnUtc = DateTime.UtcNow,
                 ProductTypeId = 1,
-                ProductType = ProductType.GroupedProduct
+                ProductType = ProductType.SimpleProduct
             });
             Products.Add(new Product()
             {
@@ -261,7 +260,7 @@ namespace PhoneStore.Data
                 CreatedOnUtc = DateTime.UtcNow,
                 UpdatedOnUtc = DateTime.UtcNow,
                 ProductTypeId = 1,
-                ProductType = ProductType.GroupedProduct
+                ProductType = ProductType.SimpleProduct
             });
 
             foreach (Product pro in Products)
@@ -271,7 +270,14 @@ namespace PhoneStore.Data
 
             #region ProductCategory 
             IList<ProductCategory> ProductCategories = new List<ProductCategory>(); 
-            ProductCategories.Add(new ProductCategory() { ProductID = 1, CategoryID = 2, DisplayOrder = 2, IsFeaturedProduct = true});
+            ProductCategories.Add(
+                new ProductCategory() 
+                { 
+                    ProductID = Products.Single(p => p.Name.Equals("Iphone4S")).ID, 
+                    CategoryID = Categories.Single(c => c.Name.Equals("Phone")).ID, 
+                    DisplayOrder = 2, 
+                    IsFeaturedProduct = true
+                });
             ProductCategories.Add(new ProductCategory() { ProductID = 2, CategoryID = 1, DisplayOrder = 1, IsFeaturedProduct = false}); 
             ProductCategories.Add(new ProductCategory() { ProductID = 3, CategoryID = 5, DisplayOrder = 3, IsFeaturedProduct = false}); 
             ProductCategories.Add(new ProductCategory() { ProductID = 4, CategoryID = 3, DisplayOrder = 4, IsFeaturedProduct = true}); 
@@ -282,15 +288,15 @@ namespace PhoneStore.Data
             context.SaveChanges(); 
             #endregion
 
-            #region Tags
-            IList<Tag> Tags = new List<Tag>(); 
-            Tags.Add(new Tag() { Tagline = "IPhone" }); 
-            Tags.Add(new Tag() { Tagline = "BPhone"}); 
-            Tags.Add(new Tag() { Tagline = "Nokia"}); 
-            Tags.Add(new Tag() { Tagline = "Awesome"}); 
+            #region ProductTags
+            IList<ProductTag> Tags = new List<ProductTag>(); 
+            Tags.Add(new ProductTag() { Name = "iphone" }); 
+            Tags.Add(new ProductTag() { Name = "bphone"}); 
+            Tags.Add(new ProductTag() { Name = "nokia"}); 
+            Tags.Add(new ProductTag() { Name = "awesome"}); 
 
-            foreach (Tag t in Tags) 
-                context.Tags.Add(t);
+            foreach (ProductTag t in Tags) 
+                context.ProductTags.Add(t);
             context.SaveChanges();
             #endregion
 
@@ -320,17 +326,25 @@ namespace PhoneStore.Data
             context.SaveChanges(); 
             #endregion
             
-            #region ProductTag
-            IList<ProductTag> ProductTags = new List<ProductTag>(); 
-            ProductTags.Add(new ProductTag() { ProductId = 1, TagId = 1});
-            ProductTags.Add(new ProductTag() { ProductId = 2, TagId = 2});
-            ProductTags.Add(new ProductTag() { ProductId = 3, TagId = 3});
-            ProductTags.Add(new ProductTag() { ProductId = 4, TagId = 4});
-            ProductTags.Add(new ProductTag() { ProductId = 5, TagId = 5});
+            #region ProductTag Mapping
 
-            foreach (ProductTag pt in ProductTags) 
-                context.ProductTags.Add(pt); 
-                context.SaveChanges();
+            Products.Where(p => p.Name.ToLower().Contains("iphone")).ToList().ForEach(i =>
+                {
+                    var iphoneTag = Tags.SingleOrDefault(t => t.Name.Equals("iphone"));
+                    i.ProductTags.Add(iphoneTag);
+                });
+
+            //IList<ProductTag> ProductTags = new List<ProductTag>(); 
+            //ProductTags.Add(new ProductTag() { ProductId = 1, TagId = 1});
+            //ProductTags.Add(new ProductTag() { ProductId = 2, TagId = 2});
+            //ProductTags.Add(new ProductTag() { ProductId = 3, TagId = 3});
+            //ProductTags.Add(new ProductTag() { ProductId = 4, TagId = 4});
+            //ProductTags.Add(new ProductTag() { ProductId = 5, TagId = 5});
+
+            //foreach (ProductTag pt in ProductTags) 
+            //    context.ProductTags.Add(pt);
+
+            context.SaveChanges();
             #endregion 
           
             base.Seed(context);

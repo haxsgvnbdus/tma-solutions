@@ -5,7 +5,6 @@ using System.Web;
 using PhoneStore.Model.Catalog;
 using PhoneStore.Model.Media;
 using PhoneStore.Model.Discounts;
-using PhoneStore.Model.Catalog;
 
 
 namespace PhoneStore.CMS.ViewModels

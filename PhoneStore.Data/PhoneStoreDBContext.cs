@@ -28,8 +28,7 @@ namespace PhoneStore.Data
         public DbSet <ProductComment> ProductComments { get; set; }
         public DbSet<ProductManufacturer> ProductManufacturers { get; set; }
         public DbSet<ProductPicture> ProductPictures { get; set; }
-        public DbSet<Tag> Tags { get; set; }
-        public DbSet<ProductTag> ProductTags { set; get; }
+        public DbSet<ProductTag> ProductTags { get; set; }
 
 
         public DbSet<Customer> Customers { get; set; }

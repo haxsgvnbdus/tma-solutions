@@ -50,7 +50,6 @@
     <Compile Include="Catalog\ProductManufacturer.cs" />
     <Compile Include="Catalog\ProductPicture.cs" />
     <Compile Include="Catalog\ProductSortingEnum.cs" />
-    <Compile Include="Catalog\ProductTag.cs" />
     <Compile Include="Catalog\ProductType.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="Customers\Customer.cs" />
@@ -61,7 +60,7 @@
     <Compile Include="Discount\DiscountType.cs" />
     <Compile Include="ISoftDeleteable.cs" />
     <Compile Include="Media\Picture.cs" />
-    <Compile Include="Catalog\Tag.cs" />
+    <Compile Include="Catalog\ProductTag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Purchase.cs" />
   </ItemGroup>

@@ -1,22 +1,22 @@
-﻿using System;
+﻿using PhoneStore.Model.Catalog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PhoneStore.Model.Media;
-using PhoneStore.Model.Catalog;
 
 namespace PhoneStore.Model.Catalog
 {
-    public partial class ProductTag : BaseEntity
+   public class ProductTag : BaseEntity 
     {
+       private ICollection<Product> products;
 
+       public String Name { set; get; }
 
-        public int ProductId { get; set; }
-        public int TagId { get; set; }
-
-        public virtual Product Product { get; set; }
-
-        public virtual Tag Tag { get; set; }
+       public virtual ICollection<Product> Products
+       {
+           get { return products ?? (products = new List<Product>()); }
+           protected set { products = value; }
+       }
     }
 }
