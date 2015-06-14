@@ -67,6 +67,7 @@ namespace PhoneStore.CMS.Controllers
                 return RedirectToAction("Index");
             }
 
+            
             return View(manufacturer);
         }
 
@@ -92,11 +93,11 @@ namespace PhoneStore.CMS.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(CreateManufacturerSpec manufacturerSpec)
         {
-            var manufacturer = manufacturerSpec.ToEntity(); 
+            var manufacturer = manufacturerSpec.ToEntity();
             if (ModelState.IsValid)
             {
                 db.Entry(manufacturer).State = EntityState.Modified;
-                db.SaveChanges();
+                db.SaveChanges(); 
                 return RedirectToAction("Index");
             }
             return View(manufacturer); 
@@ -129,7 +130,7 @@ namespace PhoneStore.CMS.Controllers
         }
 
         protected override void Dispose(bool disposing)
-        {
+            {
             if (disposing)
             {
                 db.Dispose();

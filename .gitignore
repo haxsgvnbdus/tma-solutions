@@ -8,3 +8,6 @@
 /PhoneStore.CMS/obj/Debug/build.force
 *.dll
 *.pdb
+/.vs/config/applicationhost.config
+*.cache
+/.vs/PhoneStore/v14/.suo

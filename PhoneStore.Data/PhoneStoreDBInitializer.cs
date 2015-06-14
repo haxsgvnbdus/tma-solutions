@@ -106,8 +106,8 @@ namespace PhoneStore.Data
                 ShowOnHomePage = true,
                 IncludeInTopMenu = false,
                 HasDiscountsApplied = true,
-                CreatedOnUtc = DateTime.Now,
-                UpdatedOnUtc = DateTime.Now
+                CreatedOnUtc = DateTime.UtcNow,
+                UpdatedOnUtc = DateTime.UtcNow
             });
             
 
@@ -186,7 +186,7 @@ namespace PhoneStore.Data
                 MetaTitle = "Iphone 4S",
                 Sku = "19d2123",
                 CreatedOnUtc = DateTime.UtcNow,
-                UpdatedOnUtc = DateTime.UtcNow,
+                UpdatedOnUtc = DateTime.UtcNow, //db load thgian len, index cho vo hien obj thanhviewmodel index, bam edit la lay entity cua db load len
                 ProductTypeId = 1,
                 ProductType = ProductType.SimpleProduct
             });
