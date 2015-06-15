@@ -261,3 +261,47 @@ C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Micr
 C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Web.Tests\obj\Debug\PhoneStore.Web.Tests.csprojResolveAssemblyReference.cache
 C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Web.Tests\obj\Debug\PhoneStore.Web.Tests.dll
 C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Web.Tests\obj\Debug\PhoneStore.Web.Tests.pdb
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\PhoneStore.Web.Tests.dll.config
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\PhoneStore.Web.Tests.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\PhoneStore.Web.Tests.pdb
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\PhoneStore.Web.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\System.Web.Helpers.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\System.Web.Mvc.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\System.Web.Razor.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\System.Web.WebPages.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.Owin.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\System.Web.Optimization.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Owin.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.Owin.Security.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\EntityFramework.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\PhoneStore.Web.pdb
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\System.Web.Helpers.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\System.Web.Mvc.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\System.Web.Razor.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\System.Web.WebPages.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.Owin.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\System.Web.Optimization.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.Owin.Security.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\EntityFramework.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\obj\Debug\PhoneStore.Web.Tests.csprojResolveAssemblyReference.cache
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\obj\Debug\PhoneStore.Web.Tests.dll
+E:\My Work Space\Web Projects\PhoneStore\PhoneStore.Web.Tests\obj\Debug\PhoneStore.Web.Tests.pdb

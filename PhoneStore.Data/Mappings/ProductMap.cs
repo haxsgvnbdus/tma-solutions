@@ -20,6 +20,8 @@ namespace PhoneStore.Data.Mappings
             this.Property(p => p.Sku).HasMaxLength(400);
             this.Property(p => p.Price).HasPrecision(18, 4);
             this.Ignore(p => p.ProductType);
+
+
         }
     }
 }

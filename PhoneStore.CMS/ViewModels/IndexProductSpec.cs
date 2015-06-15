@@ -7,7 +7,7 @@ namespace PhoneStore.CMS.ViewModels
 {
     public class IndexProductSpec
     {
-  
+        
         public int ID { get; set; }
         public string Name { set; get; }
         public string Description { set; get; }

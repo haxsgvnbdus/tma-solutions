@@ -18,6 +18,9 @@ namespace PhoneStore.CMS.ViewModels
 
         public string MetaTitle { get; set; }
 
+        public DateTime CreatedOnUtc { get; set; }
+        public DateTime UpdatedOnUtc { get; set; }
+
         public string Sku { get; set; }
         public int ProductTypeId { get; set; }
 
