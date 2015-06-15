@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Mappings\CategoryMap.cs" />
+    <Compile Include="Mappings\DiscountMap.cs" />
     <Compile Include="Mappings\ManufactureMap.cs" />
     <Compile Include="Mappings\PictureMap.cs" />
     <Compile Include="Mappings\ProductCategoryMap.cs" />
@@ -58,6 +59,14 @@
     <Compile Include="Migrations\201506150705335_initDB.cs" />
     <Compile Include="Migrations\201506150705335_initDB.Designer.cs">
       <DependentUpon>201506150705335_initDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201506150812048_update_ProductMap.cs" />
+    <Compile Include="Migrations\201506150812048_update_ProductMap.Designer.cs">
+      <DependentUpon>201506150812048_update_ProductMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201506150832523_add_Discount.cs" />
+    <Compile Include="Migrations\201506150832523_add_Discount.Designer.cs">
+      <DependentUpon>201506150832523_add_Discount.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PhoneStoreDBInitializer.cs" />
@@ -80,6 +89,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201506150705335_initDB.resx">
       <DependentUpon>201506150705335_initDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506150812048_update_ProductMap.resx">
+      <DependentUpon>201506150812048_update_ProductMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506150832523_add_Discount.resx">
+      <DependentUpon>201506150832523_add_Discount.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

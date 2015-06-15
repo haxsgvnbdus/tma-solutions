@@ -112,7 +112,9 @@ namespace PhoneStore.Data
 
             foreach (Category cat in Categories)
                 context.Categories.Add(cat);
+
             context.SaveChanges();
+
             #endregion
 
             #region Customers

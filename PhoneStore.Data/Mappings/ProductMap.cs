@@ -21,7 +21,9 @@ namespace PhoneStore.Data.Mappings
             this.Property(p => p.Price).HasPrecision(18, 4);
             this.Ignore(p => p.ProductType);
 
-
+            this.HasMany(p => p.ProductTags)
+                .WithMany(pt => pt.Products)
+                .Map(m => m.ToTable("Product_ProductTag_Mapping"));
         }
     }
 }
