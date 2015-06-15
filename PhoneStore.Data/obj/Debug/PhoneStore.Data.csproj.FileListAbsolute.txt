@@ -50,3 +50,15 @@ C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\bin\Debug\EntityFra
 C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csprojResolveAssemblyReference.cache
 C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.dll
 C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.pdb
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll.config
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.dll
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Data.pdb
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.dll
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.dll
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Data\bin\Debug\PhoneStore.Model.pdb
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.xml
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.csprojResolveAssemblyReference.cache
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.dll
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Data\obj\Debug\PhoneStore.Data.pdb

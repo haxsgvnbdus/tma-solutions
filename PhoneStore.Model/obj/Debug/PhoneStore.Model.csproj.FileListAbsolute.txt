@@ -15,3 +15,7 @@ C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Model\bin\Debug\PhoneSto
 C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Model\bin\Debug\PhoneStore.Model.pdb
 C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Model\obj\Debug\PhoneStore.Model.dll
 C:\Users\dell pc\Documents\GitHub\PhoneStore\PhoneStore.Model\obj\Debug\PhoneStore.Model.pdb
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Model\bin\Debug\PhoneStore.Model.dll
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Model\bin\Debug\PhoneStore.Model.pdb
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Model\obj\Debug\PhoneStore.Model.dll
+E:\My Work Space\ASP.NET Web Projects\MVC Projects\PhoneStore\PhoneStore.Model\obj\Debug\PhoneStore.Model.pdb
