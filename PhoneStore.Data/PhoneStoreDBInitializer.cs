@@ -15,9 +15,8 @@ namespace PhoneStore.Data
     {
         protected override void Seed(PhoneStoreDBContext context)
         {
-            IList<Category> Categories = new List<Category>();
-
             #region Categories
+            IList<Category> Categories = new List<Category>();
             Categories.Add(new Category
             {
                 Name = "Phone",

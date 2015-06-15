@@ -18,3 +18,5 @@
 *.dll
 *.txt
 *.pdb
+/PhoneStore.Data/bin/Debug
+/PhoneStore.Data/obj/Debug
