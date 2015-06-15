@@ -41,6 +41,7 @@ namespace PhoneStore.CMS.Controllers
                 return HttpNotFound();
             }
             var viewModel = new CreateCategorySpec();
+            viewModel.ID = category.ID;
             viewModel.Name = category.Name;
             viewModel.Description = category.Description;
             viewModel.PriceRanges = category.PriceRanges;
@@ -71,11 +72,12 @@ namespace PhoneStore.CMS.Controllers
             var category = categorySpec.ToEntity();
             if (ModelState.IsValid)
             {
+                category.CreatedOnUtc = DateTime.UtcNow;
+                category.UpdatedOnUtc = DateTime.UtcNow; 
                 db.Categories.Add(category);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
             return View(category);
         }
 
@@ -91,7 +93,9 @@ namespace PhoneStore.CMS.Controllers
             {
                 return HttpNotFound();
             }
-            return View(category);
+            var viewModel = category.ToVM(); 
+           
+            return View(viewModel);
         }
 
         // POST: Categories/Edit/5
@@ -104,6 +108,8 @@ namespace PhoneStore.CMS.Controllers
             var category = categorySpec.ToEntity();
             if (ModelState.IsValid)
             {
+                category.UpdatedOnUtc = DateTime.UtcNow;
+                category.CreatedOnUtc = DateTime.UtcNow;
                 db.Entry(category).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

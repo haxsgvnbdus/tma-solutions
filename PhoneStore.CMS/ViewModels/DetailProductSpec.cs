@@ -11,7 +11,6 @@ namespace PhoneStore.CMS.ViewModels
 {
     public class DetailProductSpec
     {
-        //public int ID { get; set; }
         public IndexProductSpec IndexSpec { get; set; }
 
         public IEnumerable<ProductCategory> ProductCategories { get; set; }

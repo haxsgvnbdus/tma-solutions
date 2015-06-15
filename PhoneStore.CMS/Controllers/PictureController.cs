@@ -40,7 +40,12 @@ namespace PhoneStore.CMS.Controllers
             {
                 return HttpNotFound();
             }
-            return View(picture);
+
+            var viewModel = new CreatePictureSpec();
+            viewModel.PictureLink = picture.PictureLink;
+            viewModel.MimeType = picture.MimeType;
+            viewModel.ID = picture.ID; 
+            return View(viewModel);
         }
 
         // GET: Picture/Create
@@ -79,7 +84,9 @@ namespace PhoneStore.CMS.Controllers
             {
                 return HttpNotFound();
             }
-            return View(picture);
+
+            var viewModel = picture.ToVM();
+            return View(viewModel);
         }
 
         // POST: Picture/Edit/5

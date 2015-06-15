@@ -29,5 +29,9 @@ namespace PhoneStore.CMS.ViewModels
         public bool IncludeInTopMenu { get; set; }
 
         public bool HasDiscountsApplied { get; set; }
+
+        public DateTime CreatedOnUtc { get; set; }
+
+        public DateTime UpdatedOnUtc { get; set; }
     }
 }

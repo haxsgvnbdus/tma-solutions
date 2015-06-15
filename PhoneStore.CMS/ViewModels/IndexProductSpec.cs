@@ -22,9 +22,9 @@ namespace PhoneStore.CMS.ViewModels
         public string Sku { get; set; }
         public int ProductTypeId { get; set; }
 
-        public DateTime CreatedOnUtc { get; set; }
+        public DateTime? CreatedOnUtc { get; set; }
 
-        public DateTime UpdatedOnUtc { get; set; }
+        public DateTime? UpdatedOnUtc { get; set; }
 
 
     }

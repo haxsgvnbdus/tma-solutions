@@ -23,7 +23,7 @@ namespace PhoneStore.CMS.Controllers
         {
             var entities = db.Manufacturers;
             var viewModels = entities.AsEnumerable().Select(c =>
-                {
+                { 
                     return c.ToVM();
                 });
 
@@ -46,6 +46,7 @@ namespace PhoneStore.CMS.Controllers
 
             var viewModel = new CreateManufacturerSpec();
             viewModel.Name = manufacturer.Name; 
+            viewModel.ID = manufacturer.ID; 
             return View(viewModel); 
         }
 

@@ -40,6 +40,12 @@ namespace PhoneStore.CMS.Controllers
             {
                 return HttpNotFound();
             }
+
+            var viewModel = discount.ToVM();
+            viewModel.ID = discount.ID; 
+            viewModel.DiscountAmount = discount.DiscountAmount;
+            viewModel.DiscountPercentage = discount.DiscountPercentage;
+            viewModel.DiscountTypeId = discount.DiscountTypeId; 
             return View(discount);
         }
 
@@ -79,7 +85,9 @@ namespace PhoneStore.CMS.Controllers
             {
                 return HttpNotFound();
             }
-            return View(discount);
+
+            var viewModel = discount.ToVM(); 
+            return View(viewModel);
         }
 
         // POST: Discount/Edit/5

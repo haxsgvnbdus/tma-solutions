@@ -1,4 +1,4 @@
-﻿@model PhoneStore.Model.Media.Tag
+﻿@model PhoneStore.Model.Catalog.ProductTag
 
 @{
     ViewBag.Title = "Edit";
@@ -18,10 +18,10 @@
         @Html.HiddenFor(model => model.ID)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Tagline, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Tagline)
-                @Html.ValidationMessageFor(model => model.Tagline)
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
             </div>
         </div>
 

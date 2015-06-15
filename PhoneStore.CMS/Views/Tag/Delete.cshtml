@@ -1,4 +1,4 @@
-﻿@model PhoneStore.Model.Media.Tag
+﻿@model PhoneStore.Model.Catalog.ProductTag
 
 @{
     ViewBag.Title = "Delete";
@@ -12,11 +12,11 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Tagline)
+            @Html.DisplayNameFor(model => model.Name)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Tagline)
+            @Html.DisplayFor(model => model.Name)
         </dd>
 
     </dl>

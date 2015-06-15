@@ -38,9 +38,9 @@ namespace PhoneStore.Model.Catalog
 
         public string Sku { get; set; }
 
-        public DateTime CreatedOnUtc { get; set; }
+        public DateTime? CreatedOnUtc { get; set; }
 
-        public DateTime UpdatedOnUtc { get; set; }
+        public DateTime? UpdatedOnUtc { get; set; }
 
         public int ProductTypeId { get; set; }
 
@@ -85,7 +85,7 @@ namespace PhoneStore.Model.Catalog
             get { return _productTags ?? (_productTags = new List<ProductTag>()); }
             protected set { _productTags = value; }
         }
-
+        
         public virtual ICollection<Discount> AppliedDiscounts
         {
             get { return _appliedDiscounts ?? (_appliedDiscounts = new List<Discount>()); }

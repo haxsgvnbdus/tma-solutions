@@ -59,6 +59,10 @@
     <Compile Include="Migrations\201506150705335_initDB.Designer.cs">
       <DependentUpon>201506150705335_initDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201506151047037_hanngo.cs" />
+    <Compile Include="Migrations\201506151047037_hanngo.Designer.cs">
+      <DependentUpon>201506151047037_hanngo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PhoneStoreDBInitializer.cs" />
     <Compile Include="PhoneStoreDBContext.cs" />
@@ -80,6 +84,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201506150705335_initDB.resx">
       <DependentUpon>201506150705335_initDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506151047037_hanngo.resx">
+      <DependentUpon>201506151047037_hanngo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

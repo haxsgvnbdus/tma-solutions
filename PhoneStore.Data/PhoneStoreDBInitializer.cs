@@ -268,13 +268,13 @@ namespace PhoneStore.Data
             #endregion
 
             #region ProductCategory 
-            IList<ProductCategory> ProductCategories = new List<ProductCategory>(); 
+            IList<ProductCategory> ProductCategories = new List<ProductCategory>();
             ProductCategories.Add(
-                new ProductCategory() 
-                { 
-                    ProductID = Products.Single(p => p.Name.ToLower().Contains("phone")).ID, 
+                new ProductCategory()
+                {
+                    ProductID = Products.Single(p => p.Name.ToLower().Contains("phone")).ID,
                     CategoryID = Categories.Single(c => c.Name.Equals("Phone")).ID,
-                    DisplayOrder = 2, 
+                    DisplayOrder = 2,
                     IsFeaturedProduct = true
                 });
 
@@ -290,17 +290,17 @@ namespace PhoneStore.Data
                  new ProductCategory()
                  {
                      ProductID = Products.Single(p => p.Name.ToLower().Contains("ipad")).ID,
-                     CategoryID = Categories.Single(c => c.Name.Equals("IPad")).ID,
+                     CategoryID = Categories.Single(c => c.Name.Equals("Tablet")).ID,
                      DisplayOrder = 1,
                      IsFeaturedProduct = false
                  });
-            
 
-          
 
-            foreach (ProductCategory pc in ProductCategories)
-                context.ProductCategories.Add(pc);
-            context.SaveChanges(); 
+
+
+            //foreach (ProductCategory pc in ProductCategories)
+            //    context.ProductCategories.Add(pc);
+            //context.SaveChanges(); 
             #endregion
 
             #region ProductTags

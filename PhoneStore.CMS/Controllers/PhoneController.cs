@@ -98,7 +98,7 @@ namespace PhoneStore.CMS.Controllers
             {
                 return HttpNotFound();
             }
-
+            
             var viewModel = product.ToVM(); 
             return View(viewModel);
         }

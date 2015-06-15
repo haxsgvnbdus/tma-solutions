@@ -41,9 +41,11 @@ namespace PhoneStore.CMS.Controllers
             {
                 return HttpNotFound();
             }
-            return View(tag);
+            var viewModel = new CreateTagSpec();
+            viewModel.Name = tag.Name;
+            viewModel.ID = tag.ID; 
+            return View(viewModel);
         }
-
         // GET: Tag/Create
         public ActionResult Create()
         {
@@ -79,7 +81,8 @@ namespace PhoneStore.CMS.Controllers
             {
                 return HttpNotFound();
             }
-            return View(tag);
+            var viewModel = tag.ToVM(); 
+            return View(viewModel);
         }
 
         // POST: Tag/Edit/5
@@ -100,7 +103,7 @@ namespace PhoneStore.CMS.Controllers
         }
 
         // GET: Tag/Delete/5
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(int? id) 
         {
             if (id == null)
             {
