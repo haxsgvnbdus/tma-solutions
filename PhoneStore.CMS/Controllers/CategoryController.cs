@@ -40,7 +40,19 @@ namespace PhoneStore.CMS.Controllers
             {
                 return HttpNotFound();
             }
-            return View(category);
+            var viewModel = new CreateCategorySpec();
+            viewModel.Name = category.Name;
+            viewModel.Description = category.Description;
+            viewModel.PriceRanges = category.PriceRanges;
+            viewModel.MetaKeywords = category.MetaKeywords;
+            viewModel.MetaTitle = category.MetaTitle;
+            viewModel.MetaDescription = category.MetaDescription;
+            viewModel.ParentCategoryId = category.ParentCategoryId;
+            viewModel.PictureId = category.PictureId;
+            viewModel.DisplayOrder = category.DisplayOrder;
+            viewModel.IncludeInTopMenu = category.IncludeInTopMenu;
+            viewModel.HasDiscountsApplied = category.HasDiscountsApplied; 
+            return View(viewModel);
         }
 
         // GET: Categories/Create

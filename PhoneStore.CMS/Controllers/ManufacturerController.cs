@@ -43,7 +43,10 @@ namespace PhoneStore.CMS.Controllers
             {
                 return HttpNotFound();
             }
-            return View(manufacturer);
+
+            var viewModel = new CreateManufacturerSpec();
+            viewModel.Name = manufacturer.Name; 
+            return View(viewModel); 
         }
 
         // GET: Manufacturer/Create
@@ -83,7 +86,8 @@ namespace PhoneStore.CMS.Controllers
             {
                 return HttpNotFound();
             }
-            return View(manufacturer);
+            var viewModel = manufacturer.ToVM();
+            return View(viewModel);
         }
 
         // POST: Manufacturer/Edit/5
