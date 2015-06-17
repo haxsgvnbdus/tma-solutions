@@ -97,12 +97,41 @@
                     <li>
                         <a href="/admin/dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
-                    <li>@Html.ActionLink("Phone List", "Index", "Phone")</li>
-                    <li>@Html.ActionLink("Manufacturer List", "Index", "Manufacturer")</li>
-                    <li>@Html.ActionLink("Category List", "Index", "Category")</li>
-                    <li>@Html.ActionLink("Discount List", "Index", "Discount")</li>
-                    <li>@Html.ActionLink("Picture List", "Index", "Picture")</li>
-                    <li>@Html.ActionLink("Tag List", "Index", "Tag")</li>
+                   
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#catalogs"><i class="fa fa-fw fa-caret-down"></i> Catalogs </a>
+                        <ul id="catalogs" class="collapse">
+                            <li>
+                                <a href="/phone"><i class="fa fa-fw fa-table"></i> Products</a></li>
+                            <li><a href="/manufacturer"><i class="fa fa-fw fa-plus"></i> Manufacturers </a></li>
+                            <li><a href="/category"><i class="fa fa-fw fa-table"></i> Categories </a></li>
+                            <li><a href="/tag"><i class="fa fa-picture-o"></i> Product Tags </a></li>
+                            <li><a href="/picture"><i class="fa fa-picture-o"></i> Gallery</a></li>
+                            @*<li><a href="/admin/careers/uploadimage">UPLOAD IMAGE</a></li>*@
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#promotions"><i class="fa fa-fw fa-caret-down"></i> Promotions </a>
+                        <ul id="promotions" class="collapse">
+                            <li> </li>
+                            <li>
+                                <a href="/discount"><i class="fa fa-fw fa-table"></i> Discounts </a>
+                            </li>
+                    @*<li><a href="/admin/careers/uploadimage">UPLOAD IMAGE</a></li>*@
+                        </ul>
+                    </li>
+                    
+                    
+                     @*<li>
+                        <li>@Html.ActionLink("Phone List", "Index", "Phone")</li>
+                        <li>@Html.ActionLink("Manufacturer List", "Index", "Manufacturer")</li>
+                        <li>@Html.ActionLink("Category List", "Index", "Category")</li>
+                        <li>@Html.ActionLink("Discount List", "Index", "Discount")</li>
+                        <li>@Html.ActionLink("Picture List", "Index", "Picture")</li>
+                        <li>@Html.ActionLink("Tag List", "Index", "Tag")</li>
+                    </ul>*@
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

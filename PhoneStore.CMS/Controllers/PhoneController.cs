@@ -119,11 +119,12 @@ namespace PhoneStore.CMS.Controllers
                 return RedirectToAction("Index");
             }
             return View(product);
-        }
-
+        } 
+        
+        
         // GET: /Phone/Delete/5
         public ActionResult Delete(int? id, bool? saveChangesError = false)
-        {
+        { 
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);

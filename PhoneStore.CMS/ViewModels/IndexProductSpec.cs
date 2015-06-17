@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace PhoneStore.CMS.ViewModels
 {
@@ -10,6 +12,8 @@ namespace PhoneStore.CMS.ViewModels
         
         public int ID { get; set; }
         public string Name { set; get; }
+
+        [UIHint("tinymce_full"), AllowHtml]
         public string Description { set; get; }
         public decimal Price { get; set; }
         public bool IsHot { get; set; }

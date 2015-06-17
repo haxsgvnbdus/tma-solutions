@@ -15,11 +15,13 @@ namespace PhoneStore.CMS.Controllers
 {
     public class CategoryController : Controller
     {
+        
         private PhoneStoreDBContext db = new PhoneStoreDBContext();
-
+        
         // GET: Categories
         public ActionResult Index()
         {
+            
             var entities = db.Categories;
             var viewModels = entities.AsEnumerable().Select(c =>
                 {
@@ -73,7 +75,8 @@ namespace PhoneStore.CMS.Controllers
             if (ModelState.IsValid)
             {
                 category.CreatedOnUtc = DateTime.UtcNow;
-                category.UpdatedOnUtc = DateTime.UtcNow; 
+                category.UpdatedOnUtc = DateTime.UtcNow;
+                ViewBag.HtmlMetaDescription = category.MetaDescription;
                 db.Categories.Add(category);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -93,8 +96,8 @@ namespace PhoneStore.CMS.Controllers
             {
                 return HttpNotFound();
             }
-            var viewModel = category.ToVM(); 
-           
+            var viewModel = category.ToVM();
+            //sviewModel.CreatedOnUtc = category.CreatedOnUtc;
             return View(viewModel);
         }
 
@@ -109,7 +112,7 @@ namespace PhoneStore.CMS.Controllers
             if (ModelState.IsValid)
             {
                 category.UpdatedOnUtc = DateTime.UtcNow;
-                category.CreatedOnUtc = DateTime.UtcNow;
+                category.CreatedOnUtc = categorySpec.CreatedOnUtc;
                 db.Entry(category).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

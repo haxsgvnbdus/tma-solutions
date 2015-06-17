@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace PhoneStore.CMS.ViewModels
 {
@@ -14,6 +15,7 @@ namespace PhoneStore.CMS.ViewModels
         [Display(Name="Category Name")]
         public string Name { get; set; }
 
+        [UIHint("tinymce_full"), AllowHtml]
         public string Description { get; set; }
 
         public string PriceRanges { get; set; }

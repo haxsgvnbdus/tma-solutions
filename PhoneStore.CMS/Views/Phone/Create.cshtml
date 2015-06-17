@@ -94,11 +94,10 @@
         <div class="form-group">
             @Html.LabelFor(model => model.ProductTypeId, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @*@Html.EditorFor(model => model.ProductTypeId)*@
                 <select>
                     <option selected disabled>Choose one</option>
-                    <option value="Single Product">Single Product</option>
-                    <option value="Group Product">Group Product</option>
+                    <option value=1>Single Product</option>
+                    <option value=2>Group Product</option>
                 </select>
                 @Html.ValidationMessageFor(model => model.ProductTypeId)
             </div>
@@ -110,6 +109,10 @@
             </div>
         </div>
     </div>
+
+    <p>
+        Posted Content : @ViewBag.HtmlMetaDescription
+    </p>
 }
     
 

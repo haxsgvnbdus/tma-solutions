@@ -180,7 +180,7 @@ namespace PhoneStore.Data.Migrations
             {
                 Name = "Iphone4S",
                 Description = "Fixed 16GB local storage",
-                Price = 400 - 600,
+                Price = 500,
                 IsHot = true,
                 ShowOnHomePage = true,
                 Deleted = false,
@@ -197,8 +197,8 @@ namespace PhoneStore.Data.Migrations
             Products.Add(new Product()
             {
                 Name = "Nikon 3200D",
-                Description = "Get new features of iCloud and PhotoLibrary",
-                Price = 600 - 800,
+                Description = "Mirror or Mirrorless, 18-55mm ",
+                Price = 3000,
                 IsHot = true,
                 ShowOnHomePage = true,
                 Deleted = false,
@@ -216,7 +216,7 @@ namespace PhoneStore.Data.Migrations
             {
                 Name = "IPad Air 2",
                 Description = "Get new features of iCloud and PhotoLibrary",
-                Price = 1.200M,
+                Price = 800,
                 IsHot = true,
                 ShowOnHomePage = true,
                 Deleted = false,
@@ -234,7 +234,7 @@ namespace PhoneStore.Data.Migrations
             {
                 Name = "BPhone",
                 Description = "First phone ever in Vietnam",
-                Price = 500 - 700,
+                Price = 500,
                 IsHot = true,
                 ShowOnHomePage = true,
                 Deleted = false,

@@ -44,7 +44,7 @@ namespace PhoneStore.Data
             modelBuilder.Configurations.Add(new PictureMap());
             modelBuilder.Configurations.Add(new ProductMap());
             modelBuilder.Configurations.Add(new ProductTagMap());
-            modelBuilder.Configurations.Add(new DiscountMap());
+            //modelBuilder.Configurations.Add(new DiscountMap());
 
             modelBuilder.Configurations.Add(new ProductCategoryMap());
             //modelBuilder.Configurations.Add(new ProductCommentMap());
