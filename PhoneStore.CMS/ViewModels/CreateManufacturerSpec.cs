@@ -9,5 +9,7 @@ namespace PhoneStore.CMS.ViewModels
     {
         public int ID { set; get; }
         public string Name { get; set; }
+
+
     }
 }

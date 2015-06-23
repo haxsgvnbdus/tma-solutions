@@ -7,7 +7,7 @@ using PhoneStore.Model.Catalog;
 using PhoneStore.CMS.ViewModels;
 using PhoneStore.Model.Discounts;
 using PhoneStore.Model.Media;
-using PhoneStore.CMS.Extensions;
+
 
 namespace PhoneStore.CMS.Extensions
 {
@@ -58,7 +58,7 @@ namespace PhoneStore.CMS.Extensions
         public static CreateProductSpec ToVM(this Product entity)
         {
             return entity.MapTo<Product, CreateProductSpec>(); 
-        }
+        }   
         
         public static IndexProductSpec ToVMIndex (this Product entity)
         {
@@ -69,6 +69,7 @@ namespace PhoneStore.CMS.Extensions
         {
             return entity.MapTo<Product, DetailProductSpec>(); 
         }
+
         #endregion
 
         #region Discount
@@ -107,5 +108,7 @@ namespace PhoneStore.CMS.Extensions
             return vm.MapTo<ProductTag, CreateTagSpec>(); 
         }
         #endregion 
+
+        
     }
 }

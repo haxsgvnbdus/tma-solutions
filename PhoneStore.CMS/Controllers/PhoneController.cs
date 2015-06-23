@@ -23,7 +23,7 @@ namespace PhoneStore.CMS.Controllers
         {
             var entities = db.Products;
             var viewModels = entities.AsEnumerable().Select(c =>
-            {
+            {   
                 return c.ToVMIndex();
             });
             return View(viewModels.ToList());

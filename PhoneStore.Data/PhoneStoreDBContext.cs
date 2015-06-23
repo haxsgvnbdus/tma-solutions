@@ -18,7 +18,7 @@ namespace PhoneStore.Data
 
         public PhoneStoreDBContext() : base("PhoneStoreWebData")
         {
-            //Database.SetInitializer<PhoneStoreDBContext>(new PhoneStoreDBInitializer()); 
+            Database.SetInitializer<PhoneStoreDBContext>(new PhoneStoreDBInitializer()); 
         }
         
         public DbSet<Category> Categories { set; get; }

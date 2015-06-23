@@ -66,7 +66,7 @@ namespace PhoneStore.Model.Catalog
         {
             get { return _productManufacturers ?? (_productManufacturers = new List<ProductManufacturer>()); }
             protected set { _productManufacturers = value; }
-        }
+        } 
 
         public virtual ICollection<ProductPicture> ProductPictures
         {

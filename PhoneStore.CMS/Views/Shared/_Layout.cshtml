@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@ViewBag.Title - PhoneStore WebApp</title>
 
-
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/theme")
 
@@ -17,6 +16,8 @@
     @Scripts.Render("~/bundles/bootstrap")
 
     @RenderSection("HeadIncludes", required: false)
+
+    
 </head>
 <body>
 
@@ -102,11 +103,11 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#catalogs"><i class="fa fa-fw fa-caret-down"></i> Catalogs </a>
                         <ul id="catalogs" class="collapse">
                             <li>
-                                <a href="/phone"><i class="fa fa-fw fa-table"></i> Products</a></li>
+                                <a href="/phone"><i class="fa fa-fw fa-plus"></i> Products</a></li>
                             <li><a href="/manufacturer"><i class="fa fa-fw fa-plus"></i> Manufacturers </a></li>
-                            <li><a href="/category"><i class="fa fa-fw fa-table"></i> Categories </a></li>
-                            <li><a href="/tag"><i class="fa fa-picture-o"></i> Product Tags </a></li>
-                            <li><a href="/picture"><i class="fa fa-picture-o"></i> Gallery</a></li>
+                            <li><a href="/category"><i class="fa fa-fw fa-plus"></i> Categories </a></li>
+                            <li><a href="/tag"><i class="fa fa-fw fa-plus"></i> Product Tags </a></li>
+                            <li><a href="/picture"><i class="fa fa-fw fa-plus"></i> Gallery</a></li>
                             @*<li><a href="/admin/careers/uploadimage">UPLOAD IMAGE</a></li>*@
                         </ul>
                     </li>
