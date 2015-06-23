@@ -24,3 +24,4 @@
 /PhoneStore.Data/obj/Debug
 /PhoneStore.Web.Tests/bin/Debug
 /PhoneStore.Web.Tests/obj/Debug
+*.db
