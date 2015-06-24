@@ -148,9 +148,12 @@ namespace PhoneStore.Data
             IList<Picture> Pictures = new List<Picture>();
             Pictures.Add(new Picture() { PictureLink = "/Images/w595-detail.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
             Pictures.Add(new Picture() { PictureLink = "/Images/zxs.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
-            //Pictures.Add(new Picture() { PictureLink = "/Images/zxs.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
-            //Pictures.Add(new Picture() { PictureLink = "/Images/zxs.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
-            //Pictures.Add(new Picture() { PictureLink = "/Images/w595-detail.jpg", MimeType = "", IsNew = true, SeoFilename = ""  });
+            Pictures.Add(new Picture() { PictureLink = "/Images/HTC1.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "/Images/HTC12.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "/Images/HTC13.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "/Images/SamsungGalS51.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "/Images/SamsungGalS52.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "/Images/SamsungGalS5.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
 
             foreach (Picture picture in Pictures)
                 context.Pictures.Add(picture);
@@ -175,15 +178,15 @@ namespace PhoneStore.Data
             IList<Product> Products = new List<Product>();
             Products.Add(new Product()
             {
-                Name = "Iphone4S",
-                Description = "Fixed 16GB local storage",
-                Price = 400 - 600,
+                Name = "Iphone 4S",
+                Description = "3.5in Retina (960 x 640) LCD display; 8 megapixel camera with 1080p video; Dual core A5 processor; Dual antennae for better signal; Same chassis design as iPhone 4",
+                Price = 700,
                 IsHot = true,
                 ShowOnHomePage = true,
                 Deleted = false,
                 StockQuantity = 12,
                 MetaKeywords = "Iphone 4S",
-                MetaDescription = "smooth touchscreen, multitouch",
+                MetaDescription = "smooth touchscreen, multitouch, retina",
                 MetaTitle = "Iphone 4S",
                 Sku = "19d2123",
                 CreatedOnUtc = DateTime.UtcNow,
@@ -193,9 +196,9 @@ namespace PhoneStore.Data
             });
             Products.Add(new Product()
             {
-                Name = "Iphone 5",
-                Description = "Get new features of iCloud and PhotoLibrary",
-                Price = 600 - 800,
+                Name = "Nikon D3200",
+                Description = "The D3200 represents the latest generation of Nikon's entry-level DSLR offering. The camera's headline feature is inevitably the new 24MP CMOS sensor which makes it equal to Sony's Alpha SLT-A65, A77 and NEX-7 in offering the highest pixel count we've yet seen at the APS-C sensor size, and in terms of output resolution, second only to the full-frame professional-grade D800 in Nikon's entire range.",
+                Price = 2000,
                 IsHot = true,
                 ShowOnHomePage = true,
                 Deleted = false,
@@ -211,8 +214,8 @@ namespace PhoneStore.Data
             });
             Products.Add(new Product()
             {
-                Name = "Iphone3S",
-                Description = "Get new features of iCloud and PhotoLibrary",
+                Name = "Nokia Lumia 730",
+                Description = "The Nokia Lumia 730 is part of Microsoft’s 2014 fall lineup of Windows Phone devices, and one of the last smartphones to carry the Nokia brand. An affordable handset with a 4.7” 720p AMOLED display, it comes with a quad-core Snapdragon 400 system chip, 1GB of RAM and 8 gigs of internal storage.",
                 Price = 1.200M,
                 IsHot = true,
                 ShowOnHomePage = true,
@@ -229,9 +232,9 @@ namespace PhoneStore.Data
             });
             Products.Add(new Product()
             {
-                Name = "BPhone",
-                Description = "First phone ever in Vietnam",
-                Price = 500 - 700,
+                Name = "HTC One X",
+                Description = "HTC's latest flagship is the company's best yet. Its beautiful design, great display and solid performance make it among the finest phones available.",
+                Price = 800,
                 IsHot = true,
                 ShowOnHomePage = true,
                 Deleted = false,
@@ -247,16 +250,16 @@ namespace PhoneStore.Data
             });
             Products.Add(new Product()
             {
-                Name = "Iphone 5C",
-                Description = "Get new features of iCloud and PhotoLibrary",
-                Price = 700 - 800,
+                Name = "Samsung Tab 4",
+                Description = "The quad-core processor is clocked at a reasonable 1.2GHz and backed by 1.5GB RAM. Our AnTuTu benchmark test gave it a score of 18,498, roughly half the Tab S's mark. Despite its middling however, components it delivers a bit above middling performance, transitioning smoothly between apps and even running HD games without any obvious hiccups.",
+                Price = 800,
                 IsHot = true,
                 ShowOnHomePage = true,
                 Deleted = false,
                 StockQuantity = 12,
-                MetaKeywords = "Iphone 5C",
-                MetaDescription = "eye-wide",
-                MetaTitle = "Iphone 5S",
+                MetaKeywords = "Samsung Tab",
+                MetaDescription = "Quad-core processor",
+                MetaTitle = "Samsung Tab",
                 Sku = "19d212",
                 CreatedOnUtc = DateTime.UtcNow,
                 UpdatedOnUtc = DateTime.UtcNow,
@@ -343,17 +346,17 @@ namespace PhoneStore.Data
             #endregion
 
             #region ProductPicture 
-            //IList<ProductPicture> ProductPictures = new List<ProductPicture>();
+            IList<ProductPicture> ProductPictures = new List<ProductPicture>();
 
-            //ProductPictures.Add(new ProductPicture() { ProductId = 1, PictureId = 1, DisplayOrder = 1}); 
-            //ProductPictures.Add(new ProductPicture() { ProductId = 2, PictureId = 2, DisplayOrder = 3}); 
-            //ProductPictures.Add(new ProductPicture() { ProductId = 3, PictureId = 1, DisplayOrder = 2}); 
-            //ProductPictures.Add(new ProductPicture() { ProductId = 4, PictureId = 2, DisplayOrder = 4});
-            //ProductPictures.Add(new ProductPicture() { ProductId = 5, PictureId = 1, DisplayOrder = 5 });
+            ProductPictures.Add(new ProductPicture() { ProductId = 1, PictureId = 1, DisplayOrder = 1 });
+            ProductPictures.Add(new ProductPicture() { ProductId = 2, PictureId = 2, DisplayOrder = 3 });
+            ProductPictures.Add(new ProductPicture() { ProductId = 3, PictureId = 3, DisplayOrder = 2 });
+            ProductPictures.Add(new ProductPicture() { ProductId = 4, PictureId = 4, DisplayOrder = 4 });
+            ProductPictures.Add(new ProductPicture() { ProductId = 5, PictureId = 5, DisplayOrder = 5 });
 
-            //foreach (ProductPicture pp in ProductPictures)
-            //    context.ProductPictures.Add(pp);
-            //    context.SaveChanges(); 
+            foreach (ProductPicture pp in ProductPictures)
+                context.ProductPictures.Add(pp);
+            context.SaveChanges(); 
             #endregion
             
             #region ProductTag Mapping

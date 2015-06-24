@@ -279,6 +279,12 @@
     <Content Include="Global.asax" />
     <Content Include="Icon.png" />
     <Content Include="Images\fancy.jpg" />
+    <Content Include="Images\HTC1.jpg" />
+    <Content Include="Images\HTC12.jpg" />
+    <Content Include="Images\HTC13.jpg" />
+    <Content Include="Images\SamSungGalS5.jpg" />
+    <Content Include="Images\SamSungGalS51.jpg" />
+    <Content Include="Images\SamSungGalS52.jpg" />
     <Content Include="Images\w595-detail.jpg" />
     <Content Include="Images\zxs.jpg" />
     <Content Include="Scripts\bootstrap-wysiwyg.js" />

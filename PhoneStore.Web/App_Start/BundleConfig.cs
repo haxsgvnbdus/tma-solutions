@@ -42,7 +42,7 @@ namespace PhoneStore.Web
                 "~/Scripts/theme/jquery.fancybox.pack.js"
             ));
 
-            bundles.Add(new ScriptBundle("~/viewgallery").Include(
+            bundles.Add(new ScriptBundle("~/bundles/viewgallery").Include(
                 "~/Scripts/theme/productviewgallery.js"
             ));
 

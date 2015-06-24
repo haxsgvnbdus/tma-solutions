@@ -11,7 +11,7 @@ namespace PhoneStore.Web.ViewModels
 
         public string Name { set; get; }
         public decimal Price { get; set; }
-
+        
         public ICollection<ProductPicture> _productPictures;
 
         //public virtual ICollection<ProductPicture> ProductPictures

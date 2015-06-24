@@ -50,7 +50,7 @@ namespace PhoneStore.CMS.Controllers
             //viewModel.ProductComments = product.ProductComments;
             viewModel.ProductPictures = product.ProductPictures;
             viewModel.ProductTags = product.ProductTags; 
-                       
+                                    
                 //ViewBag.ProductID = id.Value;
                 //viewModel.ProductCategories = viewModel.ProductCategories.Where(i => i.ID == id.Value).Single()
                 //viewModel.ProductCategories = db.ProductCategories.Where(i => i.ID == id.Value);
