@@ -164,10 +164,10 @@ namespace PhoneStore.Data
             IList<Manufacturer> Manufacturers = new List<Manufacturer>();
             Manufacturers.Add(new Manufacturer() { Name = "Apple" });
             Manufacturers.Add(new Manufacturer() { Name = "Samsung" });
-            Manufacturers.Add(new Manufacturer() { Name = "LG" });
+            Manufacturers.Add(new Manufacturer() { Name = "HTC" });
             Manufacturers.Add(new Manufacturer() { Name = "BPhone" });
-            Manufacturers.Add(new Manufacturer() { Name = "Sony" });
-            Manufacturers.Add(new Manufacturer() { Name = "Nokia" });
+            Manufacturers.Add(new Manufacturer() { Name = "Microsoft" });
+            Manufacturers.Add(new Manufacturer() { Name = "Nikon" });
 
             foreach (Manufacturer manu in Manufacturers)
                 context.Manufacturers.Add(manu);
@@ -183,7 +183,7 @@ namespace PhoneStore.Data
                 Price = 700,
                 IsHot = true,
                 ShowOnHomePage = true,
-                Deleted = false,
+                Deleted = false, 
                 StockQuantity = 12,
                 MetaKeywords = "Iphone 4S",
                 MetaDescription = "smooth touchscreen, multitouch, retina",
@@ -272,83 +272,143 @@ namespace PhoneStore.Data
             context.SaveChanges();
             #endregion
 
-            #region ProductCategory 
-            //IList<ProductCategory> ProductCategories = new List<ProductCategory>();
-            //ProductCategories.Add(
-            //    new ProductCategory()
-            //    {
-            //        ProductID = Products.Single(p => p.Name.ToLower().Contains("phone")).ID,
-            //        CategoryID = Categories.Single(c => c.Name.Equals("Phone")).ID,
-            //        DisplayOrder = 2,
-            //        IsFeaturedProduct = true
-            //    });
+            #region ProductCategory  
+            IList<ProductCategory> ProductCategories = new List<ProductCategory>();
+            ProductCategories.Add(
+                new ProductCategory()
+                {
+                    ProductID = Products.Single(p => p.Name.ToLower().Contains("phone")).ID,
+                    CategoryID = Categories.Single(c => c.Name.Equals("Phone")).ID,
+                    DisplayOrder = 2,
+                    IsFeaturedProduct = true
+                });
 
-            //ProductCategories.Add(
-            //    new ProductCategory()
-            //    {
-            //        ProductID = Products.Single(p => p.Name.ToLower().Contains("iphone")).ID,
-            //        CategoryID = Categories.Single(c => c.Name.Equals("Phone")).ID,
-            //        DisplayOrder = 1,
-            //        IsFeaturedProduct = false
-            //    });
-            //ProductCategories.Add(
-            //     new ProductCategory()
-            //     {
-            //         ProductID = Products.Single(p => p.Name.ToLower().Contains("ipad")).ID,
-            //         CategoryID = Categories.Single(c => c.Name.Equals("Tablet")).ID,
-            //         DisplayOrder = 1,
-            //         IsFeaturedProduct = false
-            //     });
+            ProductCategories.Add(
+                new ProductCategory()
+                {
+                    ProductID = Products.Single(p => p.Name.ToLower().Contains("htc")).ID,
+                    CategoryID = Categories.Single(c => c.Name.Equals("Phone")).ID,
+                    DisplayOrder = 2,
+                    IsFeaturedProduct = true
+                });
 
+            ProductCategories.Add(
+                new ProductCategory()
+                {
+                    ProductID = Products.Single(p => p.Name.ToLower().Contains("nokia")).ID,
+                    CategoryID = Categories.Single(c => c.Name.Equals("Phone")).ID,
+                    DisplayOrder = 1,
+                    IsFeaturedProduct = false
+                });
+            ProductCategories.Add(
+                 new ProductCategory()
+                 {
+                     ProductID = Products.Single(p => p.Name.ToLower().Contains("tab")).ID,
+                     CategoryID = Categories.Single(c => c.Name.Equals("Tablet")).ID,
+                     DisplayOrder = 1,
+                     IsFeaturedProduct = false
+                 });
+            ProductCategories.Add(
+                 new ProductCategory()
+                 {
+                     ProductID = Products.Single(p => p.Name.ToLower().Contains("nikon")).ID,
+                     CategoryID = Categories.Single(c => c.Name.Equals("Camera")).ID,
+                     DisplayOrder = 1,
+                     IsFeaturedProduct = false
+                 });
 
-            //foreach (ProductCategory pc in ProductCategories)
-            //    context.ProductCategories.Add(pc);
-            //context.SaveChanges(); 
+            foreach (ProductCategory pc in ProductCategories)
+                context.ProductCategories.Add(pc);
+            context.SaveChanges(); 
             #endregion
 
             #region ProductTags
             IList<ProductTag> Tags = new List<ProductTag>();
+            
+            //name
             Tags.Add(new ProductTag() { Name = "iphone" });
-            Tags.Add(new ProductTag() { Name = "bphone" });
+            Tags.Add(new ProductTag() { Name = "nikon" });
             Tags.Add(new ProductTag() { Name = "nokia" });
-            Tags.Add(new ProductTag() { Name = "awesome" });
-            Tags.Add(new ProductTag() { Name = "icloud" });
+            Tags.Add(new ProductTag() { Name = "htc" });
+            Tags.Add(new ProductTag() { Name = "samsung tab" });
+
+            //manufacturer
+            Tags.Add(new ProductTag() { Name = "apple" });
+            Tags.Add(new ProductTag() { Name = "microsoft" });
+            Tags.Add(new ProductTag() { Name = "samsung" });
+
+
+            //category
+            Tags.Add(new ProductTag() { Name = "tablet" });
+            Tags.Add(new ProductTag() { Name = "phone" });
+            Tags.Add(new ProductTag() { Name = "laptop" });
+            Tags.Add(new ProductTag() { Name = "camera" });
+            Tags.Add(new ProductTag() { Name = "wearable" });
+
+
 
             foreach (ProductTag t in Tags)
                 context.ProductTags.Add(t);
             context.SaveChanges();
             #endregion
             
-
+            
             #region ProductManufacturers
-            //IList<ProductManufacturer> ProductManufacturers = new List<ProductManufacturer>();
-            //ProductManufacturers.Add(
-            //                new ProductManufacturer ()
-            //                {    
-            //                    ProductId = Products.Single(p => p.Name.ToLower().Contains("iphone")).ID,
-            //                    ManufacturerId = Categories.Single(c => c.Name.Equals("Apple")).ID,
-            //                    DisplayOrder = 1,
-            //                    IsFeaturedProduct = false
-            //                });
+            IList<ProductManufacturer> ProductManufacturers = new List<ProductManufacturer>();
+            ProductManufacturers.Add(
+                            new ProductManufacturer()
+                            {
+                                ProductId = Products.Single(p => p.Name.ToLower().Contains("iphone")).ID,
+                                ManufacturerId = Manufacturers.Single(c => c.Name.Equals("Apple")).ID,
+                                DisplayOrder = 1,
+                                IsFeaturedProduct = false
+                            });
 
-            //ProductManufacturers.Add(
-            //                new ProductManufacturer()
-            //                {
-            //                    ProductId = Products.Single(p => p.Name.ToLower().Contains("bphone")).ID,
-            //                    ManufacturerId = Categories.Single(c => c.Name.Equals("Bach Khoa")).ID,
-            //                    DisplayOrder = 1,
-            //                    IsFeaturedProduct = false
-            //                });
+            ProductManufacturers.Add(
+                            new ProductManufacturer()
+                            {
+                                ProductId = Products.Single(p => p.Name.ToLower().Contains("nokia")).ID,
+                                ManufacturerId = Manufacturers.Single(c => c.Name.Equals("Microsoft")).ID,
+                                DisplayOrder = 2,
+                                IsFeaturedProduct = false
+                            });
 
-            //foreach (ProductManufacturer pm in ProductManufacturers) 
-            //    context.ProductManufacturers.Add(pm);
-            //    context.SaveChanges();
+            ProductManufacturers.Add(
+                            new ProductManufacturer()
+                            {
+                                ProductId = Products.Single(p => p.Name.ToLower().Contains("htc")).ID,
+                                ManufacturerId = Manufacturers.Single(c => c.Name.Equals("HTC")).ID,
+                                DisplayOrder = 2,
+                                IsFeaturedProduct = false
+                            });
+
+            ProductManufacturers.Add(
+                            new ProductManufacturer()
+                            {
+                                ProductId = Products.Single(p => p.Name.ToLower().Contains("samsung")).ID,
+                                ManufacturerId = Manufacturers.Single(c => c.Name.Equals("Samsung")).ID,
+                                DisplayOrder = 2,
+                                IsFeaturedProduct = false
+                            });
+
+            ProductManufacturers.Add(
+                            new ProductManufacturer()
+                            {
+                                ProductId = Products.Single(p => p.Name.ToLower().Contains("nikon")).ID,
+                                ManufacturerId = Manufacturers.Single(c => c.Name.Equals("Nikon")).ID,
+                                DisplayOrder = 2,
+                                IsFeaturedProduct = false
+                            });
+            foreach (ProductManufacturer pm in ProductManufacturers)
+                context.ProductManufacturers.Add(pm);
+            context.SaveChanges();
             #endregion
 
             #region ProductPicture 
             IList<ProductPicture> ProductPictures = new List<ProductPicture>();
 
             ProductPictures.Add(new ProductPicture() { ProductId = 1, PictureId = 1, DisplayOrder = 1 });
+
             ProductPictures.Add(new ProductPicture() { ProductId = 2, PictureId = 2, DisplayOrder = 3 });
             ProductPictures.Add(new ProductPicture() { ProductId = 3, PictureId = 3, DisplayOrder = 2 });
             ProductPictures.Add(new ProductPicture() { ProductId = 4, PictureId = 4, DisplayOrder = 4 });
@@ -356,71 +416,102 @@ namespace PhoneStore.Data
 
             foreach (ProductPicture pp in ProductPictures)
                 context.ProductPictures.Add(pp);
-            context.SaveChanges(); 
-            #endregion
+            context.SaveChanges();
+
+            Products.Where(p => p.ProductPictures.Any(pm => pm.Picture.PictureLink.ToLower().Contains("htc1"))).ToList().ForEach(b =>
+            {
+                var linkimg = Pictures.SingleOrDefault(t => t.PictureLink.Equals("htc1"));
+                b.ProductPictures.Add(linkimg);
+            });
+
+            #endregion 
             
             #region ProductTag Mapping
+            
+            // add name tag to those phones whose name is e.g.
+            Products.Where(p => p.Name.ToLower().Contains("iphone")).ToList().ForEach(i =>
+                {
+                    var iphoneTag = Tags.SingleOrDefault(t => t.Name.Equals("iphone"));
+                    i.ProductTags.Add(iphoneTag);
+                });
 
-            //Products.Where(p => p.Name.ToLower().Contains("iphone")).ToList().ForEach(i =>
-            //    {
-            //        var iphoneTag = Tags.SingleOrDefault(t => t.Name.Equals("iphone"));
-            //        i.ProductTags.Add(iphoneTag);
-            //    });
+            Products.Where(p => p.Name.ToLower().Contains("nokia")).ToList().ForEach(i =>
+            {
+                var nokiaTag = Tags.SingleOrDefault(t => t.Name.Equals("nokia"));
+                i.ProductTags.Add(nokiaTag);
+            });
 
-            //Products.Where(p => p.Name.ToLower().Contains("bphone")).ToList().ForEach(i =>
-            //{
-            //    var bphoneTag = Tags.SingleOrDefault(t => t.Name.Equals("bphone"));
-            //    i.ProductTags.Add(bphoneTag);
-            //});
-                            
-            //Products.Where(p => p.Description.ToLower().Contains("icloud")).ToList().ForEach(i =>
-            //{
-            //    var icloudTag = Tags.SingleOrDefault(t => t.Name.Equals("icloud"));
-            //    i.ProductTags.Add(icloudTag);
-            //});
+            Products.Where(p => p.Name.ToLower().Contains("samsung")).ToList().ForEach(i =>
+            {
+                var samsungTag = Tags.SingleOrDefault(t => t.Name.Equals("samsung"));
+                i.ProductTags.Add(samsungTag);
+            });
 
-            //// add bphone tag to those phones whose manufacutrer is bphone/etc
-            //var phonesWithBphoneTag = Products.Where(p => 
-            //                         p.ProductManufacturers.Any(pm => pm.Manufacturer.Name.ToLower().Contains("bphone")));
-            //phonesWithBphoneTag.ToList().ForEach(b =>
-            //{
-            //    var bphoneTag = Tags.SingleOrDefault(t => t.Name.Equals("bphone"));
-            //    b.ProductTags.Add(bphoneTag);
-            //});
+            Products.Where(p => p.Name.ToLower().Contains("htc")).ToList().ForEach(i =>
+            {
+                var htcTag = Tags.SingleOrDefault(t => t.Name.Equals("htc"));
+                i.ProductTags.Add(htcTag);
+            });
 
-            //var phonesWithIPhoneTag = Products.Where(p =>
-            //                         p.ProductManufacturers.Any(pm => pm.Manufacturer.Name.ToLower().Contains("iphone")));
-            //phonesWithIPhoneTag.ToList().ForEach(b =>
-            //{
-            //    var iphoneTag = Tags.SingleOrDefault(t => t.Name.Equals("iphone"));
-            //    b.ProductTags.Add(iphoneTag);
-            //});
+            Products.Where(p => p.Name.ToLower().Contains("nikon")).ToList().ForEach(i =>
+            {
+                var nikonTag = Tags.SingleOrDefault(t => t.Name.Equals("nikon"));
+                i.ProductTags.Add(nikonTag);
+            });
 
-            //var phonesWithLGTag  = Products.Where(p =>
-            //                          p.ProductManufacturers.Any(pm => pm.Manufacturer.Name.ToLower().Contains("lg")));
-            //phonesWithLGTag.ToList().ForEach(b =>
-            //{
-            //    var lgTag = Tags.SingleOrDefault(t => t.Name.Equals("lg"));
-            //    b.ProductTags.Add(lgTag);
-            //});
+            // add category tag to phones 
+            Products.Where(p => p.ProductCategories.Any(pm => pm.Category.Name.ToLower().Contains("phone"))).ToList().ForEach(b =>
+            {
+                var phoneTag = Tags.SingleOrDefault(t => t.Name.Equals("phone"));
+                b.ProductTags.Add(phoneTag);
+            });
 
-            //// add bphone tag to those phone whose name contains bphone
-            //Products.Where(p => p.Name.ToLower().Contains("bphone")).ToList().ForEach(i =>
-            //{
-            //    var bphoneTag = Tags.SingleOrDefault(t => t.Name.Equals("bphone"));
-            //    i.ProductTags.Add(bphoneTag);
-            //});
+            Products.Where(p => p.ProductCategories.Any(pm => pm.Category.Name.ToLower().Contains("camera"))).ToList().ForEach(b =>
+            {
+                var cameraTag = Tags.SingleOrDefault(t => t.Name.Equals("camera"));
+                b.ProductTags.Add(cameraTag);
+            });
+            
+            Products.Where(p => p.ProductCategories.Any(pm => pm.Category.Name.ToLower().Contains("wearable"))).ToList().ForEach(b =>
+            {
+                var wearableTag = Tags.SingleOrDefault(t => t.Name.Equals("wearable"));
+                b.ProductTags.Add(wearableTag);
+            });
+            
+            Products.Where(p => p.ProductCategories.Any(pm => pm.Category.Name.ToLower().Contains("tablet"))).ToList().ForEach(b =>
+            {
+                var tabletTag = Tags.SingleOrDefault(t => t.Name.Equals("tablet"));
+                b.ProductTags.Add(tabletTag);
+            });
 
+            Products.Where(p => p.ProductCategories.Any(pm => pm.Category.Name.ToLower().Contains("laptop"))).ToList().ForEach(b =>
+            {
+                var laptopTag = Tags.SingleOrDefault(t => t.Name.Equals("laptop"));
+                b.ProductTags.Add(laptopTag);
+            });
 
-            //IList<ProductTag> ProductTags = new List<ProductTag>(); 
-            //ProductTags.Add(new ProductTag() { ProductId = 1, TagId = 1});
-            //ProductTags.Add(new ProductTag() { ProductId = 2, TagId = 2});
-            //ProductTags.Add(new ProductTag() { ProductId = 3, TagId = 3});
-            //ProductTags.Add(new ProductTag() { ProductId = 4, TagId = 4});
-            //ProductTags.Add(new ProductTag() { ProductId = 5, TagId = 5});
+            //add manufacturer tag to phones 
+            Products.Where(p => p.ProductManufacturers.Any(pm => pm.Manufacturer.Name.ToLower().Contains("apple"))).ToList().ForEach(b =>
+            {
+                var appleTag = Tags.SingleOrDefault(t => t.Name.Equals("apple"));
+                b.ProductTags.Add(appleTag);
+            });
 
-            //foreach (ProductTag pt in ProductTags) 
-            //    context.ProductTags.Add(pt);
+            Products.Where(p => p.ProductManufacturers.Any(pm => pm.Manufacturer.Name.ToLower().Contains("microsoft"))).ToList().ForEach(b =>
+            {
+                var microsoftTag = Tags.SingleOrDefault(t => t.Name.Equals("microsoft"));
+                b.ProductTags.Add(microsoftTag);
+            });
+
+            //IList<ProductTag> ProductTags = new List<ProductTag>();
+            //ProductTags.Add(new ProductTag() { ProductId = 1, TagId = 1 });
+            //ProductTags.Add(new ProductTag() { ProductId = 2, TagId = 2 });
+            //ProductTags.Add(new ProductTag() { ProductId = 3, TagId = 3 });
+            //ProductTags.Add(new ProductTag() { ProductId = 4, TagId = 4 });
+            //ProductTags.Add(new ProductTag() { ProductId = 5, TagId = 5 });
+
+            //foreach (ProductTag pt in ProductTags)
+                //context.ProductTags.Add(pt);
 
             context.SaveChanges();
             #endregion 

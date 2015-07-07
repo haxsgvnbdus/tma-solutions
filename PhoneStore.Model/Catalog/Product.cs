@@ -73,7 +73,7 @@ namespace PhoneStore.Model.Catalog
             get { return _productPictures ?? (_productPictures = new List<ProductPicture>()); }
             protected set { _productPictures = value; }
         }
-
+        
         public virtual ICollection<ProductComment> ProductComments
         {
             get { return _productComments ?? (_productComments = new List<ProductComment>()); }

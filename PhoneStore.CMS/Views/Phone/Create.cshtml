@@ -6,7 +6,6 @@
 
 <h2>Create</h2>
 
-
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
@@ -47,9 +46,6 @@
                 @Html.ValidationMessageFor(model => model.IsHot)
             </div>
         </div>
-
-   
-       
 
         <div class="form-group">
             @Html.LabelFor(model => model.StockQuantity, new { @class = "control-label col-md-2" })
@@ -111,10 +107,11 @@
     </div>
 
     <p>
-        Posted Content : @ViewBag.HtmlMetaDescription
+        @ViewBag.HtmlMetaDescription
     </p>
 }
-    
+
+
 
 <div>
     @Html.ActionLink("Back to List", "Index")

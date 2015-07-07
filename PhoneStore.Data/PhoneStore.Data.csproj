@@ -55,19 +55,6 @@
     <Compile Include="Mappings\ProductMap.cs" />
     <Compile Include="Mappings\ProductPictureMap.cs" />
     <Compile Include="Mappings\ProductTagMap.cs" />
-    <Compile Include="Migrations\201506150705335_initDB.cs" />
-    <Compile Include="Migrations\201506150705335_initDB.Designer.cs">
-      <DependentUpon>201506150705335_initDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201506151047037_hanngo.cs" />
-    <Compile Include="Migrations\201506151047037_hanngo.Designer.cs">
-      <DependentUpon>201506151047037_hanngo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201506171045229_initDB1.cs" />
-    <Compile Include="Migrations\201506171045229_initDB1.Designer.cs">
-      <DependentUpon>201506171045229_initDB1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PhoneStoreDBInitializer.cs" />
     <Compile Include="PhoneStoreDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,17 +71,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bitmap1.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201506150705335_initDB.resx">
-      <DependentUpon>201506150705335_initDB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201506151047037_hanngo.resx">
-      <DependentUpon>201506151047037_hanngo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201506171045229_initDB1.resx">
-      <DependentUpon>201506171045229_initDB1.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
