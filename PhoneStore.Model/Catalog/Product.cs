@@ -67,7 +67,8 @@ namespace PhoneStore.Model.Catalog
             get { return _productManufacturers ?? (_productManufacturers = new List<ProductManufacturer>()); }
             protected set { _productManufacturers = value; }
         } 
-
+        
+        
         public virtual ICollection<ProductPicture> ProductPictures
         {
             get { return _productPictures ?? (_productPictures = new List<ProductPicture>()); }
@@ -91,5 +92,6 @@ namespace PhoneStore.Model.Catalog
             get { return _appliedDiscounts ?? (_appliedDiscounts = new List<Discount>()); }
             protected set { _appliedDiscounts = value; }
         }
+
     }
 }

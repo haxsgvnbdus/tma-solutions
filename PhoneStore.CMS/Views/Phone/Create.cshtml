@@ -6,10 +6,10 @@
 
 <h2>Create</h2>
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm("Create", "Phone", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Product</h4>
         <hr />
@@ -86,7 +86,7 @@
                 @Html.ValidationMessageFor(model => model.Sku)
             </div>
         </div>
-    
+
         <div class="form-group">
             @Html.LabelFor(model => model.ProductTypeId, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -100,11 +100,19 @@
         </div>
 
         <div class="form-group">
+            @Html.LabelFor(model => model.ProductPictures, new { @class = "control-label col-md-2" })
+            @*<form method="post" enctype="multipart/form-data">*@
+                <input type="file" multiple="multiple" name="File1" id="File1" accept="image/*">
+            @*</form*@>
+        </div>
+
+        <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Create" class="btn btn-default" />
             </div>
         </div>
     </div>
+
 
     <p>
         @ViewBag.HtmlMetaDescription
@@ -116,7 +124,7 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
-   
+
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }

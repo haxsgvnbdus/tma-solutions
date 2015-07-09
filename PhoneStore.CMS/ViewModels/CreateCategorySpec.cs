@@ -16,7 +16,7 @@ namespace PhoneStore.CMS.ViewModels
         public string Name { get; set; }
 
         [UIHint("tinymce_full"), AllowHtml]
-        [Required(ErrorMessage = "Description is required")]
+        [Required(ErrorMessage = "Description is required")] 
         public string Description { get; set; }
 
         [RegularExpression("(([0-9]{2,4})-([0-9]{3,4}))?", ErrorMessage = "Price range format should be #-#")] 

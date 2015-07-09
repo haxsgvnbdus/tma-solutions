@@ -33,6 +33,7 @@ namespace PhoneStore.Data
         public DbSet<ProductManufacturer> ProductManufacturers { get; set; }
         public DbSet<ProductPicture> ProductPictures { get; set; }
 
+        
 
         //public DbSet<Customer> Customers { get; set; }          
 

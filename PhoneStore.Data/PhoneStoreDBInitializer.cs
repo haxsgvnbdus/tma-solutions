@@ -8,10 +8,11 @@ using PhoneStore.Data;
 using PhoneStore.Model.Customers;
 using PhoneStore.Model.Catalog;
 using PhoneStore.Model.Media;
+using PhoneStore.Model.Discounts;
 
 namespace PhoneStore.Data
 {
-    public class PhoneStoreDBInitializer : DropCreateDatabaseAlways<PhoneStoreDBContext>
+    public class PhoneStoreDBInitializer : DropCreateDatabaseIfModelChanges<PhoneStoreDBContext>
     {
         protected override void Seed(PhoneStoreDBContext context)
         {
@@ -117,6 +118,22 @@ namespace PhoneStore.Data
 
             #endregion
 
+            
+            #region Discount
+            IList<Discount> Discounts = new List<Discount>();
+            Discounts.Add(new Discount() { Name = "SALE50", DiscountTypeId = 1, UsePercentage = true, DiscountAmount = 0.5M });
+            Discounts.Add(new Discount() { Name = "MIDSEASON", DiscountTypeId = 2, UsePercentage = true, DiscountAmount = 0.2M });
+            Discounts.Add(new Discount() { Name = "BLACKFRIDAY", DiscountTypeId = 5, UsePercentage = true, DiscountAmount = 0.4M });
+            Discounts.Add(new Discount() { Name = "CYBERMONDAY", DiscountTypeId = 10, UsePercentage = false, DiscountAmount = 0.4M });
+            Discounts.Add(new Discount() { Name = "THANKSGIVING", DiscountTypeId = 10, UsePercentage = true, DiscountAmount = 0.75M });
+
+            foreach (Discount dis in Discounts)
+                context.Discounts.Add(dis);
+
+            context.SaveChanges();
+
+            #endregion
+
             #region Customers
             //IList<Customer> Customers = new List<Customer>();
             //Customers.Add(new Customer() { Name = "Han" });
@@ -146,15 +163,19 @@ namespace PhoneStore.Data
 
             #region Pictures
             IList<Picture> Pictures = new List<Picture>();
-            Pictures.Add(new Picture() { PictureLink = "/Images/w595-detail.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
-            Pictures.Add(new Picture() { PictureLink = "/Images/zxs.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
-            Pictures.Add(new Picture() { PictureLink = "/Images/HTC1.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
-            Pictures.Add(new Picture() { PictureLink = "/Images/HTC12.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
-            Pictures.Add(new Picture() { PictureLink = "/Images/HTC13.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
-            Pictures.Add(new Picture() { PictureLink = "/Images/SamsungGalS51.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
-            Pictures.Add(new Picture() { PictureLink = "/Images/SamsungGalS52.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
-            Pictures.Add(new Picture() { PictureLink = "/Images/SamsungGalS5.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
-
+            Pictures.Add(new Picture() { PictureLink = "w595-detail.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "zxs.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "HTC1.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "HTC12.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "HTC13.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "SamsungGalS51.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "SamsungGalS52.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "SamsungGalS5.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "1-iphone4india-1402331615422.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "665_lumia 730 1.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "nikon-d3200-a-good-camera.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            Pictures.Add(new Picture() { PictureLink = "orig-nikon-d3200-main-2.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+            
             foreach (Picture picture in Pictures)
                 context.Pictures.Add(picture);
             //context.SaveChanges();
@@ -374,6 +395,7 @@ namespace PhoneStore.Data
                             });
 
             ProductManufacturers.Add(
+
                             new ProductManufacturer()
                             {
                                 ProductId = Products.Single(p => p.Name.ToLower().Contains("htc")).ID,
@@ -407,27 +429,32 @@ namespace PhoneStore.Data
             #region ProductPicture 
             IList<ProductPicture> ProductPictures = new List<ProductPicture>();
 
-            ProductPictures.Add(new ProductPicture() { ProductId = 1, PictureId = 1, DisplayOrder = 1 });
-
-            ProductPictures.Add(new ProductPicture() { ProductId = 2, PictureId = 2, DisplayOrder = 3 });
-            ProductPictures.Add(new ProductPicture() { ProductId = 3, PictureId = 3, DisplayOrder = 2 });
+            ProductPictures.Add(new ProductPicture() { ProductId = 1, PictureId = 9, DisplayOrder = 1 });
+            ProductPictures.Add(new ProductPicture() { ProductId = 2, PictureId = 11, DisplayOrder = 3 });
+            ProductPictures.Add(new ProductPicture() { ProductId = 2, PictureId = 12, DisplayOrder = 2 });
+            ProductPictures.Add(new ProductPicture() { ProductId = 3, PictureId = 10, DisplayOrder = 2 });
+            ProductPictures.Add(new ProductPicture() { ProductId = 4, PictureId = 3, DisplayOrder = 4 });
             ProductPictures.Add(new ProductPicture() { ProductId = 4, PictureId = 4, DisplayOrder = 4 });
-            ProductPictures.Add(new ProductPicture() { ProductId = 5, PictureId = 5, DisplayOrder = 5 });
+            ProductPictures.Add(new ProductPicture() { ProductId = 4, PictureId = 5, DisplayOrder = 4 });
+            ProductPictures.Add(new ProductPicture() { ProductId = 5, PictureId = 6, DisplayOrder = 5 });
+            ProductPictures.Add(new ProductPicture() { ProductId = 5, PictureId = 7, DisplayOrder = 5 });
+            ProductPictures.Add(new ProductPicture() { ProductId = 5, PictureId = 8, DisplayOrder = 5 });
 
             foreach (ProductPicture pp in ProductPictures)
                 context.ProductPictures.Add(pp);
             context.SaveChanges();
 
-            Products.Where(p => p.ProductPictures.Any(pm => pm.Picture.PictureLink.ToLower().Contains("htc1"))).ToList().ForEach(b =>
-            {
-                var linkimg = Pictures.SingleOrDefault(t => t.PictureLink.Equals("htc1"));
-                b.ProductPictures.Add(linkimg);
-            });
+            //Products.Where(p => p.ProductPictures.Any(pm => pm.Picture.PictureLink.ToLower().Contains("htc1"))).ToList().ForEach(b =>
+            //{
+            //    var linkimg = Pictures.SingleOrDefault(t => t.PictureLink.Equals("htc1"));
+            //    b.ProductPictures.Add(linkimg);
+            //});
 
             #endregion 
-            
+           
+
             #region ProductTag Mapping
-            
+
             // add name tag to those phones whose name is e.g.
             Products.Where(p => p.Name.ToLower().Contains("iphone")).ToList().ForEach(i =>
                 {

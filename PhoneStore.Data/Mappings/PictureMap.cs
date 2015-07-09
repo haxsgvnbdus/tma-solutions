@@ -11,13 +11,13 @@ namespace PhoneStore.Data.Mappings
 {
     class PictureMap : EntityTypeConfiguration<Picture>
     {
-        public PictureMap()
-        {
+        public PictureMap() 
+        { 
             this.ToTable("Picture");
             this.HasKey(c => c.ID);
-            this.Property(c => c.IsNew).IsRequired();
-            this.Property(c => c.SeoFilename).IsRequired();
-            this.Property(c => c.MimeType).IsRequired();
+            this.Property(c => c.IsNew).IsOptional();
+            this.Property(c => c.SeoFilename).IsOptional();
+            this.Property(c => c.MimeType).IsOptional();
             this.Property(c => c.PictureLink).IsRequired();
         }         
     }

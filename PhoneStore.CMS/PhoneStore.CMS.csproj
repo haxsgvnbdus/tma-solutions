@@ -278,10 +278,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Icon.png" />
+    <Content Include="Images\1-iphone4india-1402331615422.jpg" />
+    <Content Include="Images\665_lumia 730 1.jpg" />
     <Content Include="Images\fancy.jpg" />
     <Content Include="Images\HTC1.jpg" />
     <Content Include="Images\HTC12.jpg" />
     <Content Include="Images\HTC13.jpg" />
+    <Content Include="Images\nikon-d3200-a-good-camera.jpg" />
+    <Content Include="Images\orig-nikon-d3200-main-2.jpg" />
     <Content Include="Images\SamSungGalS5.jpg" />
     <Content Include="Images\SamSungGalS51.jpg" />
     <Content Include="Images\SamSungGalS52.jpg" />
@@ -668,6 +672,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\uploads\" />
+    <Folder Include="Views\PictureUploadModel\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

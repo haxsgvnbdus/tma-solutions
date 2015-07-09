@@ -44,6 +44,8 @@ namespace PhoneStore.CMS.ViewModels
             protected set { _productPictures = value; }
         }
 
+
+
         public virtual ICollection<ProductComment> ProductComments
         {
             get { return _productComments ?? (_productComments = new List<ProductComment>()); }
