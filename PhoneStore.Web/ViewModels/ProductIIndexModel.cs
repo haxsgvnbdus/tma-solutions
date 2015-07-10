@@ -8,7 +8,7 @@ namespace PhoneStore.Web.ViewModels
 {
     public class ProductIndexModel
     {
-
+        public int ID { set; get;  }
         public string Name { set; get; }
         public decimal Price { get; set; }
         

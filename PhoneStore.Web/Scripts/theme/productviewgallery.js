@@ -210,8 +210,7 @@ var jQblvg  = jQuery.noConflict();
     this.getVideo(data);
     this.setImages();
     this.setVideo();
-    this.initSwitch();
-    
+    this.initSwitch();   
 };
 
 /*------------------------------------------------------------------------------------------------------------------*/

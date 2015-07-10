@@ -19,7 +19,7 @@
         </div>
     </div>
 </div>
-<!-- start main --> 
+<!-- start main -->
 <div class="main_bg">
     <div class="wrap">
         <div class="main">
@@ -36,38 +36,42 @@
                                         <div class="more-views-container">
                                             <ul>
 
-                                                @*@for (int i = 0; i < Model.Count; i++)
+                                                @for (int i = 0; i < Model.ProductPictures.Count; i++)
                                                 {
                                                     <li>
-
+                                                        <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
+                                                            <img src="http://localhost:20415/Images/@Model.ProductPictures.ElementAt(i).Picture.PictureLink" src_main="" title="" alt="" />
+                                                        </a>
                                                     </li>
-                                                }*@
-                                                <li>
-                                                    <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
-                                                        <img src="" src_main="" title="" alt="" />
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
-                                                        <img src="" src_main="" title="" alt="" />
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
-                                                        <img src="" src_main="" title="" alt="" />
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
-                                                        <img src="" src_main="" title="" alt="" />
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
-                                                        <img src="" src_main="" title="" alt="" />
-                                                    </a> 
-                                                </li>
-                                            </ul> 
+                                                }
+
+                                                @*<li>
+                                                        <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
+                                                            <img src="" src_main="" title="" alt="" />
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
+                                                            <img src="" src_main="" title="" alt="" />
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
+                                                            <img src="" src_main="" title="" alt="" />
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
+                                                            <img src="" src_main="" title="" alt="" />
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
+                                                            <img src="" src_main="" title="" alt="" />
+                                                        </a>
+                                                    </li>*@
+
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="product-image">
@@ -75,36 +79,6 @@
                                             <img src="images/0001-2.jpg" alt="Women Shorts" title="Women Shorts" />
                                         </a>
                                     </div>
-                                    <script type="text/javascript">
-						var prodGallery = jQblvg.parseJSON('{"prod_1":{"main":{"orig":"images/0001-2.jpg","main":"images/large/0001-2.jpg","thumb":"images/small/0001-2.jpg","label":""},"gallery":{"item_0":{"orig":"images/0001-2.jpg","main":"images/large/0001-2.jpg","thumb":"images/small/0001-2.jpg","label":""},"item_1":{"orig":"images/0001-1.jpg","main":"images/large/0001-1.jpg","thumb":"images/small/0001-1.jpg","label":""},"item_2":{"orig":"images/0001-5.jpg","main":"images/large/0001-5.jpg","thumb":"images/small/0001-5.jpg","label":""},"item_3":{"orig":"images/0001-3.jpg","main":"images/large/0001-3.jpg","thumb":"images/small/0001-3.jpg","label":""},"item_4":{"orig":"images/0001-4.jpg","main":"images/large/0001-4.jpg","thumb":"images/small/0001-4.jpg","label":""}},"type":"simple","video":false}}'),
-						    gallery_elmnt = jQblvg('.product-img-box'),
-						    galleryObj = new Object(),
-						    gallery_conf = new Object();
-						    gallery_conf.moreviewitem = '<a class="cs-fancybox-thumbs" data-fancybox-group="thumb"  href=""  title="" alt=""><img src="" src_main="" title="" alt="" /></a>';
-						    gallery_conf.animspeed = 200;
-						jQblvg(document).ready(function() {
-						    galleryObj[1] = new prodViewGalleryForm(prodGallery, 'prod_1', gallery_elmnt, gallery_conf, '.product-image', '.more-views', 'http:');
-						        jQblvg('.product-image .cs-fancybox-thumbs').absoluteClick();
-						    jQblvg('.cs-fancybox-thumbs').fancybox({ prevEffect : 'none',
-						                             nextEffect : 'none',
-						                             closeBtn : true,
-						                             arrows : true,
-						                             nextClick : true,
-						                             helpers: {
-						                               thumbs : {
-						                                   position: 'bottom'
-						                               }
-						                             }
-						                             });
-						    jQblvg('#wrap').css('z-index', '100');
-						            jQblvg('.more-views-container').elScroll({type: 'vertical', elqty: 4, btn_pos: 'border', scroll_speed: 400 });
-
-						});
-
-						function initGallery(a,b,element) {
-						    galleryObj[a] = new prodViewGalleryForm(prods, b, gallery_elmnt, gallery_conf, '.product-image', '.more-views', '');
-						};
-                                    </script>
                                 </div>
                             </div>
                         </div>
@@ -114,31 +88,31 @@
                     <div class="span1_of_1_des">
                         <div class="desc1">
                             @*<h3>Lorem ipsum dolor sit amet laoret.</h3>*@
-                            
+
                             <h3>@Html.DisplayFor(model => model.Name)</h3>
-                            
+
                             <h5>$@Html.DisplayFor(model => model.Price)  <a href="#">click for offer</a></h5>
-                            <div class="available"> 
+                            <div class="available">
                                 <div class="btn_form">
                                     <form>
                                         <input type="submit" value="buy now" title="" />
                                     </form>
-                                </div> 
+                                </div>
                                 <span><a href="#">login to save in wishlist </a></span>
                                 <p>@Html.DisplayFor(model => model.Description)</p>
-                            </div> 
+                            </div>
                             <div class="share-desc">
                                 <div class="share">
                                     <h4>Share Product :</h4>
                                     <ul class="share_nav">
-                                        <li><a href="#"><img src="images/facebook.png" title="facebook"></a></li>
-                                        <li><a href="#"><img src="images/twitter.png" title="Twitter"></a></li>
-                                        <li><a href="#"><img src="images/rss.png" title="Rss"></a></li> 
-                                        <li><a href="#"><img src="images/gpluse.png" title="Google+"></a></li>
-                                    </ul> 
-                                </div> 
+                                        <li><a href="#"><img src="/images/facebook.png" title="facebook"></a></li>
+                                        <li><a href="#"><img src="/images/twitter.png" title="Twitter"></a></li>
+                                        <li><a href="#"><img src="/images/rss.png" title="Rss"></a></li>
+                                        <li><a href="#"><img src="/images/gpluse.png" title="Google+"></a></li>
+                                    </ul>
+                                </div>
                                 <div class="clear"></div>
-                            </div>  
+                            </div>
                         </div>
                     </div>
                     <div class="clear"></div>
@@ -158,7 +132,7 @@
 
                             <div class="clear-shadow"></div>
                             I
-                            <div class="content"> 
+                            <div class="content">
                                 <div class="content-1">
                                     <p class="para top"><span>LOREM IPSUM</span> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined </p>
                                     <ul>
@@ -194,7 +168,7 @@
                             </div>
                         </section>
                         <!-- end tabs -->
-                    </div> 
+                    </div>
                     <!-- end left content_bottom -->
                 </div>
                 <!-- start left_sidebar -->
@@ -241,15 +215,9 @@
                         </div>
                         <div class="clear"></div>
                     </div>
-                    <h4>related colors</h4>
-                    <ul class="color-list">
-                        <li><a href="#"> <span class="color2"> </span><p class="red">Green</p></a></li>
-                        <li><a href="#"> <span class="color3"> </span><p class="red">Blue</p></a></li>
-                        <li><a href="#"> <span class="color4"> </span><p class="red">Yellow</p></a></li>
-                        <li><a href="#"> <span class="color5"> </span><p class="red">Violet</p></a></li>
-                        <li><a href="#"> <span class="color6"> </span><p class="red">Orange</p></a></li>
-                        <li><a href="#"> <span class="color7"> </span><p class="red">Gray</p></a></li>
-                    </ul>
+
+
+
                 </div>
                 <div class="clear"></div>
             </div>
@@ -258,3 +226,41 @@
     </div>
 </div>
 
+<script type="text/javascript">
+    var data = '{"prod_1":{"main":{"orig":"images/0001-2.jpg","main":"images/large/0001-2.jpg","thumb":"images/small/0001-2.jpg","label":""},"gallery":{"item_0":{"orig":"images/0001-2.jpg","main":"images/large/0001-2.jpg","thumb":"images/small/0001-2.jpg","label":""},"item_1":{"orig":"images/0001-1.jpg","main":"images/large/0001-1.jpg","thumb":"images/small/0001-1.jpg","label":""},"item_2":{"orig":"images/0001-5.jpg","main":"images/large/0001-5.jpg","thumb":"images/small/0001-5.jpg","label":""},"item_3":{"orig":"images/0001-3.jpg","main":"images/large/0001-3.jpg","thumb":"images/small/0001-3.jpg","label":""},"item_4":{"orig":"images/0001-4.jpg","main":"images/large/0001-4.jpg","thumb":"images/small/0001-4.jpg","label":""}},"type":"simple","video":false}}';
+    var prodGallery = jQblvg.parseJSON(data),
+        gallery_elmnt = jQblvg('.product-img-box'),
+        galleryObj = new Object(),
+        gallery_conf = new Object();
+
+    gallery_conf.moreviewitem = '<a class="cs-fancybox-thumbs" data-fancybox-group="thumb"  href=""  title="" alt=""><img src="" src_main="" title="" alt="" /></a>';
+    gallery_conf.animspeed = 200;
+
+    jQblvg(document).ready(function () {
+        galleryObj[1] = new prodViewGalleryForm(prodGallery, 'prod_1', gallery_elmnt, gallery_conf, '.product-image', '.more-views', 'http:');
+        jQblvg('.product-image .cs-fancybox-thumbs').absoluteClick();
+        jQblvg('.cs-fancybox-thumbs').fancybox({
+            prevEffect: 'none',
+            nextEffect: 'none',
+            closeBtn: true,
+            arrows: true,
+            nextClick: true,
+            helpers: {
+                thumbs: {
+                    position: 'bottom'
+                }
+            }
+        });
+        jQblvg('#wrap').css('z-index', '100');
+        jQblvg('.more-views-container').elScroll({ type: 'vertical', elqty: 4, btn_pos: 'border', scroll_speed: 400 });
+
+    });
+
+    function getImages(id) {
+        $ajax
+    }
+
+    function initGallery(a, b, element) {
+        galleryObj[a] = new prodViewGalleryForm(prods, b, gallery_elmnt, gallery_conf, '.product-image', '.more-views', '');
+    };
+</script>

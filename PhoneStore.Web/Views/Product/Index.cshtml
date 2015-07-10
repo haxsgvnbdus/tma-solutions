@@ -28,23 +28,23 @@
 <div class="grids_of_3">
                 @for (int i = 0; i < Model.Count(); i++)
                 {
+                    var item = Model.ElementAt(i);
                     if (i % 3 == 0)
                     {
+                       
                         <div class="grid1_of_3" style="margin-left: 0">
-                            <a href="/Product/Detail/@i" >
-                            @*<img src="/images/pic4.jpg" alt="" />
-                                Html.DisplayFor( => Model.ElementAt(i)._productPictures. *@ 
-                                <img src= "@Model.ElementAt(i).ProductPictures.First(c => c.ID == script)" alt="" />
+                            <a href="/Product/Detail/@item.ID">
+                                <img src= "http://localhost:20415/Images/@item.ProductPictures.ElementAt(0).Picture.PictureLink" alt="" />
                                 <h3>@Model.ElementAt(i).Name </h3>
                                 <span class="price">@Model.ElementAt(0).Price</span>
-                            </a>
+                            </a> 
                         </div> 
                     } 
                     else if ((i + 1) % 3 == 0)
                     {
                         <div class="grid1_of_3">
-                            <a href="/Product/Detail/@i">
-                                <img src="/images/pic4.jpg" alt="" />
+                            <a href="/Product/Detail/@item.ID">
+                                <img src="http://localhost:20415/Images/@item.ProductPictures.ElementAt(0).Picture.PictureLink" alt="" />
                                 <h3>@Model.ElementAt(i).Name </h3>
                                 <span class="price">@Model.ElementAt(i).Price</span>
                             </a>
@@ -58,8 +58,8 @@
                     else
                     {
                         <div class="grid1_of_3">
-                            <a href="/Product/Detail/@i">
-                                <img src="/images/pic4.jpg" alt="" />
+                            <a href="/Product/Detail/@item.ID">
+                                <img src="http://localhost:20415/Images/@item.ProductPictures.ElementAt(0).Picture.PictureLink" alt="" />
                                 <h3>@Model.ElementAt(i).Name </h3>
                                 <span class="price">@Model.ElementAt(i).Price</span>
                             </a>
@@ -73,7 +73,7 @@
             </div>
             <div class="clear"></div>
 
-
+            
 
             <div class="top_main">
                 <h2>best sellers of the month</h2>
@@ -84,24 +84,26 @@
             <div class="grids_of_3">
                 @for (int i = 0; i < Model.Count(); i++)
                 {
+                    var item = Model.ElementAt(i);
+
                     if (i % 3 == 0)
                     {
                         <div class="grid1_of_3" style="margin-left: 0">
-                            <a href="/Product/Detail/@i">
-                                <img src="/images/pic4.jpg" alt="" />
+                            <a href="/Product/Detail/@item.ID">
+                                <img src="http://localhost:20415/Images/@item.ProductPictures.ElementAt(0).Picture.PictureLink" alt="" />
                                 <h3>@Model.ElementAt(i).Name </h3>
                                 <span class="price">@Model.ElementAt(0).Price</span>
-                            </a>
+                            </a> 
                         </div>
                     }
                     else if ((i + 1) % 3 == 0)
                     {
                         <div class="grid1_of_3">
-                            <a href="/Product/Detail/@i">
-                                <img src="/images/pic4.jpg" alt="" />
+                            <a href="/Product/Detail/@item.ID">
+                                <img src="http://localhost:20415/Images/@item.ProductPictures.ElementAt(0).Picture.PictureLink" alt="" />
                                 <h3>@Model.ElementAt(i).Name </h3>
-                                <span class="price">@Model.ElementAt(i).Price</span>
-                            </a>
+                                <span class="price">@Model.ElementAt(0).Price</span>
+                            </a> 
                         </div>
 
                         <div class="clear"></div>
@@ -112,11 +114,11 @@
                     else
                     {
                         <div class="grid1_of_3">
-                            <a href="/Product/Detail/@i">
-                                <img src="/images/pic4.jpg" alt="" />
+                            <a href="/Product/Detail/@item.ID">
+                                <img src="http://localhost:20415/Images/@item.ProductPictures.ElementAt(0).Picture.PictureLink" alt="" />
                                 <h3>@Model.ElementAt(i).Name </h3>
-                                <span class="price">@Model.ElementAt(i).Price</span>
-                            </a>
+                                <span class="price">@Model.ElementAt(0).Price</span>
+                            </a> 
                         </div>
 
                     }
@@ -141,7 +143,7 @@
                     <h2>blog news</h2>
                     <div class="grid_date">
                         <div class="date1">
-                            <h4>apr 01</h4>
+                            <h4>apr 01</h4> 
                         </div>
                         <div class="date_text">
                             <h4><a href="#"> Donec vehicula est ac augue consectetur,</a></h4>

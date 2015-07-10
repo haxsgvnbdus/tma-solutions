@@ -33,7 +33,8 @@ namespace PhoneStore.Web
             bundles.Add(new ScriptBundle("~/bundles/slideshow").Include(
                 "~/Scripts/theme/jquery.eislideshow.js"
             ));
-
+            
+            
             bundles.Add(new ScriptBundle("~/bundles/cloudzoom").Include(
                 "~/Scripts/theme/cloud-zoom.1.0.3.min.js"
             ));
@@ -63,7 +64,7 @@ namespace PhoneStore.Web
 
             bundles.Add(new StyleBundle("~/Content/viewgallery").Include(
                 "~/Content/theme/productviewgallery.css"
-            ));
+            )); 
         }
     }
 }

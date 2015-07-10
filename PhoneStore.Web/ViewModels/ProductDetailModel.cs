@@ -16,6 +16,8 @@ namespace PhoneStore.Web.ViewModels
         private ICollection<ProductComment> _productComments;
         private ICollection<ProductTag> _productTags;
         private ICollection<Discount> _appliedDiscounts;
+
+        public int ID { set; get;  }
         public string Name { set; get; }
 
         public string Description { set; get; }
