@@ -8,6 +8,7 @@ using PhoneStore.Web.Extensions;
 using PhoneStore.Web.ViewModels;
 using PhoneStore.Model.Catalog;
 using System.Net;
+using PhoneStore.Model.Media;
 
 namespace PhoneStore.Web.Controllers
 {
@@ -45,13 +46,18 @@ namespace PhoneStore.Web.Controllers
             viewModel.Description = product.Description;
             viewModel.Sku = product.Sku;
             viewModel.Price = product.Price;
-
+            viewModel.ProductPictures = product.ProductPictures;
             return View(viewModel);
 
 
         }
-        
-         
+
+        public JsonResult GetImages(int id)
+        {
+            var vm = new ProductPictureDetailsModel();
+
+            return Json(vm, JsonRequestBehavior.AllowGet);
+        }
 
     }
 }

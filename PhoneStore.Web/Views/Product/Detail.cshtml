@@ -1,8 +1,8 @@
-﻿@{
+﻿@model PhoneStore.Web.ViewModels.ProductDetailModel
+@{
     ViewBag.Title = "Detail";
 }
 
-@model PhoneStore.Web.ViewModels.ProductDetailModel
 
 
 @Styles.Render("~/Content/viewgallery")
@@ -32,53 +32,11 @@
                         <div class="product-view">
                             <div class="product-essential">
                                 <div class="product-img-box">
-                                    <div class="more-views">
-                                        <div class="more-views-container">
-                                            <ul>
 
-                                                @for (int i = 0; i < Model.ProductPictures.Count; i++)
-                                                {
-                                                    <li>
-                                                        <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
-                                                            <img src="http://localhost:20415/Images/@Model.ProductPictures.ElementAt(i).Picture.PictureLink" src_main="" title="" alt="" />
-                                                        </a>
-                                                    </li>
-                                                }
-
-                                                @*<li>
-                                                        <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
-                                                            <img src="" src_main="" title="" alt="" />
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
-                                                            <img src="" src_main="" title="" alt="" />
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
-                                                            <img src="" src_main="" title="" alt="" />
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
-                                                            <img src="" src_main="" title="" alt="" />
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="cs-fancybox-thumbs" data-fancybox-group="thumb" href="" title="" alt="">
-                                                            <img src="" src_main="" title="" alt="" />
-                                                        </a>
-                                                    </li>*@
-
-                                            </ul>
-                                        </div>
+                                    <div style="width:420px; height:424px">
+                                        <img src="http://localhost:20415/Images/@Model.ProductPictures.ElementAt(0).Picture.PictureLink" height="424" width="390" src_main="" title="" alt="" />>
                                     </div>
-                                    <div class="product-image">
-                                        <a class="cs-fancybox-thumbs cloud-zoom" rel="adjustX:30,adjustY:0,position:'right',tint:'#202020',tintOpacity:0.5,smoothMove:2,showTitle:true,titleOpacity:0.5" data-fancybox-group="thumb" href="images/0001-2.jpg" title="Women Shorts" alt="Women Shorts">
-                                            <img src="images/0001-2.jpg" alt="Women Shorts" title="Women Shorts" />
-                                        </a>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -118,7 +76,7 @@
                     <div class="clear"></div>
                     <!-- start left content_bottom -->
                     <div class="left_content_btm">
-                        <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p class="para">@Html.DisplayFor(model => model.Description)</p>
                         <!-- start tabs -->
                         <section class="tabs">
                             <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked">
@@ -127,14 +85,11 @@
                             <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2">
                             <label for="tab-2" class="tab-label-2">consumer</label>
 
-                            <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3">
-                            <label for="tab-3" class="tab-label-3">semiconductor</label>
-
                             <div class="clear-shadow"></div>
                             I
                             <div class="content">
                                 <div class="content-1">
-                                    <p class="para top"><span>LOREM IPSUM</span> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined </p>
+                                    <p class="para top"><span></span>@Html.DisplayFor(model => model.Description)</p>
                                     <ul>
                                         <li>Research</li>
                                         <li>Design and Development</li>
@@ -153,18 +108,7 @@
                                         <li>Set top boxes for HDTV and IPTV Player applications on various Operating Systems and Hardware Platforms</li>
                                     </ul>
                                 </div>
-                                <div class="content-3">
-                                    <p class="para top"><span>LOREM IPSUM</span> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined </p>
-                                    <ul>
-                                        <li>Research</li>
-                                        <li>Design and Development</li>
-                                        <li>Porting and Optimization</li>
-                                        <li>System integration</li>
-                                        <li>Verification, Validation and Testing</li>
-                                        <li>Maintenance and Support</li>
-                                    </ul>
-                                    <div class="clear"></div>
-                                </div>
+
                             </div>
                         </section>
                         <!-- end tabs -->
@@ -215,7 +159,7 @@
                         </div>
                         <div class="clear"></div>
                     </div>
-
+                    
 
 
                 </div>
@@ -227,15 +171,12 @@
 </div>
 
 <script type="text/javascript">
-    var data = '{"prod_1":{"main":{"orig":"images/0001-2.jpg","main":"images/large/0001-2.jpg","thumb":"images/small/0001-2.jpg","label":""},"gallery":{"item_0":{"orig":"images/0001-2.jpg","main":"images/large/0001-2.jpg","thumb":"images/small/0001-2.jpg","label":""},"item_1":{"orig":"images/0001-1.jpg","main":"images/large/0001-1.jpg","thumb":"images/small/0001-1.jpg","label":""},"item_2":{"orig":"images/0001-5.jpg","main":"images/large/0001-5.jpg","thumb":"images/small/0001-5.jpg","label":""},"item_3":{"orig":"images/0001-3.jpg","main":"images/large/0001-3.jpg","thumb":"images/small/0001-3.jpg","label":""},"item_4":{"orig":"images/0001-4.jpg","main":"images/large/0001-4.jpg","thumb":"images/small/0001-4.jpg","label":""}},"type":"simple","video":false}}';
-    var prodGallery = jQblvg.parseJSON(data),
+    var prodGallery = jQblvg.parseJSON('{"prod_1":{"main":{"orig":"images/0001-2.jpg","main":"images/large/0001-2.jpg","thumb":"images/small/0001-2.jpg","label":""},"gallery":{"item_0":{"orig":"images/0001-2.jpg","main":"images/large/0001-2.jpg","thumb":"images/small/0001-2.jpg","label":""},"item_1":{"orig":"images/0001-1.jpg","main":"images/large/0001-1.jpg","thumb":"images/small/0001-1.jpg","label":""},"item_2":{"orig":"images/0001-5.jpg","main":"images/large/0001-5.jpg","thumb":"images/small/0001-5.jpg","label":""},"item_3":{"orig":"images/0001-3.jpg","main":"images/large/0001-3.jpg","thumb":"images/small/0001-3.jpg","label":""},"item_4":{"orig":"images/0001-4.jpg","main":"images/large/0001-4.jpg","thumb":"images/small/0001-4.jpg","label":""}},"type":"simple","video":false}}'),
         gallery_elmnt = jQblvg('.product-img-box'),
         galleryObj = new Object(),
         gallery_conf = new Object();
-
     gallery_conf.moreviewitem = '<a class="cs-fancybox-thumbs" data-fancybox-group="thumb"  href=""  title="" alt=""><img src="" src_main="" title="" alt="" /></a>';
     gallery_conf.animspeed = 200;
-
     jQblvg(document).ready(function () {
         galleryObj[1] = new prodViewGalleryForm(prodGallery, 'prod_1', gallery_elmnt, gallery_conf, '.product-image', '.more-views', 'http:');
         jQblvg('.product-image .cs-fancybox-thumbs').absoluteClick();
@@ -256,11 +197,7 @@
 
     });
 
-    function getImages(id) {
-        $ajax
-    }
-
     function initGallery(a, b, element) {
         galleryObj[a] = new prodViewGalleryForm(prods, b, gallery_elmnt, gallery_conf, '.product-image', '.more-views', '');
     };
-</script>
+</script>-->

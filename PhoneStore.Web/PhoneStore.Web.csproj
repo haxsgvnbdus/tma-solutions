@@ -183,6 +183,7 @@
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\ProductDetailModel.cs" />
     <Compile Include="ViewModels\ProductIIndexModel.cs" />
+    <Compile Include="ViewModels\ProductPictureDetailsModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
