@@ -55,6 +55,11 @@
     <Compile Include="Mappings\ProductMap.cs" />
     <Compile Include="Mappings\ProductPictureMap.cs" />
     <Compile Include="Mappings\ProductTagMap.cs" />
+    <Compile Include="Migrations\201507141103121_init3.cs" />
+    <Compile Include="Migrations\201507141103121_init3.Designer.cs">
+      <DependentUpon>201507141103121_init3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PhoneStoreDBInitializer.cs" />
     <Compile Include="PhoneStoreDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,6 +76,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bitmap1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201507141103121_init3.resx">
+      <DependentUpon>201507141103121_init3.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

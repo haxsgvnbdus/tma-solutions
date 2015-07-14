@@ -16,3 +16,4 @@ namespace PhoneStore.CMS.Models
         public string Password { set; get;  }
     }
 }
+

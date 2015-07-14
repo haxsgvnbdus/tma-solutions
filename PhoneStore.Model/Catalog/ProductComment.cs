@@ -9,7 +9,7 @@ namespace PhoneStore.Model.Catalog
     public partial class ProductComment : BaseEntity
     {
         public int ProductID { get; set;  }
-        public int CustomerID { get; set; }
+        public string CustomerID { get; set; }
 
         public bool IsApproved { get; set; }
 

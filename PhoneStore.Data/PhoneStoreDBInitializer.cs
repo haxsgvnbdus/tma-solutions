@@ -12,7 +12,7 @@ using PhoneStore.Model.Discounts;
 
 namespace PhoneStore.Data
 {
-    public class PhoneStoreDBInitializer : DropCreateDatabaseIfModelChanges<PhoneStoreDBContext>
+    public class PhoneStoreDBInitializer : DropCreateDatabaseAlways<PhoneStoreDBContext>
     {
         protected override void Seed(PhoneStoreDBContext context)
         {
@@ -117,7 +117,8 @@ namespace PhoneStore.Data
             context.SaveChanges();
 
             #endregion
-
+            
+            
             
             #region Discount
             IList<Discount> Discounts = new List<Discount>();
@@ -214,7 +215,7 @@ namespace PhoneStore.Data
                 UpdatedOnUtc = DateTime.UtcNow, //db load thgian len, index cho vo hien obj thanhviewmodel index, bam edit la lay entity cua db load len
                 ProductTypeId = 1,
                 ProductType = ProductType.SimpleProduct
-            });
+            }); 
             Products.Add(new Product()
             {
                 Name = "Nikon D3200",
