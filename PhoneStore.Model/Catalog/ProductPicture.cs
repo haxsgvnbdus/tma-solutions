@@ -11,7 +11,7 @@ namespace PhoneStore.Model.Catalog
     {
         public int ProductId { get; set; }
 
-        public int PictureId { get; set; }
+        public int PictureId { get; set; } 
 
         public int DisplayOrder { get; set; }
 

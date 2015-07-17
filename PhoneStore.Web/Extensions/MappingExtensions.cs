@@ -20,6 +20,7 @@ namespace PhoneStore.Web.Extensions
             return Mapper.Map<TSource, TDestination>(source);
         }
 
+
         #region Product
         public static ProductIndexModel ToVM(this Product entity)
         {
@@ -27,7 +28,7 @@ namespace PhoneStore.Web.Extensions
         }
         #endregion
                     
-
+        
 
     }
 }

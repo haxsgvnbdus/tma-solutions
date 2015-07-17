@@ -13,8 +13,7 @@ namespace PhoneStore.Web.Controllers
         PhoneStoreDBContext db = new PhoneStoreDBContext();
         public ActionResult Index()
         {
-            var entities = db.Products;
-            var viewModels = entities.AsEnumerable().Select(c =>
+            var viewModels = db.Products.ToList().Select(c =>
                 {
                     return c.ToVM(); 
                 });

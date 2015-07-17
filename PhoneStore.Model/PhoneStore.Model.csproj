@@ -52,10 +52,9 @@
     <Compile Include="Catalog\ProductSortingEnum.cs" />
     <Compile Include="Catalog\ProductType.cs" />
     <Compile Include="Configuration.cs" />
-    <Compile Include="Customers\Customer.cs" />
     <Compile Include="Catalog\Manufacturer.cs" />
     <Compile Include="Catalog\Product.cs" />
-    <Compile Include="Customers\ExternalAuthenticationRecord.cs" />
+    <Compile Include="Customers\User.cs" />
     <Compile Include="Discount\Discount.cs" />
     <Compile Include="Discount\DiscountType.cs" />
     <Compile Include="ISoftDeleteable.cs" />
