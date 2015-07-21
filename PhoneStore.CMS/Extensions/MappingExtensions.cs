@@ -7,6 +7,7 @@ using PhoneStore.Model.Catalog;
 using PhoneStore.CMS.ViewModels;
 using PhoneStore.Model.Discounts;
 using PhoneStore.Model.Media;
+using PhoneStore.CMS.Models;
 
 
 namespace PhoneStore.CMS.Extensions
@@ -109,6 +110,18 @@ namespace PhoneStore.CMS.Extensions
         }
         #endregion 
 
-        
+        //#region User
+
+        //public static User ToEntity(this LoginViewModel vm)
+        //{
+        //    return vm.MapTo<LoginViewModel, User>();
+        //}
+        //public static LoginViewModel ToVM (this User entity)
+        //{
+        //    return entity.MapTo<User, LoginViewModel>(); 
+        //}
+        //#endregion
+
+
     }
 }

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -10,9 +9,11 @@ using PhoneStore.Data;
 using PhoneStore.Model.Discounts;
 using PhoneStore.CMS.Extensions;
 using PhoneStore.CMS.ViewModels;
+using System.Data.Entity;
 
 namespace PhoneStore.CMS.Controllers
 {
+    [Authorize]
     public class DiscountController : Controller
     {
         private PhoneStoreDBContext db = new PhoneStoreDBContext();

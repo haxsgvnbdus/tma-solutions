@@ -13,6 +13,7 @@ using PhoneStore.CMS.ViewModels;
 
 namespace PhoneStore.CMS.Controllers
 {
+    [Authorize]
     public class PictureController : Controller
     {
         private PhoneStoreDBContext db = new PhoneStoreDBContext();

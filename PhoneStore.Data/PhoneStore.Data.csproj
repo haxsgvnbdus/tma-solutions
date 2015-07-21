@@ -55,13 +55,10 @@
     <Compile Include="Mappings\ProductMap.cs" />
     <Compile Include="Mappings\ProductPictureMap.cs" />
     <Compile Include="Mappings\ProductTagMap.cs" />
-    <Compile Include="Migrations\201507141103121_init3.cs" />
-    <Compile Include="Migrations\201507141103121_init3.Designer.cs">
-      <DependentUpon>201507141103121_init3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201507170729040_init4.cs" />
-    <Compile Include="Migrations\201507170729040_init4.Designer.cs">
-      <DependentUpon>201507170729040_init4.cs</DependentUpon>
+    <Compile Include="Mappings\UserMap.cs" />
+    <Compile Include="Migrations\201507200752285_initinit.cs" />
+    <Compile Include="Migrations\201507200752285_initinit.Designer.cs">
+      <DependentUpon>201507200752285_initinit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PhoneStoreDBInitializer.cs" />
@@ -82,11 +79,8 @@
     <Content Include="Bitmap1.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201507141103121_init3.resx">
-      <DependentUpon>201507141103121_init3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201507170729040_init4.resx">
-      <DependentUpon>201507170729040_init4.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201507200752285_initinit.resx">
+      <DependentUpon>201507200752285_initinit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

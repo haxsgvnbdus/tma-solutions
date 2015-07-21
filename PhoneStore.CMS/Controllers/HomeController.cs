@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace PhoneStore.CMS.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -17,7 +18,7 @@ namespace PhoneStore.CMS.Controllers
         {
             ViewBag.Message = "Your application description page";
             return View();
-        }
+        } 
             
         public ActionResult Contact()
         {

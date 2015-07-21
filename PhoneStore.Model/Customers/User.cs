@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhoneStore.Data.Customers
+namespace PhoneStore.Model.Customers
 {
     public class User
     {
@@ -14,7 +14,7 @@ namespace PhoneStore.Data.Customers
 
         [Required]
         [StringLength(20)]
-        public string Username { get; set; }
+        public string UserName { get; set; }
 
         [StringLength(50)]
         public string Email { get; set; }
@@ -23,6 +23,6 @@ namespace PhoneStore.Data.Customers
         public string Password { get; set; }
 
         public int? Privilege { get; set; }
-
+       
     }
 }

@@ -1,14 +1,15 @@
 namespace PhoneStore.Data.Migrations
 {
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
     using PhoneStore.Model.Catalog;
     using PhoneStore.Model.Customers;
     using PhoneStore.Model.Discounts;
-    using PhoneStore.Model.Media;
+    using System;
     using System.Collections.Generic;
+    using System.Data.Entity;
+    using System.Data.Entity.Migrations;
+    using System.Linq;
+    using PhoneStore.Data;
+    using PhoneStore.Model.Media;
 
     internal sealed class Configuration : DbMigrationsConfiguration<PhoneStore.Data.PhoneStoreDBContext>
     {
@@ -31,7 +32,6 @@ namespace PhoneStore.Data.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-
 
             #region Categories
             IList<Category> Categories = new List<Category>();
@@ -191,6 +191,8 @@ namespace PhoneStore.Data.Migrations
             Pictures.Add(new Picture() { PictureLink = "665_lumia 730 1.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
             Pictures.Add(new Picture() { PictureLink = "nikon-d3200-a-good-camera.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
             Pictures.Add(new Picture() { PictureLink = "orig-nikon-d3200-main-2.jpg", MimeType = "", IsNew = true, SeoFilename = "" });
+
+
 
             foreach (Picture picture in Pictures)
                 context.Pictures.Add(picture);
@@ -557,8 +559,17 @@ namespace PhoneStore.Data.Migrations
             //context.ProductTags.Add(pt);
 
             context.SaveChanges();
-            #endregion 
+            #endregion
 
+            #region User
+            IList<User> Users = new List<User>();
+            Users.Add(new User() { UserName = "", Password = "admin" });
+
+            foreach (User user in Users)
+                context.Users.Add(user);
+            context.SaveChanges();
+            #endregion
         }
     }
 }
+

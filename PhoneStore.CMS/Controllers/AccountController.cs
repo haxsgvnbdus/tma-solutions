@@ -5,55 +5,61 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
+using PhoneStore.Core;
+using System.Web.Security;
+using PhoneStore.Data;
 using PhoneStore.CMS.Models;
+using PhoneStore.CMS.Extensions;
+using PhoneStore.Model.Customers;
+
 
 namespace PhoneStore.CMS.Controllers
 {
-    [Authorize]
     public class AccountController : Controller
     {
-        private readonly IUserService userService;
-        
-        public AccountController()
-        {
-            this.userService = new UserService();
-        }
 
-        public AccountController(IUserService userService)
+        private PhoneStoreDBContext db = new PhoneStoreDBContext();
+        
+    //GET 
+    public ActionResult Login()
         {
-            this.userService = userService;
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Phone");
+            }
+            return View();
         }
 
     [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Login(LoginViewModel user)
+        public ActionResult Login(LoginViewModel userVM)
         {
             if (ModelState.IsValid)
             {
-                if (userService.DoesUserExist(user.Username, user.Password))
+
+                //var user = userVM.ToEntity();        
+                //if (userVM.UserName.Equals("admin") && userVM.Password.Equals("admin")) 
+                if (db.Users.Where(u => u.UserName == userVM.UserName).Single() != null)  
                 {
-                    FormsAuthentication.SetAuthCookie(user.Username, user.RememberMe);
-                    return RedirectToAction("Index", "Admin");
-                }
+                    FormsAuthentication.SetAuthCookie(userVM.UserName, userVM.RememberMe);
+                    return RedirectToAction("Index", "Phone");
+                } 
                 else
-                {
+                { 
                     ModelState.AddModelError("", "Login data is incorrect!");
                 }
-            }
-
-            return View(user);
+            } 
+            
+            return View(userVM); 
         }
-
+            
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
-            return RedirectToAction("Login", "Account");
+            return RedirectToAction("Index", "Home");
         }
 
-        }
-    }
+        } 
+} 
 
-}

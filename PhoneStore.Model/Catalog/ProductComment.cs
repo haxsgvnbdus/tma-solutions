@@ -1,4 +1,4 @@
-﻿using PhoneStore.Data.Customers;
+﻿using PhoneStore.Model.Customers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace PhoneStore.Model.Catalog
     public partial class ProductComment : BaseEntity
     {
         public int ProductID { get; set;  }
-        public string UserID { get; set; }
+        public int UserID { get; set; }
 
         public bool IsApproved { get; set; }
 

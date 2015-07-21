@@ -18,6 +18,7 @@ using System.Collections;
 
 namespace PhoneStore.CMS.Controllers
 {
+    [Authorize]
     public class PhoneController : Controller
     {
         private PhoneStoreDBContext db = new PhoneStoreDBContext();

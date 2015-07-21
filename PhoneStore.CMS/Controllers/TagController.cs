@@ -14,6 +14,7 @@ using PhoneStore.Model.Catalog;
 
 namespace PhoneStore.CMS.Controllers
 {
+    [Authorize]
     public class TagController : Controller
     {
         private PhoneStoreDBContext db = new PhoneStoreDBContext();
