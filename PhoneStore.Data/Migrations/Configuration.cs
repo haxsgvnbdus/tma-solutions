@@ -563,13 +563,17 @@ namespace PhoneStore.Data.Migrations
 
             #region User
             IList<User> Users = new List<User>();
-            Users.Add(new User() { UserName = "", Password = "admin" });
+            Users.Add(new User() { UserName = "admin", Password = "admin", Privilege = 0, Email = "Email" });
+            Users.Add(new User() { UserName = "user", Password = "user" });
 
             foreach (User user in Users)
                 context.Users.Add(user);
             context.SaveChanges();
             #endregion
+
+
         }
     }
 }
+
 

@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.Owin.Security;
-using PhoneStore.Core;
 using System.Web.Security;
 using PhoneStore.Data;
 using PhoneStore.CMS.Models;
@@ -20,7 +19,7 @@ namespace PhoneStore.CMS.Controllers
     {
 
         private PhoneStoreDBContext db = new PhoneStoreDBContext();
-        
+       
     //GET 
     public ActionResult Login()
         {
@@ -40,14 +39,14 @@ namespace PhoneStore.CMS.Controllers
 
                 //var user = userVM.ToEntity();        
                 //if (userVM.UserName.Equals("admin") && userVM.Password.Equals("admin")) 
-                if (db.Users.Where(u => u.UserName == userVM.UserName).Single() != null)  
+                if (db.Users.Any(u => u.UserName.Equals(userVM.UserName) && u.Password.Equals(userVM.Password)))  
                 {
                     FormsAuthentication.SetAuthCookie(userVM.UserName, userVM.RememberMe);
                     return RedirectToAction("Index", "Phone");
                 } 
                 else
                 { 
-                    ModelState.AddModelError("", "Login data is incorrect!");
+                    ModelState.AddModelError("", "Login data is incorrect!"); 
                 }
             } 
             

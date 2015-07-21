@@ -19,15 +19,15 @@ namespace PhoneStore.Web.Controllers
         // GET: Product
         public ActionResult Index()
         {
-            var entities = db.Products;
-            var viewModels = entities.AsEnumerable().Select(c =>
+            var entities = db.Products.ToList();
+            var viewModels = entities.Select(c =>
                 {
                     return c.ToVM(); 
                 });
 
             return View(viewModels.ToList());
         }
-
+        [Authorize]
         public ActionResult Detail(int? ID)
         {
             if (ID == null)

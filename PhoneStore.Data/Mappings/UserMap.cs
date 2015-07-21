@@ -10,11 +10,15 @@ namespace PhoneStore.Data.Mappings
 {
     public class UserMap : EntityTypeConfiguration<User>
     {
-        public UserMap()
-        {
-            this.ToTable("User");
-            this.HasKey(m => m.UserID);
-            this.Property(m => m.UserName).IsRequired().HasMaxLength(40); 
-        }
+        //public UserMap()
+        //{
+        //    this.ToTable("User");
+        //    this.HasKey(m => m.UserID);
+        //    this.Property(m => m.UserName).IsRequired().HasMaxLength(40);
+        //    this.Property(m => m.Password).IsRequired().HasMaxLength(40);
+        //    this.Property(m => m.Privilege);
+        //    this.Property(m => m.Email).IsRequired();
+            
+        //}
     }
 }

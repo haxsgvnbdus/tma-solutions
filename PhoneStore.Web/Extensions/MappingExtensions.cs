@@ -5,9 +5,11 @@ using System.Web;
 using AutoMapper;
 using PhoneStore.Model.Catalog;
 using PhoneStore.Web.ViewModels;
+using PhoneStore.Web.Models;
 
 
 using PhoneStore.Model.Discounts;
+using PhoneStore.Model.Customers;
 
 
 namespace PhoneStore.Web.Extensions
@@ -27,8 +29,15 @@ namespace PhoneStore.Web.Extensions
             return entity.MapTo<Product, ProductIndexModel>(); 
         }
         #endregion
-                    
+
+        #region User 
         
+        public static User ToEntity(this RegisterViewModel vm)
+        {
+            return vm.MapTo<RegisterViewModel, User>(); 
+        }
+        #endregion
+
 
     }
 }

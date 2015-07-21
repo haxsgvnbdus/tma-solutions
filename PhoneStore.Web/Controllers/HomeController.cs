@@ -8,15 +8,17 @@ using PhoneStore.Web.Extensions;
 
 namespace PhoneStore.Web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : Controller 
     {
         PhoneStoreDBContext db = new PhoneStoreDBContext();
         public ActionResult Index()
         {
-            var viewModels = db.Products.ToList().Select(c =>
-                {
-                    return c.ToVM(); 
-                });
+            var entities = db.Products.ToList();
+            var viewModels = entities.Select(c =>
+            {
+                return c.ToVM();
+            });
+
             return View(viewModels.ToList());
         }
 
@@ -31,7 +33,7 @@ namespace PhoneStore.Web.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            return View(); 
         }
     }
 }

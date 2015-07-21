@@ -36,7 +36,8 @@ namespace PhoneStore.Data
         public DbSet<User> Users { get; set; }
         
 
-        //public DbSet<Customer> Customers { get; set; }          
+        //public DbSet<Customer> Customers { get; set; }
+        
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -52,7 +53,9 @@ namespace PhoneStore.Data
             //modelBuilder.Configurations.Add(new ProductCommentMap());
             modelBuilder.Configurations.Add(new ProductManufacturerMap());
             modelBuilder.Configurations.Add(new ProductPictureMap());
+            //modelBuilder.Configurations.Add(new UserMap());
 
+            
         }
       
     }

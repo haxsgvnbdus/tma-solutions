@@ -666,10 +666,6 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PhoneStore.Core\PhoneStore.Core.csproj">
-      <Project>{e24a7706-b999-42f1-933f-5f4e4a2f3f87}</Project>
-      <Name>PhoneStore.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\PhoneStore.Data\PhoneStore.Data.csproj">
       <Project>{c4b771bd-8dbe-4cec-98a0-fca54009d7db}</Project>
       <Name>PhoneStore.Data</Name>

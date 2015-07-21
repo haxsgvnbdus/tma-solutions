@@ -12,13 +12,14 @@ using PhoneStore.Web.Models;
 using PhoneStore.Model.Customers;
 using PhoneStore.Data;
 using System.Web.Security;
+using PhoneStore.Web.Extensions;
 
 namespace PhoneStore.Web.Controllers
 {
     [Authorize]
     public class AccountController : Controller
     {
-        private PhoneStoreDBContext db = new PhoneStoreDBContext(); 
+        private PhoneStoreDBContext db = new PhoneStoreDBContext();
         // GET: /Account/Login
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
@@ -32,7 +33,7 @@ namespace PhoneStore.Web.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Login(LoginViewModel userVM)
+        public ActionResult Login(LoginViewModel userVM)
         {
             if (ModelState.IsValid)
             {
@@ -43,19 +44,25 @@ namespace PhoneStore.Web.Controllers
                 //    return RedirectToLocal(returnUrl);
                 //}
 
-                if (db.Users.Where(u => u.UserName == userVM.UserName).Single() != null)
-                {  
-                    FormsAuthentication.SetAuthCookie(userVM.UserName, userVM.RememberMe);
-                    return RedirectToAction("Index", "Phone");
-                } 
+                if (db.Users.Any(u => u.UserName.Equals(userVM.UserName) && u.Password.Equals(userVM.Password)))
+                {
+                    FormsAuthentication.SetAuthCookie(userVM.UserName, userVM.RememberMe); 
+                    return RedirectToAction("Index", "Home");
+                }
                 else
-                { 
+                {
                     ModelState.AddModelError("", "Invalid username or password.");
                 }
             }
-            
+
             // If we got this far, something failed, redisplay form
-            return View(userVM); 
+            return View(userVM);
+        }
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Home");
         }
 
         //
@@ -71,7 +78,7 @@ namespace PhoneStore.Web.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Register(RegisterViewModel model)
+        public ActionResult Register(RegisterViewModel userVM)
         {
             if (ModelState.IsValid)
             {
@@ -87,13 +94,19 @@ namespace PhoneStore.Web.Controllers
                 //    AddErrors(result);
                 //}
 
-                var user = new User();
-                        
-            }
-
+                var user = userVM.ToEntity();
+                if (!db.Users.Any(u => u.UserName.Equals(userVM.UserName) && u.Password.Equals(userVM.Password)))
+                {
+                    db.Users.Add(user);
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Username already taken");
+                }
+            } 
             // If we got this far, something failed, redisplay form
-            return View(model);
+            return View(userVM);
         }
-
     }
 }

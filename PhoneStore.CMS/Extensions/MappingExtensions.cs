@@ -8,6 +8,7 @@ using PhoneStore.CMS.ViewModels;
 using PhoneStore.Model.Discounts;
 using PhoneStore.Model.Media;
 using PhoneStore.CMS.Models;
+using PhoneStore.Model.Customers;
 
 
 namespace PhoneStore.CMS.Extensions
@@ -110,7 +111,7 @@ namespace PhoneStore.CMS.Extensions
         }
         #endregion 
 
-        //#region User
+        //#region Admin
 
         //public static User ToEntity(this LoginViewModel vm)
         //{
@@ -122,6 +123,7 @@ namespace PhoneStore.CMS.Extensions
         //}
         //#endregion
 
+        
 
     }
 }
